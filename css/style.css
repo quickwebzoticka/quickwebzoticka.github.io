@@ -876,11 +876,6 @@ footer .tel-text:before {
 	padding-right: 0px;
 }
 
-.row {
-	margin-right: 0px;
-	margin-left: 0px;
-}
-
 .logo-wrapper img {
 	width: 82px;
     height: 58px;
@@ -946,10 +941,6 @@ footer .tel-text:before {
 }
 
 @media (max-width: 531px) {
-.row {
-	margin-right: 0px;
-	margin-left: 0px;
-}
 
 .logo-wrapper img {
 	width: 82px;
