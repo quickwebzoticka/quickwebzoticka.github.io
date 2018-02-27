@@ -380,7 +380,7 @@ header {
 	display: inline-block;
 	list-style: none;
 	text-align: center;
-	margin: 5px 10px;
+	margin: 5px 5px;
 	transition: 0.2s;
 }
 
@@ -391,7 +391,7 @@ header {
 .tags li a {
 	display: block;
 	text-decoration: none;
-	padding: 10px 30px;
+	padding: 10px 25px;
 	color: #7F88C8;
     line-height: 22px;
     font-size: 18px;
@@ -406,7 +406,8 @@ header {
 }
 
 .nomargin {
-	margin: 0;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 .more {
@@ -497,11 +498,11 @@ header {
 	height: 25px;
 	text-align: left;
 	background: red;
-	padding: 0 0 0 25px;
+	padding: 2px 0 0 25px;
     color: #FFFFFF;
-    font-family: 'ubuntu', sans-serif;
-	font-size: 15px;
-	font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
 	line-height: 20px;
     box-shadow: 6px 6px 8px rgba(0,0,0,0.5);
 }
