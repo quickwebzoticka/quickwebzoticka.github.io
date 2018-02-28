@@ -11,6 +11,10 @@ $(document).ready(function() {
 			}
 			$('.main-width').css('background', 'url(../img/slider/' + currentBackgroundImageNumber + '.png) no-repeat 0 0');
 			$('.main-width').css('background-size', 'cover');
-		}, 7000)
+		}, 7000);
+
+	$('#detail_search').on('click', function(){
+		$('#search_menu').toggle();
+	})
 
 });

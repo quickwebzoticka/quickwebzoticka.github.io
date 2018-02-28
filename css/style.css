@@ -293,23 +293,143 @@ header {
 
 .choose-bar input {
 	position: relative;
-	width: 75%;
+	width: 85%;
 	padding: 5px 20px 5px 10px;
 	margin: 20px 40px;
 	border-radius: 5px;
 	border: 1px solid transparent;
 }
 
+.choose-bar select {
+	position: relative;
+	width: 85%;
+	padding: 5px 20px 5px 10px;
+    margin: 19px 18px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+}
+
+.choose-bar select option {
+	font-weight: 300;
+	font-size: 14px;
+	width: 100%;
+}
+
+.choose-bar .communications {
+	text-align: left;
+	display: inline-block;
+	position: relative;
+	width: 85%;
+	padding: 5px 20px 5px 10px;
+    margin: 19px 18px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	background-color: #FFF;
+}
+
+.choose-bar .communications:after {
+	content: "▼";
+	padding: 0 8px;
+	font-size: 9px;
+	position: absolute;
+	right: 0px;
+	top: 10px;
+	z-index: 1;
+	text-align: center;
+	width: 10%;
+	height: 100%;
+	pointer-events: none;
+	box-sizing: border-box;
+}
+
+.metrs input {
+	text-align: left;
+	position: relative;
+	width: 85%;
+	padding: 5px 20px 5px 10px;
+    margin: 19px 18px;
+	border-radius: 5px;
+	border: 1px solid transparent;
+	background-color: #FFF;
+	font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.slider-range_pos {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	transition: 0.6s;
+	transition-delay: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+.metrs:hover .slider-range_pos {
+	opacity: 1;
+}
+
+.checkboxes {
+	position: absolute;
+	bottom: -322px;
+	left: 0;
+	background: #FFF;
+	border-radius: 5px;
+	width: 100%;
+	z-index: 10;
+	transition: 0.6s;
+	transition-delay: 0.3s;
+	opacity: 0;
+	transform: scale(0); 
+	transition-timing-function: ease-in-out; 
+}
+
+.checkboxes:after {
+    content: '';
+    background: #FFF;
+    width: 45px;
+    height: 45px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 41%;
+    top: 3px;
+    z-index: -1;
+}
+
+.checkboxes input {
+	position: relative;
+	width: 32%;
+    margin: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.checkboxes input:focus {
+	outline: none;
+}
+
+.choose-bar .communications:hover .checkboxes {
+	opacity: 1;
+	transform: scale(1);
+	bottom: -122px;
+}
+
+#search_menu {
+	display: block;
+}
+
 .choose-bar .input_wrapper {
 	position: relative;
 }
 
-.choose-bar .input_wrapper:after {
+/*.choose-bar .input_wrapper:after {
 	content: '↓';
 	position: absolute;
 	top: 32%;
 	right: 16%;
-}
+}*/
 
 .choose-bar button {
 	color: #FFF;
