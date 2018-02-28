@@ -280,15 +280,18 @@ header {
 	color: #FFF;
 }
 
+.choose-bar-wrapper {
+	border: solid 1px #9399C8;
+    background-color: #FFFFFF;
+    background-color: rgba(100,100,100,0.77);
+}
+
 .choose-bar {
 	margin-top: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	display: inline-block;
 	max-width: 980px;
-	border: solid 1px #9399C8;
-    background-color: #FFFFFF;
-    background-color: rgba(255,255,255,0.77);
 }
 
 .choose-bar input {
@@ -409,8 +412,17 @@ header {
 	transform: scale(1);
 }
 
-#search_menu {
-	display: none;
+.detailsearch button {
+	color: #FFF;
+	text-decoration: underline;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    padding: 2px 28px;
+    border: solid 1px transparent;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .choose-bar .input_wrapper {
@@ -908,10 +920,6 @@ footer .tel-text:before {
 	position: relative;
 	padding-top: 50px;
 	padding-bottom: 70px;
-}
-
-.content .choose-bar {
-	background-color: rgba(100,100,100,0.77);
 }
 
 .content .choose-bar a {

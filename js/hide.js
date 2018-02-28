@@ -1,3 +1,11 @@
-$( '#detail_search' ).click(function(){
-  $( '#search_menu' ).css('display', 'block');
+$(document).ready(function() {
+
+$( function() {
+
+		$( ".detailsearch" ).click(function(){
+			
+		  $( ".searchmenu" ).css("display:","block");
+		});
+
+	});
 });
