@@ -417,7 +417,7 @@ header {
 }
 
 #search_menu {
-	display: block;
+	display: none;
 }
 
 .choose-bar .input_wrapper {
@@ -932,7 +932,7 @@ footer .tel-text:before {
 }
 
 .fixed-menu {
-	width: 323px;
+	width: 350px;
 	height: 100%;
 	position: fixed;
 	z-index: 9999;
@@ -940,6 +940,18 @@ footer .tel-text:before {
 	left: -300px;
 	background: #4B5392;
 	transition: 0.2s;
+}
+
+.fixed-menu:after {
+    content: '';
+    background: url(../img/menu.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 45%;
+    right: 6px;
+    transform: rotate(90deg);
 }
 
 .fixed-menu:hover {
