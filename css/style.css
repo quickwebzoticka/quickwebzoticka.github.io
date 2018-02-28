@@ -1194,7 +1194,7 @@ footer .tel-text:before {
 
 .main_description {
 	color: #363636;
-    font-family: 'open-sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     font-weight: 700;
 }
@@ -1202,9 +1202,10 @@ footer .tel-text:before {
 .staff h2 {
 	text-align: center;
 	color: #363636;
-    font-family: 'open-sans', sans-serif;
-    font-size: 50px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 40px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .staff_bar {
@@ -1249,12 +1250,15 @@ footer .tel-text:before {
     text-transform: uppercase;
 }
 
+.heighted {
+	height: 113px;
+}
+
 .staff_contact {
 	color: #363636;
     font-family: ubuntu, sans-serif;
     font-size: 15px;
     font-weight: 300;
-    padding-top: 40px;
 }
 
 .staff_contact a {
@@ -1334,6 +1338,10 @@ footer .tel-text:before {
 }
 
 .staff_detail a {
+	margin-right: 10px;
+}
+
+.staff_detail_rightside a {
 	margin-right: 10px;
 }
 
