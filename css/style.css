@@ -292,6 +292,7 @@ header {
 }
 
 .choose-bar-wrapper {
+	margin-top: 30px;
 	position: relative;
 	border: solid 1px #9399C8;
     background-color: #FFFFFF;
@@ -499,7 +500,7 @@ header {
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
-	width: 555px;
+	width: 314px;
 	float: none;
 	margin: 10px;
 	transition: 0.5s;
@@ -507,7 +508,6 @@ header {
 
 .item img {
 	width: 100%;
-	height: 428px;
 }
 
 .item:hover {
@@ -515,7 +515,7 @@ header {
 }
 
 .item_text {
-	padding-top: 30px;
+	padding-top: 10px;
 	background: #4B5392;
 	width: 100%;
 	height: 82px;
@@ -527,6 +527,7 @@ header {
 }
 
 .item_text p {
+	display: inline-block;
 	margin: 0;
 	height: 100%;
 }
@@ -1531,6 +1532,10 @@ footer .tel-text:before {
 	
 .flex-container {
 	justify-content: space-between;
+}
+
+.choose-bar-wrapper {
+	width: 82%;
 }
 
 }
