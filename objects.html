@@ -180,14 +180,19 @@
 							<div class="row">
 								<div class="col-xs-12 col-md-4">
 									<div class="input_wrapper metrs">
-										<input type="text" id="amount" readonly placeholder="Площадь">
-										<div id="slider-range" class="slider-range_pos"></div>
+										<input type="text" id="amount" readonly placeholder="Площадь" data-target="#slider-div" data-toggle="collapse">
+										<div id="slider-div" style="height: 0">
+											<div id="slider-range" class="slider-range_pos"></div>
+										</div>
+										
 									</div>
 								</div>
 								<div class="col-xs-12 col-md-4">
 									<div class="input_wrapper metrs">
-										<input type="text" id="amount-1" readonly placeholder="Площадь">
-										<div id="slider-range-1" class="slider-range_pos"></div>
+										<input type="text" id="amount-1" readonly placeholder="Площадь" data-target="#slider-div-1" data-toggle="collapse">
+										<div id="slider-div-1" style="height: 0">
+											<div id="slider-range-1" class="slider-range_pos"></div>
+										</div>
 									</div>
 								</div>
 								<div class="col-xs-12 col-md-4">
@@ -235,8 +240,10 @@
 								</div>
 								<div class="col-xs-12 col-md-4">
 									<div class="input_wrapper metrs">
-										<input type="text" id="amount-2" readonly>
-										<div id="slider-range-2" class="slider-range_pos"></div>
+										<input type="text" id="amount-2" readonly data-target="#slider-div-2" data-toggle="collapse">
+										<div id="slider-div-2" style="height: 0">
+											<div id="slider-range-2" class="slider-range_pos"></div>
+										</div>
 									</div>
 								</div>
 							</div>
