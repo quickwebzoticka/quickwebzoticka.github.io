@@ -530,9 +530,7 @@ header {
 }
 
 .item_text {
-	padding-top: 10px;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding: 30px 20px;
 	background: rgba(240, 240, 240, 0.7);
 	width: 100%;
 	height: 82px;
@@ -540,15 +538,18 @@ header {
 	font-family: Ubuntu;
 	font-size: 20px;
 	font-weight: 300;
-	line-height: 26px;
-	text-align: left;
+	line-height: 20px;
+	text-align: center;
+}
+
+.two-line {
+	padding: 23px 20px;
 }
 
 .item_text p {
 	display: inline-block;
 	color: #363636;
-	margin: 0;
-	height: 100%;
+	margin: auto auto;
 }
 
 .types h3 {
@@ -1624,7 +1625,16 @@ footer .tel-text:before {
 }
 
 .item {
-	width: 275px;
+	width: 230px;
+}
+
+.item:after {
+	left: -3%;
+	bottom: 27%;
+}
+
+.item:hover:after {
+	width: 103%;
 }
 
 .item img {
@@ -1633,7 +1643,7 @@ footer .tel-text:before {
 }
 
 .item_text {
-	padding-top: 12px;
+	padding-top: 21px;
 	color: #ffffff;
 	font-family: Ubuntu;
 	font-size: 20px;
@@ -1643,6 +1653,9 @@ footer .tel-text:before {
 .item_text p {
 	margin: 0;
 	height: 100%;
+}
+.two-line {
+	padding-top: 14px;
 }
 
 .types h2 {
@@ -1736,7 +1749,16 @@ footer .tel-text:before {
 }
 
 .item {
-	width: 160px;
+	width: 149px;
+}
+
+.item:after {
+	left: -4%;
+	bottom: 38%;
+}
+
+.item:hover:after {
+	width: 104%;
 }
 
 .item img {
@@ -1745,11 +1767,16 @@ footer .tel-text:before {
 }
 
 .item_text {
-	padding-top: 12px;
+	padding-top: 20px;
+	padding-left: 15px;
 	color: #ffffff;
 	font-family: Ubuntu;
 	font-size: 15px;
 	font-weight: 300;
+}
+
+.two-line {
+	padding-top: 13px;
 }
 
 .item_text p {
