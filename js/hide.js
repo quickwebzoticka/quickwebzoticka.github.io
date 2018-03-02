@@ -42,3 +42,7 @@
       $("#slider-div-2").css("height", "40%");
 
     });
+
+ $('.open').click(function() {
+        $(".navbar_nav").slideToggle();
+    });
