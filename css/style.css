@@ -91,7 +91,7 @@ header {
 
 .logo_text {
 	display: inline-block;
-	padding: 10px 0 0 0;
+	padding: 19px 0 0 0;
 }
 
 .head_h1 {
@@ -376,41 +376,40 @@ header {
 }
 
 #slider-div {
-	overflow: hidden;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    height: 40%;
 }
 
 #slider-div-1 {
-	overflow: hidden;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    height: 40%;
 }
 
 #slider-div-2 {
-	overflow: hidden;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	opacity: 1;	
+    overflow: hidden;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    height: 40%;	
 }
 
-/*.slider-range_pos {
+.slider-range_pos {
 	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	opacity: 1;
-}*/
-
-.metrs:focus .slider-range_pos {
+	bottom: 25%;
+	left: 5%;
+	width: 90%;
 	opacity: 1;
 }
 
@@ -1392,7 +1391,7 @@ footer .tel-text:before {
 }
 
 .p_padding {
-	padding: 20px 0px;
+	padding: 50px 0px 20px 0px;
 }
 
 .main_description {
@@ -1415,6 +1414,7 @@ footer .tel-text:before {
 	font-size: 15px;
 	text-align: center;
 	color: #808080;
+	display: none;
 }
 
 .staff_bar {
@@ -1597,6 +1597,10 @@ footer .tel-text:before {
 	width: 82%;
 }
 
+.logo_text {
+	padding-top: 12px;
+}
+
 }
 
 @media (max-width: 1199px){
@@ -1677,6 +1681,7 @@ footer .tel-text:before {
 
 .tel_nopadding {
 	padding-right: 0px;
+	padding-left: 0px;
 }
 
 .logo-wrapper img {
@@ -1696,11 +1701,11 @@ footer .tel-text:before {
 }
 
 .tel {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .tel-text {
-	font-size: 10px;
+	font-size: 13px;
 }
 
 .nav-panel {
@@ -1709,10 +1714,6 @@ footer .tel-text:before {
 }
 
 .flex-container_nav-bar {
-}
-
-.nav-bar li a {
-	font-size: 14px;
 }
 
 .item {
@@ -1804,7 +1805,7 @@ footer .tel-text:before {
 
 .head_h1 {
 	font-size: 14px;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .object_cost {
@@ -1814,11 +1815,11 @@ footer .tel-text:before {
 }
 
 .tel {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tel-text {
-	font-size: 10px;
+	font-size: 13px;
 }
 
 .nav-panel {
@@ -1898,6 +1899,10 @@ footer .tel-text:before {
 
 .fixed-menu {
 	left: -350px;
+}
+
+.staff .prompt {
+	display: block;
 }
 
 }
