@@ -1388,7 +1388,7 @@ footer .tel-text:before {
 }
 
 .p_padding {
-	padding: 20px 50px;
+	padding: 20px 10px;
 }
 
 .main_description {
@@ -1407,10 +1407,16 @@ footer .tel-text:before {
     text-transform: uppercase;
 }
 
-.staff_bar {
-	margin-top: 40px;
-	margin-bottom: 40px;
+.staff .prompt {
+	font-size: 15px;
 	text-align: center;
+	color: #808080;
+}
+
+.staff_bar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .staff_card {
@@ -1511,6 +1517,7 @@ footer .tel-text:before {
 	display: inline-block;
 	position: relative;
 	cursor: pointer;
+	margin: 20px 0;
 }
 
 .staff_carder:hover .staff_detail,
@@ -1605,6 +1612,53 @@ footer .tel-text:before {
 	display: inline-block;
 	right: 0;
 	bottom: 0;
+}
+
+.staff {
+	padding-bottom: 347px;
+}
+
+.staff_detail {
+	position: absolute;
+	padding: 19px 40px;
+	text-align: left;
+	top: 192px;
+    right: -28px;
+	width: 337px;
+	background: #FFF;
+	border: 1px solid #4B5392;
+	box-shadow: 6px 6px 8px rgba(147,153,200,0.34);
+	z-index: 10;
+	display: none;
+}
+
+.staff_detail_rightside {
+	position: absolute;
+	padding: 19px 40px;
+	text-align: left;
+	top: 192px;
+    left: -28px;
+	width: 337px;
+	background: #FFF;
+	border: 1px solid #4B5392;
+	box-shadow: 6px 6px 8px rgba(147,153,200,0.34);
+	z-index: 10;
+	display: none;
+}
+
+.staff_detail:after,
+.staff_detail_rightside:after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	z-index: 20;
+	background: #FFF;
+	border-top: 1px solid #4B5392;
+	border-left: 1px solid #4B5392;
+ 	top: -13px;
+    left: 47%;
+	transform: rotate(45deg);	
 }
 
 }
