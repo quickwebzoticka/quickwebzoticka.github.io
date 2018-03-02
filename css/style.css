@@ -29,11 +29,15 @@ body {
 	margin-right: 0px;
 }
 
-.col-xs-12, .col-xs-6 {
+.col-md-12, .col-xs-12, .col-xs-6 {
 	padding-left: 0px;
 	padding-right: 0px;
 }
 
+.nopadding {
+	padding-left: 0px;
+	padding-right: 0px;	
+}
 
 /*-------------------------------------*/
 /*---------------MAIN------------------*/
@@ -132,7 +136,7 @@ header {
 }
 
 .tel_nopadding {
-	
+	padding-right: 0px;
 }
 
 .tel_wrapper {
@@ -1388,7 +1392,7 @@ footer .tel-text:before {
 }
 
 .p_padding {
-	padding: 20px 10px;
+	padding: 20px 0px;
 }
 
 .main_description {
@@ -1806,7 +1810,7 @@ footer .tel-text:before {
 .object_cost {
 	padding: 5px 25px;
 	font-size: 13px;
-	margin-left: -79px;
+	margin-left: -88px;
 }
 
 .tel {
@@ -1823,8 +1827,8 @@ footer .tel-text:before {
 }
 
 .flex-container_nav-bar {
-    margin-right: -30px;
-    margin-left: -30px;
+/*    margin-right: -30px;
+    margin-left: -30px;*/
 }
 
 .nav-bar li a {
