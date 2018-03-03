@@ -211,7 +211,7 @@ header {
 	width: 100%;
 }
 
-.nav-bar-mob {
+.mob_open {
 	display: none;
 }
 
@@ -449,9 +449,9 @@ header {
 }*/
 
 .nav-bar-mob li {
-	display: inline-block;
+	display: block;
 	list-style: none;
-	padding-left: 10px;
+    padding: 5px 0px;
 	transition: 0.2s;
 }
 
@@ -460,12 +460,12 @@ header {
 	display: block;
 	color: #FFF;
     line-height: 22px;
-    font-size: 14px;
+    font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
 }
 
-.nav-bar-mob li a:before {
+/*.nav-bar-mob li a:before {
 	content: '';
 	position: absolute;
 	display: inline-block;
@@ -488,7 +488,7 @@ header {
 	bottom: 0;
 	opacity: 0;
 	transition: 0.5s;
-}
+}*/
 
 .nav-bar-mob li a:hover:after,
 .nav-bar-mob li a:hover:before {
@@ -2001,9 +2001,13 @@ footer .tel-text:before {
 @media (max-width: 531px) {
 
 .nav-bar-mob {
-	display: inline-block;
 	margin-top: 10px;
 	width: 100%;	
+}
+
+.mob_open {
+	display: inline-block;
+	margin-top: 21px;
 }
 
 .open {
@@ -2075,8 +2079,7 @@ footer .tel-text:before {
 }
 
 .nav-panel {
-/*	padding-left: 5px;
-	padding-right: 5px;*/
+	text-align: right;
 }
 
 .flex-container_nav-bar {
