@@ -211,6 +211,10 @@ header {
 	width: 100%;
 }
 
+.nav-bar-mob {
+	display: none;
+}
+
 .flex-container_nav-bar {
 	display: flex;
 	justify-content: space-between;
@@ -222,6 +226,7 @@ header {
 
 .open {
 	display: inline-block;
+	cursor: pointer;
 }
 
 .burger {
@@ -247,11 +252,10 @@ header {
 .navbar_nav {
 	position: absolute;
     right: 0;
-    top: 0;
 	background: #FFF;
 	z-index: 9999;
 	border-radius: 10px;
-	padding: 10px;
+	padding: 10px 0;
 	width: 19%;
 }
 
@@ -261,11 +265,14 @@ header {
 
 .nav-bar {
 	background: transparent;
+	text-align: left;
 }
 
 .nav-bar li {
 	display: block;
 	list-style: none;
+	padding-left: 10px;
+	transition: 0.2s;
 }
 
 .nav-bar li a {
@@ -278,7 +285,24 @@ header {
     font-weight: 300;
 }
 
-.nav-bar li a:before {
+.nav-bar-mob li {
+	display: inline-block;
+	list-style: none;
+	padding-left: 10px;
+	transition: 0.2s;
+}
+
+.nav-bar-mob li a {
+	position: relative;
+	display: block;
+	color: #FFF;
+    line-height: 22px;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+.nav-bar-mob li a:before {
 	content: '';
 	position: absolute;
 	display: inline-block;
@@ -291,7 +315,7 @@ header {
 	transition: 0.5s;
 }
 
-.nav-bar li a:after {
+.nav-bar-mob li a:after {
 	content: '';
 	position: absolute;
 	display: inline-block;
@@ -303,10 +327,14 @@ header {
 	transition: 0.5s;
 }
 
-.nav-bar li a:hover:after,
-.nav-bar li a:hover:before {
+.nav-bar-mob li a:hover:after,
+.nav-bar-mob li a:hover:before {
 	width: 50%;
 	opacity: 1;
+}
+
+.nav-bar li:not(:first-child):hover {
+	background: #999;
 }
 
 /*---------------MAIN---------------*/
@@ -1666,6 +1694,11 @@ footer .tel-text:before {
 }
 
 @media (max-width: 992px) {
+
+.navbar-nav {
+    top:71px;
+}
+
 .detailsearch {
 	position: relative;
 	display: inline-block;
@@ -1807,6 +1840,16 @@ footer .tel-text:before {
 }
 
 @media (max-width: 531px) {
+
+.nav-bar-mob {
+	display: inline-block;
+	margin-top: 10px;
+	width: 100%;	
+}
+
+.open {
+	display: none;
+}
 
 .detail_information {
 	text-align: center;

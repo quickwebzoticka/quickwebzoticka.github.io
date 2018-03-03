@@ -46,3 +46,12 @@
  $('.open').click(function() {
         $(".navbar_nav").slideToggle();
     });
+
+  $(document).click( function(event){
+
+ 	if( $(event.target).closest(".open").length || $(event.target).closest(".navbar_nav").length || $(".navbar_nav").css("display", "none") ) 
+        return;
+      $(".navbar_nav").slideToggle();
+      event.stopPropagation();
+
+    });
