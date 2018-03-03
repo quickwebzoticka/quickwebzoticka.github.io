@@ -44,14 +44,34 @@
     });
 
  $('.open').click(function() {
-        $(".navbar_nav").slideToggle();
+    $('.navbar_nav').animate({width: 'toggle'});
     });
 
-  $(document).click( function(event){
+  // $(document).click( function(event){
 
- 	if( $(event.target).closest(".open").length || $(event.target).closest(".navbar_nav").length || $(".navbar_nav").css("display", "none") ) 
-        return;
-      $(".navbar_nav").slideToggle();
-      event.stopPropagation();
+ 	// if( $(event.target).closest(".open").length || $(event.target).closest(".navbar_nav").length || $(".navbar_nav").css("display", "none") ) 
+  //       return;
+  //   $('.navbar_nav').animate({width: 'toggle'});
+  //     event.stopPropagation();
 
+  //   });
+
+(function() {
+
+  "use strict";
+
+  var toggles = document.querySelectorAll(".cmn-toggle-switch");
+
+  for (var i = toggles.length - 1; i >= 0; i--) {
+    var toggle = toggles[i];
+    toggleHandler(toggle);
+  };
+
+  function toggleHandler(toggle) {
+    toggle.addEventListener( "click", function(e) {
+      e.preventDefault();
+      (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
     });
+  }
+
+})();
