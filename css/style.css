@@ -230,6 +230,26 @@ header {
 	padding: 10px 0px 0px 10px;
 }
 
+.open button {
+	display: inline-block;
+}
+
+.menu {
+	position: absolute;
+    top: 14px;
+    right: 40px;
+	display: inline-block;
+	margin-bottom: 10px;
+	color: #FFF;
+    vertical-align: 10px;
+}
+
+.open:before {
+	display: inline-block;
+	content: "Menu"
+	color: #FFF;
+}
+
 .cmn-toggle-switch {
   display: block;
   position: relative;
@@ -449,7 +469,7 @@ header {
 }*/
 
 #div-nav-bar-mob {
-	
+
 }
 
 .nav-bar-mob li {

@@ -47,6 +47,19 @@
     $('.navbar_nav').animate({width: 'toggle'});
     });
 
+ $(".open").click( function(event){
+
+    $('.menu').animate({width: 'toggle'});
+
+    });
+
+  // $(".open").click( function(event){
+
+ 	// if( $(".menu").css("display", "none") ) 
+  //       $(".menu").css("display", "inline-block");
+
+  //   });
+
   // $(document).click( function(event){
 
  	// if( $(event.target).closest(".open").length || $(event.target).closest(".navbar_nav").length || $(".navbar_nav").css("display", "none") ) 
