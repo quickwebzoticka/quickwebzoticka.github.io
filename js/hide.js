@@ -45,10 +45,6 @@
 
  $('.open').click(function() {
     $('.navbar_nav').animate({width: 'toggle'});
-    });
-
- $(".open").click( function(event){
-
     $('.menu').animate({width: 'toggle'});
 
     });

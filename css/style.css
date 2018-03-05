@@ -234,20 +234,19 @@ header {
 	display: inline-block;
 }
 
+.menu_wrapper_head {
+	display: inline-block;
+}
+
 .menu {
 	position: absolute;
     top: 14px;
-    right: 40px;
+    right: 50px;
 	display: inline-block;
 	margin-bottom: 10px;
 	color: #FFF;
     vertical-align: 10px;
-}
-
-.open:before {
-	display: inline-block;
-	content: "Menu"
-	color: #FFF;
+    font-size: 18px;
 }
 
 .cmn-toggle-switch {
@@ -1972,6 +1971,10 @@ footer .tel-text:before {
 
 .tel-text {
 	font-size: 13px;
+}
+
+.menu_wrapper_head {
+	display: none;
 }
 
 .nav-panel {
