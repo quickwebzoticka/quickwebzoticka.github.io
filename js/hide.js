@@ -45,7 +45,7 @@
 
  $('.open').click(function() {
     $('.navbar_nav').animate({width: 'toggle'});
-    $('.menu').animate({width: 'toggle'});
+    $('.menu').animate({opacity: 'toggle', left: ['toggle', 'swing']});
 
     });
 
