@@ -92,7 +92,7 @@ header {
 
 .logo_text {
 	display: inline-block;
-	padding: 19px 0 0 0;
+	padding: 13px 0 0 0;
 }
 
 .head_h1 {
@@ -297,7 +297,7 @@ header {
 
 .menu {
 	position: absolute;
-    top: 10px;
+    bottom: 0px;
     right: 50px;
 	display: inline-block;
 	margin-bottom: 10px;
@@ -448,7 +448,7 @@ header {
 .navbar_nav {
 	position: absolute;
     right: 44px;
-    top: -8px;
+	bottom: -8px;
 	z-index: 9999;
 	border-radius: 10px;
 	padding: 10px 0;
@@ -1992,6 +1992,19 @@ footer .tel-text:before {
 	width: 100%;
 }
 
+.mob_open {
+	display: inline-block;
+	margin-top: 13px;
+}
+
+.open {
+	display: none;
+}
+
+.menu_wrapper_head {
+	display: none;
+}
+
 }
 
 @media (max-width: 992px) {
@@ -2092,15 +2105,6 @@ footer .tel-text:before {
 	font-size: 13px;
 }
 
-.menu_wrapper_head {
-	display: none;
-}
-
-.nav-panel {
-/*	padding-left: 5px;
-	padding-right: 5px;*/
-}
-
 .flex-container_nav-bar {
 }
 
@@ -2149,15 +2153,6 @@ footer .tel-text:before {
 .nav-bar-mob {
 	margin-top: 10px;
 	width: 100%;	
-}
-
-.mob_open {
-	display: inline-block;
-	margin-top: 21px;
-}
-
-.open {
-	display: none;
 }
 
 .detail_information {
