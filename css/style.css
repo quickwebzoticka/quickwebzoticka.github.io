@@ -359,6 +359,15 @@ header {
           transition-delay: 0, 0.3s;
 }
 
+.open_original_color span {
+	background: #4B5392;
+}
+
+.open_original_color span::before,
+.open_original_color span::after {
+	background: #4B5392;
+}
+
 .burger {
 	padding: 8px 10px;
     background-color: transparent;
