@@ -16,6 +16,7 @@ a:hover {
 a:focus {
 	outline: none;
 	text-decoration: none;
+	color: #FFF;
 }
 
 body {
@@ -122,6 +123,61 @@ header {
 .object_cost:hover {
 	color: #FFF;
 	box-shadow: 0px 0px 5px #FE0005, 0px 0px 20px #FE0005;
+}
+
+.modal-logo-img {
+	width: 150px;
+	height: 94px;
+	float: right;
+}
+
+.modal-content {
+	background: rgba(150,150,150,0.9);
+	padding: 20px;
+}
+
+.cost-header p {
+	display: inline-block;
+}
+
+.cost-header p span {
+	font-size: 30px;
+}
+
+.modal-body-sale {
+	padding-top: 30px;
+}
+
+.modal-body-sale input {
+	margin: 0px 10px;
+}
+
+.modal-body-type input {
+	margin: 0px 10px;
+}
+
+.modal-body-docs {
+	padding: 30px 0;
+}
+
+.modal-body-docs p {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.modal-body-contacts input {
+	padding: 10px 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 60%;
+	color: #333;
+	border-radius: 10px;
+	border: 1px solid transparent;
+
+}
+
+.cost-button {
+	padding: 30px 0;
 }
 
 .head_rightside {
