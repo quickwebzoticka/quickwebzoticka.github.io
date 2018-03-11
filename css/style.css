@@ -2237,8 +2237,8 @@ footer .tel-text:before {
 
 .nav-bar-mob {
 	margin-top: 10px;
-	margin-left: -96px;
-	width: 187%;	
+    margin-left: 0px;
+    width: 100%;	
 }
 
 .detail_information {
