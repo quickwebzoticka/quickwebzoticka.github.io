@@ -127,9 +127,17 @@ header {
 	float: right;
 }
 
+.modal-width {
+	width: 900px;
+}
+
 .modal-content {
 	background: rgba(150,150,150,0.9);
 	padding: 20px;
+}
+
+.cost-header {
+	padding: 15px;
 }
 
 .cost-header p {
@@ -140,36 +148,36 @@ header {
 	font-size: 30px;
 }
 
-.modal-body-sale {
+.modal-body-filter {
 	padding-top: 30px;
 }
 
-.modal-body-sale input {
-	margin: 0px 10px;
+.modal-body-type {
+	line-height: 30px;
+	padding-left: 4px;
 }
 
-.modal-body-type input {
-	margin: 0px 10px;
-}
-
-.modal-body-docs {
-	padding: 30px 0;
-}
-
-.modal-body-docs p {
-	display: inline-block;
-	margin-right: 20px;
-}
-
-.modal-body-contacts input {
-	padding: 10px 20px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	width: 60%;
+.modal_inputs {
+	padding: 5px 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 96%;
 	color: #333;
-	border-radius: 10px;
+	border-radius: 5px;
 	border: 1px solid transparent;
+	height: 30px;
+}
 
+.modal_checkboxes {
+	line-height: 37px;
+}
+
+.modal_checkbox {
+	margin: 0px 10px 0px 0px !important;
+}
+
+.modal_inputs_div .modal_inputs {
+	margin-bottom: 25px;
 }
 
 .cost-button {
@@ -694,6 +702,26 @@ header {
 	font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
     font-weight: 300;
+}
+
+#slider-div-modal {
+    overflow: hidden;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    height: 40%;	
+}
+
+#slider-div-modal-1 {
+    overflow: hidden;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    height: 40%;		
 }
 
 #slider-div {

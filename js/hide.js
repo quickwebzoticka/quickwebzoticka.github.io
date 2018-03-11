@@ -43,6 +43,36 @@
 
     });
 
+  $(document).click( function(event){
+
+ 	if( $(event.target).closest("#slider-div-modal").length || $(event.target).closest("#amount-modal").length ) 
+        return;
+      $("#slider-div-modal").css("height", "0");
+      event.stopPropagation();
+
+    });
+
+ $("#amount-modal").click( function(event){
+
+      $("#slider-div-modal").css("height", "40%");
+
+    });
+
+   $(document).click( function(event){
+
+ 	if( $(event.target).closest("#slider-div-modal-1").length || $(event.target).closest("#amount-modal-1").length ) 
+        return;
+      $("#slider-div-modal-1").css("height", "0");
+      event.stopPropagation();
+
+    });
+
+ $("#amount-modal-1").click( function(event){
+
+      $("#slider-div-modal-1").css("height", "40%");
+
+    });
+
  $('.open').click(function() {
     $('.navbar_nav').animate({width: 'toggle'});
     $('.menu').animate({opacity: 'toggle', left: ['toggle', 'swing']});
