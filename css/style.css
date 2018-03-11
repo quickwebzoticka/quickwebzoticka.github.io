@@ -56,10 +56,6 @@ body {
 	transition: 0.6s;
 }
 
-.header-width {
-	/*box-shadow: 0px 0px 10px rgba(0,0,0,0.5);*/
-}
-
 header {
 	width: 100%;
 	background: transparent;
@@ -122,7 +118,7 @@ header {
 
 .object_cost:hover {
 	color: #FFF;
-	box-shadow: 0px 0px 5px #FE0005, 0px 0px 20px #FE0005;
+	box-shadow: 0px 0px 24px #FE0005, 0px 0px 20px #FE0005;
 }
 
 .modal-logo-img {
@@ -752,6 +748,10 @@ header {
 	transition-delay: 0.2s; 
 }
 
+.checkboxes_transport {
+	bottom: -100px;	
+}
+
 .checkboxes:after {
     content: '';
     background: #FFF;
@@ -786,6 +786,27 @@ header {
 	display: inline-block;
     right: 3%;
     bottom: 48px;
+}
+
+.map {
+	display: inline-block;
+	position: absolute;
+	width: 11%;
+    left: 3%;
+    right: 0;
+    bottom: 48px;
+}
+
+.map button {
+	color: #FFF;
+	text-decoration: underline;
+    font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    padding: 2px 28px;
+    border: solid 1px transparent;
+    background-color: transparent;
+    border-radius: 10px;
 }
 
 .detailsearch button {
@@ -1153,16 +1174,34 @@ header {
     font-weight: 400;
 }
 
+.btn-add {
+	padding-top: 10px;
+}
+
+.btn-add button {
+	color: #FFF;
+	font-size: 17px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+	padding: 2px 28px;
+	border: solid 1px #FFF;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.btn-add button:hover {
+	background-color: #FFF;
+	border: solid 1px transparent;
+	color: #4B5392;
+}
+
 /*---------------NEWS---------------*/
 
 .news-width {
 	width: 100%;
 	background: #FBFAF7 url(../img/back3static.png) no-repeat 0 0;
 	background-size: cover;
-}
-
-.news-opacity {
-
 }
 
 .news {
@@ -1194,8 +1233,18 @@ header {
     transition: 0.5s;
 }
 
+.wrappered {
+	border-color: #FE0005;
+	border-style: solid;
+    border-width: 1px;
+}
+
 .new:hover {
 	box-shadow: 0px 0px 10px #000;
+}
+
+.wrappered:hover {
+	box-shadow: 0px 0px 10px #FE0005;
 }
 
 .new img {
@@ -1216,14 +1265,14 @@ header {
     text-align: left;
     font-family: open-sans, sans-serif;
     font-weight: 700;
+    height: 56px;
+    margin-bottom: 0px;
 }
 
-.new h3:after{
-	content: '';
-	display: block;
+.new .new_big_line {
 	border-bottom: 1px solid #4B5392;
 	width: 60%;
-	margin: 15px 0 15px 0;
+	margin-bottom: 10px;
 }
 
 .new .inner_text {
@@ -1310,6 +1359,20 @@ footer .tel-text:before {
 .content {
 	position: relative;
 	padding: 50px 0 70px 0;
+}
+
+.content h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+	color: #363636;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+.content h3 {
+	font-size: 25px;
+	font-weight: 700;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .content .choose-bar a {
@@ -1487,7 +1550,11 @@ footer .tel-text:before {
 	background: #FBFAF7;
 	padding: 10px 20px;
 	vertical-align: top;
-	margin: 9px;
+	margin: 8px;
+}
+
+.card_information ul {
+	vertical-align: top;
 }
 
 .width-cuted {
@@ -1628,11 +1695,15 @@ footer .tel-text:before {
 .interest_text {
 	display: inline-block;
 	width: 60%;
-	font-size: 25px;
+	font-size: 18px;
     color: #FBFAF7;
     line-height: 30px;
     font-family: 'open-sans-condensed', sans-serif;
     font-weight: 700;
+}
+
+.interest_text span {
+	font-size: 25px;
 }
 
 .input_align {
@@ -2020,6 +2091,19 @@ footer .tel-text:before {
 	bottom: 0;
 }
 
+.map {
+	position: relative;
+	display: block;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+}
+
+.map button {
+	display: inline-block;
+}
+
 .staff {
 	padding-bottom: 30px;
 }
@@ -2152,7 +2236,8 @@ footer .tel-text:before {
 
 .nav-bar-mob {
 	margin-top: 10px;
-	width: 100%;	
+	margin-left: -96px;
+	width: 187%;	
 }
 
 .detail_information {

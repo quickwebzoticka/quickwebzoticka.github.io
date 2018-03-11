@@ -111,6 +111,7 @@
 										<li><a href="objects.html">Объекты</a></li>
 										<li><a href="about.html">О&nbsp;Компании</a></li>
 										<li><a href="#">Инвесторам</a></li>
+										<li><a href="#">Полезная<br>информация</a></li>
 										<li><a href="#">Контакты</a></li>
 								</ul>
 							</div>
@@ -128,6 +129,7 @@
 									<li><a href="objects.html">Объекты</a></li>
 									<li><a href="about.html">О&nbsp;Компании</a></li>
 									<li><a href="#">Инвесторам</a></li>
+									<li><a href="#">Полезная&nbsp;информация</a></li>
 									<li><a href="#">Контакты</a></li>
 								</div>
 							</ul>
@@ -250,7 +252,7 @@
 									<div class="input_wrapper communications"><span>Коммуникации</span>
 										<div class="checkboxes">
 											<div class="row">
-												<input type="checkbox" name="Водоснабжение">Водоснабжение
+												<input type="checkbox" name="эл.снабжение">Эл.снабжение
 											</div>
 											<div class="row">
 												<input type="checkbox" name="Отопление">Отопление
@@ -262,7 +264,7 @@
 												<input type="checkbox" name="Связь">Связь
 											</div>
 											<div class="row">
-												<input type="checkbox" name="эл.снабжение">эл.снабжение
+												<input type="checkbox" name="Водоснабжение">Водоснабжение
 											</div>
 										</div>
 									</div>
@@ -287,6 +289,7 @@
 										<option value="Панель">Панель</option>
 										<option value="Бетон">Бетон</option>
 										<option value="Газобетон">Газобетон</option>
+										<option value="Металлоконструкция">Металлоконструкция</option>
 									</select></div>
 								</div>
 								<div class="col-xs-12 col-md-4">
@@ -300,13 +303,22 @@
 							</div>
 							<div class="row">
 								<div class="col-xs-12 col-md-4">
-									<div class="input_wrapper"><select>
-										<option value="" hidden disabled selected>Транспортные коммуникации</option>
-										<option value="Автодорога">Автодорога</option>
-										<option value="Ж/д пути">Ж/д пути</option>
-										<option value="Причал">Причал</option>
-										<option value="Вертолетн. площадка">Вертолетн. площадка</option>
-									</select></div>
+									<div class="input_wrapper communications"><span>Транспортные коммуникации</span>
+										<div class="checkboxes checkboxes_transport">
+											<div class="row">
+												<input type="checkbox" name="автодорога">Автодорога
+											</div>
+											<div class="row">
+												<input type="checkbox" name="Ж/д пути">Ж/д пути
+											</div>
+											<div class="row">
+												<input type="checkbox" name="Причал">Причал
+											</div>
+											<div class="row">
+												<input type="checkbox" name="Верт. площадка">Верт. площадка
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="col-xs-12 col-md-4">
 									<div class="input_wrapper"><select>
@@ -334,6 +346,9 @@
 						</form>
 						<div class="detailsearch">
 							<button data-target="#searchmenu" data-toggle="collapse">Расширенный поиск</button>
+						</div>
+						<div class="map">
+							<button>Карта</button>
 						</div>
 					</div>
 
@@ -398,11 +413,11 @@
 					<h3>Теги</h3>
 					<ul class="tags">
 						<div class="flex-container">
-							<li><a href="#">площади в торговых центрах</a></li>
+							<li><a href="#">отдельно стоящие здания</a></li>
 							<li><a href="#">нежилые помещения в домах</a></li>
 							<li><a href="#">с отдельным входом</a></li>
 							<li><a href="#">стрит-ритейл</a></li>
-							<li><a href="#">отдельно стоящие здания</a></li>
+							<li><a href="#">площади в торговых центрах</a></li>
 							<li><a href="#">автобоксы</a></li>
 							<li><a href="#">деловые центры</a></li>
 							<li><a href="#">заводы, фабрики</a></li>
@@ -468,6 +483,9 @@
 						</div>
 					</div>
 					</div>
+					<div class="row btn-add">
+						<button>Разместить свой объект</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -487,10 +505,11 @@
  			</div>
  			<div class="row">
  				<div class="col-xs-12 col-md-4 news-bar">
- 					<div class="new">
+ 					<div class="new wrappered">
  						<img src="img/new.jpg" alt="new">
  						<p class="date">21.01.2018</p>
- 						<h3>Прогноз цен на рынке недвижимости</h3>
+ 						<h3>Торги и аукционы</h3>
+ 						<div class="new_big_line"></div>
  						<p class="inner_text">Мнение экспертов рынка коммерческой надвижимости о росте цен в 2018 году . . .</p>
  						<a href="#">Читать далее</a>
  					</div>
@@ -500,6 +519,7 @@
  						<img src="img/new.jpg" alt="new">
  						<p class="date">21.01.2018</p>
  						<h3>Прогноз цен на рынке недвижимости</h3>
+ 						<div class="new_big_line"></div>
  						<p class="inner_text">Мнение экспертов рынка коммерческой надвижимости о росте цен в 2018 году . . .</p>
  						<a href="#">Читать далее</a>
  					</div>
@@ -509,6 +529,7 @@
  						<img src="img/new.jpg" alt="new">
  						<p class="date">21.01.2018</p>
  						<h3>Прогноз цен на рынке недвижимости</h3>
+ 						<div class="new_big_line"></div>
  						<p class="inner_text">Мнение экспертов рынка коммерческой надвижимости о росте цен в 2018 году . . .</p>
  						<a href="#">Читать далее</a>
  					</div>
@@ -532,7 +553,7 @@
 						<div class="col-lg-5 col-md-8 col-sm-8 col-xs-8 logo_mob_leftside">
 							<div class="col-xs-4">
 							<div class="logo-wrapper">
-								<a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+								<a href="object_unic.html"><img src="img/logo.png" alt="logo" class="logo"></a>
 							</div>
 							</div>
 							<div class="col-xs-8">
