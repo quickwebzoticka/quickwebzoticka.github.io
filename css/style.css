@@ -1319,6 +1319,7 @@ header {
 footer {
 	width: 100%;
 	background: #363636;
+	padding-bottom: 10px;
 }
 
 footer .object_cost {
