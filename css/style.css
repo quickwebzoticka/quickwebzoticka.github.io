@@ -2263,6 +2263,15 @@ footer .tel-text:before {
 
 @media (max-width: 531px) {
 
+.modal-width {
+	width: auto;
+}
+
+.modal-logo-img {
+	width: 93px;
+    height: 59px;
+}
+
 .nav-bar-mob {
 	margin-top: 10px;
     margin-left: 0px;
