@@ -59,7 +59,7 @@ body {
 header {
 	width: 100%;
 	background: transparent;
-
+	padding-top: 10px;
 }
 
 .flex-container_head {
@@ -308,6 +308,12 @@ header {
 	color: #FFF;
     vertical-align: 10px;
     font-size: 18px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.menu:hover {
+	color: #D4B35D;
 }
 
 .cmn-toggle-switch {
@@ -1036,7 +1042,7 @@ header {
 }
 
 .offers {
-	padding: 30px 0 50px 0;
+	padding: 50px 0 50px 0;
 }
 
 .offers h2 {
@@ -1044,7 +1050,9 @@ header {
 	font-weight: 700;
 	color: #FBFAF7;
 	font-size: 40px;
-	text-transform: uppercase; 
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .offers-bar {
@@ -2357,6 +2365,7 @@ footer .tel-text:before {
 
 .main h2 {
 	font-size: 43px;
+	margin-top: 10px;
 }
 
 .item {
