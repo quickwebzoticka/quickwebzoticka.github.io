@@ -629,7 +629,7 @@ header {
 }
 
 .choose-bar-wrapper {
-	margin-top: 30px;
+	margin-top: 4ы0px;
 	position: relative;
 	border: solid 1px #9399C8;
     background-color: #FFFFFF;
@@ -880,7 +880,7 @@ header {
 /*---------------TYPES---------------*/
 
 .types {
-	padding: 50px 0 30px 0;
+	padding: 30px 0 30px 0;
 }
 
 .types-width {
@@ -902,7 +902,7 @@ header {
 }
 
 .items {
-	padding: 20px 0 0 0;
+	padding: 40px 0 0 0;
 	text-align: center;
 }
 
@@ -1056,7 +1056,7 @@ header {
 }
 
 .offers-bar {
-	padding-top: 50px;
+	padding-top: 30px;
 	text-align: center;
 }
 
@@ -1211,7 +1211,7 @@ header {
 }
 
 .btn-add {
-	padding-top: 10px;
+	padding-top: 40px;
 }
 
 .btn-add button {
@@ -1241,7 +1241,7 @@ header {
 }
 
 .news {
-	padding: 20px 0 15px 0;
+	padding: 40px 0 50px 0;
 }
 
 .news h2 {
@@ -1253,7 +1253,7 @@ header {
 }
 
 .news-bar {
-	padding: 20px 0;
+	padding: 40px 0;
 	text-align: center;
 }
 
@@ -1395,7 +1395,7 @@ footer .tel-text:before {
 
 .content {
 	position: relative;
-	padding: 50px 0 70px 0;
+	padding: 50px 0 50px 0;
 }
 
 .content h2 {
@@ -1526,8 +1526,8 @@ footer .tel-text:before {
 /*-------------------MAIN---------------*/
 
 .main-unic {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .navigation {
@@ -1548,7 +1548,8 @@ footer .tel-text:before {
     font-size: 40px;
     font-weight: 700;
     text-transform: none;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .row_images {
@@ -1568,7 +1569,7 @@ footer .tel-text:before {
 }
 
 .detail_information {
-	padding-top: 20px;
+	padding-top: 40px;
 	text-align: left;
 	vertical-align: top;
 }
@@ -1765,7 +1766,17 @@ footer .tel-text:before {
 /*-------------------SIMILAR---------------*/
 
 .similar {
-	padding: 30px 0;
+	padding: 40px 0;
+}
+
+.similar h2 {
+	font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 700;
+    color: #363636;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 /*-------------------DROP_CONTACTS---------------*/
@@ -1821,11 +1832,11 @@ footer .tel-text:before {
 /*-------------------------------------*/
 
 .staff {
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 }
 
 .p_padding {
-	padding: 50px 0px 20px 0px;
+	padding: 50px 0px 30px 0px;
 }
 
 .main_description {
@@ -1842,6 +1853,7 @@ footer .tel-text:before {
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 40px;
 }
 
 .staff .prompt {
@@ -1852,7 +1864,6 @@ footer .tel-text:before {
 }
 
 .staff_bar {
-    margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -2008,8 +2019,8 @@ footer .tel-text:before {
 }
 
 .why {
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 30px;
+	padding-bottom: 20px;
 	text-align: center;
 }
 
