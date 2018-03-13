@@ -647,25 +647,27 @@ header {
 .choose-bar input {
 	position: relative;
 	width: 85%;
-	padding: 5px 20px 5px 10px;
+	padding: 7px 20px 7px 10px;
 	margin: 20px 40px;
 	border-radius: 5px;
 	border: 1px solid transparent;
+	font-size: 16px;
 }
 
 .choose-bar select {
 	position: relative;
 	width: 85%;
-	padding: 5px 20px 5px 10px;
+	padding: 7px 20px 7px 10px;
     margin: 19px 18px;
 	border-radius: 5px;
 	background: #FFF;
 	border: 1px solid transparent;
+	font-size: 16px;
 }
 
 .choose-bar select option {
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 15px;
 	width: 100%;
 	background: #FFF;
 }
@@ -675,7 +677,7 @@ header {
 	display: inline-block;
 	position: relative;
 	width: 85%;
-	padding: 5px 20px 5px 10px;
+	padding: 7px 20px 7px 10px;
     margin: 19px 18px;
 	border-radius: 5px;
 	border: 1px solid transparent;
@@ -701,13 +703,13 @@ header {
 	text-align: left;
 	position: relative;
 	width: 85%;
-	padding: 5px 20px 5px 10px;
+	padding: 7px 20px 7px 10px;
     margin: 19px 18px;
 	border-radius: 5px;
 	border: 1px solid transparent;
 	background-color: #FFF;
 	font-family: 'Ubuntu', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -1097,7 +1099,7 @@ header {
 	position: absolute;
 	top: 5px;
 	left: -15px;
-	width: 198px;
+	width: 223px;
 	height: 25px;
 	text-align: left;
 	background: red;
@@ -1111,7 +1113,7 @@ header {
 }
 
 .flag-offer {
-	width: 75%;
+	width: 64%;
 }
 
 .green {
@@ -1174,6 +1176,10 @@ header {
 .offers-item_card .link {
 	display: inline-block;
 	color: #4B5392;
+	border: 1px solid #4B5392;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px #4B5392;
+	padding: 4px 22px;
     line-height: 22px;
     font-size: 18px;
     letter-spacing: 1px;
@@ -1181,35 +1187,10 @@ header {
     font-weight: 700;
 }
 
-.offers-item_card .link:after {
-	content: ' ';
-	margin-top: 4px;
-	display: block;
-	width: 0%;
-	border: 1px solid #FFF;
-	opacity: 0;
-}
-
 .offers-item_card:hover .link {
 	color: #FFF;
-}
-
-.offers-item_card:hover .link:after {
-	width: 100%;
-	opacity: 1;	
-}
-
-.offers-item_card .link:hover:after {
-	width: 100%;
-	opacity: 1;
-}
-
-.float_right {
-	float: right;
-	line-height: 24px;
-    font-size: 20px;
-    font-family: 'open-sans', sans-serif;
-    font-weight: 400;
+	border: 1px solid #FFF;
+	box-shadow: 0px 0px 20px #FFF;
 }
 
 .btn-add {
@@ -1218,20 +1199,22 @@ header {
 
 .btn-add button {
 	color: #FFF;
-	font-size: 17px;
+	font-size: 18px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
-	padding: 2px 28px;
+	padding: 7px 28px;
 	border: solid 1px #FFF;
     background-color: transparent;
     border-radius: 10px;
     transition: 0.5s;
+    box-shadow: 0px 0px 5px #fff;
 }
 
 .btn-add button:hover {
 	background-color: #FFF;
-	border: solid 1px transparent;
+	border: solid 1px #FFF;
 	color: #4B5392;
+	box-shadow: 0px 0px 20px #fff;
 }
 
 /*---------------NEWS---------------*/
@@ -1412,7 +1395,7 @@ footer .tel-text:before {
 	font-size: 25px;
 	font-weight: 700;
 	font-family: 'Open Sans Condensed', sans-serif;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .content .choose-bar a {
@@ -1830,6 +1813,19 @@ footer .tel-text:before {
 	padding-top: 40px;
 }
 
+.tags_unic h3 {
+	margin-bottom: 5px;
+}
+
+.tags_unic p {
+	color: #7E888D;
+	font-size: 16px;
+    line-height: 35px;
+    font-family: 'open-sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
 /*-------------------------------------*/
 /*---------------STAFF-----------------*/
 /*-------------------------------------*/
@@ -2018,7 +2014,7 @@ footer .tel-text:before {
 
 .why-opacity {
 	width: 100%;
-	background-color: rgba(0,0,0, 0.44);
+	background-color: rgba(0,0,0, 0.66);
 }
 
 .why {
@@ -2029,7 +2025,7 @@ footer .tel-text:before {
 
 .why h2 {
 	color: #FFF;
-	font-size: 40px;
+	font-size: 44px;
 	font-family: 'open-sans-condensed', sans-serif;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -2287,7 +2283,7 @@ footer .tel-text:before {
 
 .choose-bar button {
 	width: 86%;
-	font-size: 18px;
+	font-size: 20px;
 	padding: 22px 28px;
 }
 
@@ -2386,6 +2382,7 @@ footer .tel-text:before {
 .main h2 {
 	font-size: 43px;
 	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 .item {
