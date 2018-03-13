@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contacts</title>
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fonts/osanscondensed.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script>
+	$( function() {
+	$( "#slider-range" ).slider({
+	  range: true,
+	  min: 0,
+	  max: 10000,
+	  values: [ 75, 300 ],
+	  slide: function( event, ui ) {
+	    $( "#amount" ).val('Площадь: ' + ui.values[ 0 ] + " - " + ui.values[ 1 ] + ' кв.м' );
+	  }
+	});
+	$( "#amount" ).val('Площадь: ' + $( "#slider-range" ).slider( "values", 0 ) +
+	  " - " + $( "#slider-range" ).slider( "values", 1 ) + ' кв.м' );
+	} );
+
+	$( function() {
+	$( "#slider-range-1" ).slider({
+	  range: true,
+	  min: 1,
+	  max: 30,
+	  values: [ 5, 9 ],
+	  slide: function( event, ui ) {
+	    $( "#amount-1" ).val('Этажность: ' + ui.values[ 0 ] + " - " + ui.values[ 1 ]);
+	  }
+	});
+	$( "#amount-1" ).val('Этажность: ' + $( "#slider-range-1" ).slider( "values", 0 ) +
+	  " - " + $( "#slider-range-1" ).slider( "values", 1 ) );
+	} );
+
+	$( function() {
+	$( "#slider-range-2" ).slider({
+	  range: true,
+	  min: 1,
+	  max: 100,
+	  values: [ 3, 20 ],
+	  slide: function( event, ui ) {
+	    $( "#amount-2" ).val('Высота потолков: ' + ui.values[ 0 ] + " - " + ui.values[ 1 ]);
+	  }
+	});
+	$( "#amount-2" ).val('Высота потолков: ' + $( "#slider-range-2" ).slider( "values", 0 ) +
+	  " - " + $( "#slider-range-2" ).slider( "values", 1 ) );
+	} );
+
+	$( function() {
+	$( "#slider-range-modal" ).slider({
+	  range: true,
+	  min: 0,
+	  max: 10000,
+	  values: [ 75, 300 ],
+	  slide: function( event, ui ) {
+	    $( "#amount-modal" ).val('Площадь: ' + ui.values[ 0 ] + " - " + ui.values[ 1 ] + ' кв.м' );
+	  }
+	});
+	$( "#amount-modal" ).val('Площадь: ' + $( "#slider-range-modal" ).slider( "values", 0 ) +
+	  " - " + $( "#slider-range-modal" ).slider( "values", 1 ) + ' кв.м' );
+	} );
+
+	$( function() {
+	$( "#slider-range-modal-1" ).slider({
+	  range: true,
+	  min: 1,
+	  max: 30,
+	  values: [ 5, 9 ],
+	  slide: function( event, ui ) {
+	    $( "#amount-modal-1" ).val('Этажность: ' + ui.values[ 0 ] + " - " + ui.values[ 1 ]);
+	  }
+	});
+	$( "#amount-modal-1" ).val('Этажность: ' + $( "#slider-range-modal-1" ).slider( "values", 0 ) +
+	  " - " + $( "#slider-range-modal-1" ).slider( "values", 1 ) );
+	} );
+
+	$( function() {
+
+		$( ".detail_search" ).click(function(){
+
+		  $( ".search_menu" ).css("display:","block");
+		});
+
+	});
+	</script>
+</head>
+<body>
+	<!------------------ HEAD ---------------->
+	<div class="header-width">
+		<div class="container">
+			<header>
+					<div class="row">
+						<div class="col-md-12 nopadding clearfix">
+							<div class="col-lg-5 col-md-8 col-sm-8 col-xs-8 clearfix">
+								<div class="col-xs-4">
+								<div class="logo-wrapper">
+									<a href="index.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+								</div>
+								</div>
+								<div class="col-xs-8">
+								<div class="logo_text">
+									<h1 class="head_h1">Мурманская <br>Девелоперская Компания</h1>
+									<a href="#" class="object_cost color-original color-original_cost color-original-border" data-target="#myModal" data-toggle="modal">Оценить свой объект</a>
+								</div>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-4 col-sm-4 col-xs-4 clearfix nopadding">
+							<div class="row">
+							<div class="tel_nopadding clearfix">
+								<div class="tel_wrapper">
+									<div class="row nomargin">
+									<a href="#" class="tel color-original">8(8152) 70-51-51</a>
+									</div>
+									<a href="#" class="tel-text color-original">Заказать звонок</a>
+								</div>
+							</div>
+							</div>
+							<div class="row">
+							<div class="nav-panel clearfix">
+								<div class="mob_open" data-target="#div-nav-bar-mob" data-toggle="collapse">
+									<button class="cmn-toggle-switch cmn-toggle-switch__htx open_original_color">
+									<span>toggle menu</span>
+									</button>
+								</div>
+								<div id="div-nav-bar-mob" class="collapse">
+									<ul class="nav-bar-mob color-original">
+											<li><a href="objects.html">Объекты</a></li>
+											<li><a href="about.html">О&nbsp;Компании</a></li>
+											<li><a href="#">Инвесторам</a></li>
+											<li><a href="#">Полезная<br>информация</a></li>
+											<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+							<div class="menu_wrapper_head">
+								<div class="menu color-original">Меню</div>
+							</div>
+							<div class="open">
+								<button class="cmn-toggle-switch cmn-toggle-switch__htx open_original_color">
+									<span>toggle menu</span>
+								</button>
+							</div>
+							<div class="navbar_nav" style="display: none">
+								<ul class="nav-bar color-original">
+									<div class="flex-container_nav-bar">
+										<li><a href="objects.html">Объекты</a></li>
+										<li><a href="about.html">О&nbsp;Компании</a></li>
+										<li><a href="#">Инвесторам</a></li>
+										<li><a href="#">Полезная&nbsp;информация</a></li>
+										<li><a href="#">Контакты</a></li>
+									</div>
+								</ul>
+							</div>
+							</div>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div id="myModal" class="modal fade">
+					<div class="modal-dialog modal-width">
+						<div class="modal-content">
+							<div class="row cost-header">
+								<p><span>Заявка</span><br>на оценку объекта</p>
+								<a href="index.html"><img src="img/logo.png" class="modal-logo-img" alt="logo"></a>
+							</div>
+							<form class="modal-form">
+							<div class="row cost-body">
+								<div class="modal-body-filter">
+									<div class="choose-bar">
+										<div class="row">
+											<div class="col-xs-12 col-md-4">
+												<div class="input_wrapper">
+													<select>
+														<option value="" hidden disabled selected>Покупка/Аренда</option>
+														<option value="Покупка">Покупка</option>
+														<option value="Аренда">Аренда</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-4">
+												<div class="input_wrapper"><select class="custom-select my-1 mr-sm-2">
+													<option value="" hidden disabled selected>Типы недвижимости</option>
+													<option value="Торговая недвижимость">Торговая недвижимость</option>
+													<option value="Офисная недвижимость">Офисная недвижимость</option>
+													<option value="Складские помещения">Складские помещения</option>
+													<option value="Земельн. участки (включ. ОНС)">Земельн. участки (включ. ОНС)</option>
+													<option value="Рестораны и кафе">Рестораны и кафе</option>
+													<option value="Прозводственные помещения">Прозводственные помещения</option>
+													<option value="Гостиницы, хостелы, общежития">Гостиницы, хостелы, общежития</option>
+													<option value="Промышленные базы">Промышленные базы</option>
+													<option value="Автомойки, автосервисы">Автомойки, автосервисы</option>
+													<option value="Объекты инфраструктуры иное">Объекты инфраструктуры иное</option>
+												</select></div>
+											</div>
+											<div class="col-xs-12 col-md-4">
+												<div class="input_wrapper metrs">
+													<input type="text" id="amount-modal" readonly placeholder="Площадь">
+													<div id="slider-div-modal" style="height: 0">
+													<div id="slider-range-modal" class="slider-range_pos"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-xs-12 col-md-4">
+												<div class="input_wrapper metrs">
+													<input type="text" id="amount-modal-1" readonly placeholder="Площадь">
+													<div id="slider-div-modal-1" style="height: 0">
+													<div id="slider-range-modal-1" class="slider-range_pos">
+													</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-4">
+												<div class="input_wrapper communications"><span>Коммуникации</span>
+												<div class="checkboxes">
+													<div class="row">
+														<input type="checkbox" name="эл.снабжение">Эл.снабжение
+													</div>
+													<div class="row">
+														<input type="checkbox" name="Отопление">Отопление
+													</div>
+													<div class="row">
+														<input type="checkbox" name="Интернет">Интернет
+													</div>
+													<div class="row">
+														<input type="checkbox" name="Связь">Связь
+													</div>
+													<div class="row">
+														<input type="checkbox" name="Водоснабжение">Водоснабжение
+													</div>
+												</div>
+												</div>
+											</div>
+											<div class="col-xs-12 col-md-4">
+												<div class="input_wrapper">
+													<select>
+														<option value="" hidden disabled selected>Материал стен</option>
+														<option value="Кирпич">Кирпич</option>
+														<option value="Панель">Панель</option>
+														<option value="Бетон">Бетон</option>
+														<option value="Газобетон">Газобетон</option>
+														<option value="Металлоконструкция">Металлоконструкция</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>		
+								</div>
+								<div class="modal-body-type">
+									<div class="row">
+										<div class="col-md-4 modal_checkboxes">
+											<input type="checkbox" class="modal_checkbox" name="1этаж">1 этаж<br>
+											<input type="checkbox" class="modal_checkbox" name="2этаж">2 этаж и выше<br>
+											<input type="checkbox" class="modal_checkbox" name="Цоколь">Цоколь<br>
+										</div>
+										<div class="col-md-4">
+											<input type="text" class="modal_inputs"placeholder="Адрес объекта: улица, дом"><br>
+											<input type="checkbox" class="modal_checkbox" name="Отдельно стоящее здание">Отдельно стоящее здание
+											<p>Документы:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<a href="#">Прикрепить...</a></p>
+										</div>
+										<div class="col-md-4 modal_inputs_div">
+											<input type="text" class="modal_inputs"placeholder="Введите имя"><br>
+											<input type="text" class="modal_inputs"placeholder="Введите адрес эл. почты">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row cost-button text-center">
+								<a href="#" class="object_cost" data-dismiss="modal">Оценить объект</a>
+							</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				</header>
+		</div>
+	</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<p>
+				УЧЕТНАЯ КАРТОЧКА ОРГАНИЗАЦИИ<br>
+				<br>
+				Общество с ограниченной ответственностью<br>
+				<br>
+				«Мурманская девелоперская компания» (ООО «МДК»)<br>
+				<br>
+				Юр.адрес: 183038, г. Мурманск, ул. Шмидта, д.43, оф.215<br>
+				<br>
+				Фактический адрес: 183038, г. Мурманск, ул. Шмидта, д.43, оф.215<br>
+				<br>
+				ИНН 5190074776<br>
+				<br>
+				КПП 519001001<br>
+				<br>
+				ОГРН 1175190010478<br>
+				<br>
+				Р/с 40702810600000003260<br>
+				<br>
+				БАНК «МСКБ» (ПАО)<br>
+				<br>
+				к/с 30101810600000000768 в отделении Мурманск, проспект Ленина, д.12<br>
+				<br>
+				БИК 044705768 ОГРН 1025100003917<br>
+				<br>
+				ИНН 5190900165 КПП 519001001 Эл.почта: mdk051@mail.ru<br>
+				<br>
+				Телефон: +7 911-300-51-51<br>
+				<br>
+				Директор: Соболев Егор Игоревич, действующий на основании Устава.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+<footer>
+	<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-lg-5 col-md-8 col-sm-8 col-xs-8 logo_mob_leftside">
+							<div class="col-xs-4">
+							<div class="logo-wrapper">
+								<a href="object_unic.html"><img src="img/logo.png" alt="logo" class="logo"></a>
+							</div>
+							</div>
+							<div class="col-xs-8">
+							<div class="logo_text">
+								<h1 class="head_h1">Мурманская <br>Девелоперская Компания</h1>
+								<a href="#" class="object_cost">Оценить свой объект</a>
+							</div>
+							</div>
+						</div>
+						<div class="col-lg-7 col-md-4 col-sm-4 col-xs-4 tel_nopadding">
+							<div class="tel_wrapper">
+								<div class="row nomargin">
+								<a href="#" class="tel">8(8152)753-789</a>
+								</div>
+								<a href="#" class="tel-text tel-text-footer">Заказать звонок</a>
+							</div>
+						</div>
+						<div class="col-lg-7 col-md-12 nav-panel">
+							<ul class="nav-bar">
+								<div class="flex-container_nav-bar">
+									<li><a href="objects.html">Объекты</a></li>
+									<li><a href="about.html">О Компании</a></li>
+									<li><a href="#">Инвесторам</a></li>
+									<li><a href="#">Контакты</a></li>
+								</div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+</footer>
+
+	<script src="js/hide.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

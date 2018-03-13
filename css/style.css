@@ -102,24 +102,26 @@ header {
 }
 
 .object_cost {
-	padding: 5px 39px;
+	padding: 9px 21px;
 	border-radius: 10px;
 	border: 1px solid black;
-    font-size: 17px;
+    font-size: 18px;
 	text-decoration: none;
-	box-shadow: 0px 0px 3px #FE0005, 0px 0px 15px #FE0005;
-	border-color: #FE0005;
+	box-shadow: 0px 0px 3px #4b5392, 0px 0px 15px #4b5392;
+	border-color: #4b5392;
 	border-width: 1px;
     border-style: solid;
     border-color: transparent;
-    color: #FFF;
+    color: #4b5392 ;
     transition: 0.2s;
 }
 
 .object_cost:hover {
 	color: #FFF;
-	box-shadow: 0px 0px 24px #FE0005, 0px 0px 20px #FE0005;
+	box-shadow: 0px 0px 24px #FFF, 0px 0px 20px #FFF;
 }
+
+/*#FE0005*/
 
 .modal-logo-img {
 	width: 150px;
@@ -685,18 +687,18 @@ header {
 }
 
 .choose-bar .communications:after {
-	content: "▼";
-	padding: 0 8px;
-	font-size: 9px;
-	position: absolute;
-	right: 0px;
-	top: 10px;
-	z-index: 1;
-	text-align: center;
-	width: 10%;
-	height: 100%;
-	pointer-events: none;
-	box-sizing: border-box;
+    content: "▼";
+    padding: 0 8px;
+    font-size: 9px;
+    position: absolute;
+    right: 0px;
+    top: 37%;
+    z-index: 1;
+    text-align: center;
+    width: 9%;
+    height: 100%;
+    pointer-events: none;
+    box-sizing: border-box;
 }
 
 .metrs input {
