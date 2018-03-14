@@ -111,9 +111,9 @@
 									<div class="flex-container_nav-bar">
 										<li><a href="objects.html">Объекты</a></li>
 										<li><a href="about.html">О&nbsp;Компании</a></li>
-										<li><a href="#">Инвесторам</a></li>
+										<li><a href="investors.html">Инвесторам</a></li>
 										<li><a href="#">Полезная&nbsp;информация</a></li>
-										<li><a href="#">Контакты</a></li>
+										<li><a href="contacts.html">Контакты</a></li>
 									</div>
 								</ul>
 							</div>
@@ -178,8 +178,8 @@
 												</div>
 											</div>
 											<div class="col-xs-12 col-md-4">
-												<div class="input_wrapper communications"><span>Коммуникации</span>
-												<div class="checkboxes">
+												<div id="trigger_commun_modal" class="input_wrapper communications"><span>Коммуникации</span>
+												<div class="checkboxes" id="toggle_commun_modal" style="height: 0">
 													<div class="row">
 														<input type="checkbox" name="эл.снабжение">Эл.снабжение
 													</div>
@@ -253,7 +253,7 @@
 			<p class="main_description">Долгосрочная  дружба с клиентом возможна только тогда, когда от сотрудничества выигрывают обе стороны!</p>
 		</div>
 		<h2>сотрудники</h2>
-		<p class="prompt">кликните на сотрудника для просмотра информации</p>
+		<p class="prompt">Нажмите "Подробнее" для просмотра информации о Сотруднике</p>
 		<div class="row staff_bar">
 			<div class="col-md-4 text-center">
 				<div class="staff_carder">
@@ -262,8 +262,9 @@
 						<p class="staff_name">Егор Игоревич Соболев</p>
 						<p class="staff_post heighted">ДИРЕКТОР «МДК»</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-1">Подробнее</button>
 					</div>
-					<div class="staff_detail">
+					<div class="staff_detail" id="toggle_detail_staff-1">
 						<p class="staff_name">Егор Игоревич Соболев</p>
 						<p class="staff_post nopadding">ДИРЕКТОР «МДК»</p>
 						<p class="staff_ehd">
@@ -288,8 +289,9 @@
 						<p class="staff_name">Елена Константиновна Андреева</p>
 						<p class="staff_post heighted">НАЧАЛЬНИК ЮРИДИЧЕСКОГО ОТДЕЛА</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-2">Подробнее</button>
 					</div>
-					<div class="staff_detail">
+					<div class="staff_detail" id="toggle_detail_staff-2">
 						<p class="staff_name">Елена Константиновна Андреева</p>
 						<p class="staff_post">НАЧАЛЬНИК ЮРИДИЧЕСКОГО ОТДЕЛА</p>
 						<p class="staff_ehd">
@@ -314,8 +316,9 @@
 						<p class="staff_name">Олеся Викторовна Васильева</p>
 						<p class="staff_post heighted">НАЧАЛЬНИК ОТДЕЛА ПО РАБОТЕ С ИНВЕСТОРАМИ</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-3">Подробнее</button>
 					</div>
-					<div class="staff_detail_rightside">
+					<div class="staff_detail_rightside" id="toggle_detail_staff-3">
 						<p class="staff_name">Олеся Викторовна Васильева</p>
 						<p class="staff_post">НАЧАЛЬНИК ОТДЕЛА ПО РАБОТЕ С ИНВЕСТОРАМИ</p>
 						<p class="staff_ehd">
@@ -343,8 +346,9 @@
 						<p class="staff_name">Валерия Игоревна Мамонова</p>
 						<p class="staff_post heighted">ИНЖЕНЕР ПО ЗЕМЛЕУСТРОЙСТВУ</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-4">Подробнее</button>
 					</div>
-					<div class="staff_detail">
+					<div class="staff_detail" id="toggle_detail_staff-4">
 						<p class="staff_name">Валерия Игоревна Мамонова</p>
 						<p class="staff_post">ИНЖЕНЕР ПО ЗЕМЛЕУСТРОЙСТВУ</p>
 						<p class="staff_ehd">
@@ -368,8 +372,9 @@
 						<p class="staff_name">Андрей Александрович Янченков</p>
 						<p class="staff_post heighted">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-5">Подробнее</button>
 					</div>
-					<div class="staff_detail">
+					<div class="staff_detail" id="toggle_detail_staff-5">
 						<p class="staff_name">Андрей Александрович Янченков</p>
 						<p class="staff_post">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_ehd">
@@ -394,8 +399,9 @@
 						<p class="staff_name">Иван Сергеевич Репьев</p>
 						<p class="staff_post heighted">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-6">Подробнее</button>
 					</div>
-					<div class="staff_detail_rightside">
+					<div class="staff_detail_rightside" id="toggle_detail_staff-6">
 						<p class="staff_name">Иван Сергеевич Репьев</p>
 						<p class="staff_post">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_ehd">
@@ -423,8 +429,9 @@
 						<p class="staff_name">Андрей Сергеевич Симонов</p>
 						<p class="staff_post heighted">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-7">Подробнее</button>
 					</div>
-					<div class="staff_detail">
+					<div class="staff_detail" id="toggle_detail_staff-7">
 						<p class="staff_name">Андрей Сергеевич Симонов</p>
 						<p class="staff_post">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_ehd">
@@ -449,8 +456,9 @@
 						<p class="staff_name">Инна Вячеславовна Макарова</p>
 						<p class="staff_post heighted">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-8">Подробнее</button>
 					</div>
-					<div class="staff_detail">
+					<div class="staff_detail" id="toggle_detail_staff-8">
 						<p class="staff_name">Инна Вячеславовна Макарова</p>
 						<p class="staff_post">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_ehd">
@@ -475,8 +483,9 @@
 						<p class="staff_name">Олеся Владимировна Быкова</p>
 						<p class="staff_post heighted">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-9">Подробнее</button>
 					</div>
-					<div class="staff_detail_rightside">
+					<div class="staff_detail_rightside" id="toggle_detail_staff-9">
 						<p class="staff_name">Олеся Владимировна Быкова</p>
 						<p class="staff_post">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_ehd">
@@ -501,11 +510,12 @@
 				<div class="staff_carder">
 					<div class="staff_card">
 						<div class="staff_photo_wrapper"><img src="img/staff/photo.jpg" class="staff_photo" alt="photo"></div>
-						<p class="staff_name">Наталья Александровна Кануткина</p>
+						<p class="staff_name">Наталья&nbsp;Александровна Кануткина</p>
 						<p class="staff_post heighted">СПЕЦИАЛИСТ ПО МАРКЕТИНГУ</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-10">Подробнее</button>
 					</div>
-					<div class="staff_detail">
+					<div class="staff_detail" id="toggle_detail_staff-10">
 						<p class="staff_name">Наталья Александровна Кануткина</p>
 						<p class="staff_post">СПЕЦИАЛИСТ ПО МАРКЕТИНГУ</p>
 						<p class="staff_ehd">
@@ -527,11 +537,12 @@
 				<div class="staff_carder">
 					<div class="staff_card">
 						<div class="staff_photo_wrapper"><img src="img/staff/photo.jpg" class="staff_photo" alt="photo"></div>
-						<p class="staff_name">Евгений Владимирович Таничев</p>
+						<p class="staff_name">Евгений&nbsp;Владимирович Таничев</p>
 						<p class="staff_post heighted">ОСНОВАТЕЛЬ И РУКОВОДИТЕЛЬ ПРОЕКТА</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-11">Подробнее</button>
 					</div>
-					<div class="staff_detail">
+					<div class="staff_detail" id="toggle_detail_staff-11">
 						<p class="staff_name">Евгений Владимирович Таничев</p>
 						<p class="staff_post">ОСНОВАТЕЛЬ И РУКОВОДИТЕЛЬ ПРОЕКТА</p>
 						<p class="staff_ehd">
@@ -556,8 +567,9 @@
 						<p class="staff_name">Алексей Викторович Белов</p>
 						<p class="staff_post heighted">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-12">Подробнее</button>
 					</div>
-					<div class="staff_detail_rightside">
+					<div class="staff_detail_rightside" id="toggle_detail_staff-12">
 						<p class="staff_name">Алексей Викторович Белов</p>
 						<p class="staff_post">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_ehd">
@@ -584,8 +596,9 @@
 						<p class="staff_name">Константин Александрович Стахно</p>
 						<p class="staff_post heighted">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_contact"><a href="#">mdk051@mail.ru</a><br>+7(977) 777-77-77</p>
+						<button class="staff_detail_mob" id="staff_btn-13">Подробнее</button>
 					</div>
-					<div class="staff_detail">
+					<div class="staff_detail" id="toggle_detail_staff-13">
 						<p class="staff_name">Константин Александрович Стахно</p>
 						<p class="staff_post">СПЕЦИАЛИСТ ПО КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</p>
 						<p class="staff_ehd">
@@ -698,5 +711,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/hide.js"></script>
+    <script src="js/staff.js"></script>
 </body>
 </html>

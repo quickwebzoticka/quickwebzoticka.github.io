@@ -18,6 +18,7 @@
 	  range: true,
 	  min: 0,
 	  max: 10000,
+	  step: 10,
 	  values: [ 75, 300 ],
 	  slide: function( event, ui ) {
 	    $( "#amount" ).val('Площадь: ' + ui.values[ 0 ] + " - " + ui.values[ 1 ] + ' кв.м' );
@@ -223,8 +224,8 @@
 												</div>
 											</div>
 											<div class="col-xs-12 col-md-4">
-												<div class="input_wrapper communications"><span>Коммуникации</span>
-												<div class="checkboxes">
+												<div id="trigger_commun_modal" class="input_wrapper communications"><span>Коммуникации</span>
+												<div class="checkboxes" id="toggle_commun_modal" style="height: 0">
 													<div class="row">
 														<input type="checkbox" name="эл.снабжение">Эл.снабжение
 													</div>
@@ -317,7 +318,7 @@
 										<option value="Прозводственные помещения">Прозводственные помещения</option>
 										<option value="Гостиницы, хостелы, общежития">Гостиницы, хостелы, общежития</option>
 										<option value="Промышленные базы">Промышленные базы</option>
-										<option value="Автомойки, автосервисы">Автомойки, автосервисы</option>
+										<option value="Автомойки, автосервисы">Автомойки, автосервисы, автобоксы&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
 										<option value="Объекты инфраструктуры иное">Объекты инфраструктуры иное</option>
 									</select></div>
 								</div>
@@ -341,6 +342,10 @@
 							</div>
 							<div class="row">
 								<div class="col-xs-12 col-md-4">
+									<div class="input_wrapper metrs_mob">
+										<input type="number" placeholder="Площадь: от" min="0" max="10000">
+										<input type="number" placeholder="до" min="0" max="10000">
+									</div>
 									<div class="input_wrapper metrs">
 										<input type="text" id="amount" readonly placeholder="Площадь">
 										<div id="slider-div" style="height: 0">
@@ -350,6 +355,10 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-md-4">
+									<div class="input_wrapper metrs_mob">
+										<input type="number" placeholder="Этажность: от" min="1" max="30">
+										<input type="number" placeholder="до" min="1" max="30">
+									</div>
 									<div class="input_wrapper metrs">
 										<input type="text" id="amount-1" readonly placeholder="Площадь">
 										<div id="slider-div-1" style="height: 0">
@@ -358,8 +367,8 @@
 									</div>
 								</div>
 								<div class="col-xs-12 col-md-4">
-									<div class="input_wrapper communications"><span>Коммуникации</span>
-										<div class="checkboxes">
+									<div id="trigger_commun" class="input_wrapper communications"><span>Коммуникации</span>
+										<div id="toggle_commun" class="checkboxes" style="height: 0px">
 											<div class="row">
 												<input type="checkbox" name="эл.снабжение">Эл.снабжение
 											</div>
@@ -402,6 +411,10 @@
 									</select></div>
 								</div>
 								<div class="col-xs-12 col-md-4">
+									<div class="input_wrapper metrs_mob">
+										<input type="number" placeholder="Высота: от" min="1" max="100">
+										<input type="number" placeholder="Потолков: до" min="1" max="100">
+									</div>
 									<div class="input_wrapper metrs">
 										<input type="text" id="amount-2" readonly>
 										<div id="slider-div-2" style="height: 0">
@@ -412,8 +425,8 @@
 							</div>
 							<div class="row">
 								<div class="col-xs-12 col-md-4">
-									<div class="input_wrapper communications"><span>Транспортные коммуникации</span>
-										<div class="checkboxes checkboxes_transport">
+									<div class="input_wrapper communications" id="trigger_trans"><span>Транспортные коммуникации</span>
+										<div class="checkboxes checkboxes_transport" id="toggle_trans" style="height: 0;">
 											<div class="row">
 												<input type="checkbox" name="автодорога">Автодорога
 											</div>
@@ -432,8 +445,8 @@
 								<div class="col-xs-12 col-md-4">
 									<div class="input_wrapper"><select>
 										<option value="" hidden disabled selected>Наличие парковки</option>
-										<option value="Да">Да</option>
-										<option value="Нет">Нет</option>
+										<option value="Да">Есть</option>
+										<option value="Нет">Не имеет значения</option>
 									</select></div>
 								</div>
 								<div class="col-xs-12 col-md-4">
