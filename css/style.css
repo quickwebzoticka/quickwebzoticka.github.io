@@ -107,11 +107,12 @@ header {
 	border: 1px solid black;
     font-size: 18px;
 	text-decoration: none;
-	box-shadow: 0px 0px 3px #4b5392, 0px 0px 15px #4b5392;
+	/*box-shadow: 0px 0px 3px #4b5392, 0px 0px 15px #4b5392;*/
 	border-color: #4b5392;
 	border-width: 1px;
     border-style: solid;
     border-color: transparent;
+    background: #4b5392;
     color: #FFF ;
     transition: 0.2s;
 }
@@ -161,13 +162,12 @@ header {
 
 .modal_inputs {
 	padding: 5px 10px;
-	margin-top: 5px;
 	margin-bottom: 10px;
 	width: 96%;
 	color: #333;
 	border-radius: 5px;
 	border: 1px solid transparent;
-	height: 30px;
+	height: 40px;
 }
 
 .modal_checkboxes {
@@ -477,7 +477,6 @@ header {
 .nav-bar {
 	background: transparent;
 	text-align: left;
-	overflow: hidden;
 }
 
 .nav-bar li {
@@ -503,7 +502,7 @@ header {
 	display: inline-block;
 	border: 1px solid #D4B35D;
 	width: 0;
-	bottom: 0;
+	bottom: -20%;
 	right: 50%;
 	transform: rotate(0deg);
 	opacity: 0;
@@ -517,7 +516,7 @@ header {
 	border: 1px solid #D4B35D;
 	width: 0;
 	left: 50%;
-	bottom: 0;
+	bottom: -20%;
 	opacity: 0;
 	transition: 0.5s;
 }
@@ -547,7 +546,8 @@ header {
 }*/
 
 #div-nav-bar-mob {
-
+	margin-left: -196%;
+	text-align: left;
 }
 
 .nav-bar-mob li {
@@ -611,7 +611,7 @@ header {
 }
 
 .main {
-	padding-top: 50px;
+	padding-top: 40px;
 	padding-bottom: 90px;
 }
 
@@ -629,6 +629,7 @@ header {
 	font-size: 50px;
 	text-transform: uppercase;
 	color: #FFF;
+	margin-bottom: 20px;
 }
 
 .choose-bar-wrapper {
@@ -659,7 +660,7 @@ header {
 .choose-bar select {
 	position: relative;
 	width: 85%;
-	padding: 7px 10px 7px 2px;
+	padding: 9px 10px 9px 2px;
     margin: 19px 18px;
 	border-radius: 5px;
 	background: #FFF;
@@ -679,7 +680,7 @@ header {
 	display: inline-block;
 	position: relative;
 	width: 85%;
-	padding: 6px 20px 7px 8px;
+	padding: 8px 20px 9px 8px;
     margin: 19px 18px;
 	border-radius: 5px;
 	border: 1px solid transparent;
@@ -705,7 +706,7 @@ header {
 	text-align: left;
 	position: relative;
 	width: 85%;
-	padding: 6px 20px 6px 8px;
+	padding: 8px 20px 8px 8px;
     margin: 19px 18px;
 	border-radius: 5px;
 	border: 1px solid transparent;
@@ -780,7 +781,7 @@ header {
 
 .checkboxes {
 	position: absolute;
-	bottom: -122px;
+	bottom: -73px;
 	left: 0;
 	background: #FFF;
 	border-radius: 5px;
@@ -788,10 +789,16 @@ header {
 	z-index: 10; 
 	box-shadow: 0px 5px 15px #000;
 	overflow: hidden;
+	transform: scale(0);
 }
 
 .checkboxes_transport {
-	bottom: -100px;	
+	bottom: -96px;
+	transform: scale(0);
+}
+
+.checkboxes_modal {
+	bottom: -73px;
 }
 
 .checkboxes:after {
@@ -809,7 +816,7 @@ header {
 .checkboxes input {
 	position: relative;
     width: 10%;
-    margin: 5px 30px 0 12px;
+    margin: 5px 20px 0 12px;
     border-radius: 5px;
     border: 1px solid transparent;
     transform: scale(1.3);
@@ -1007,7 +1014,7 @@ header {
 .tags li a {
 	display: block;
 	text-decoration: none;
-	padding: 10px 25px;
+	padding: 10px 17px;
 	color: #7F88C8;
     line-height: 22px;
     font-size: 18px;
@@ -1366,6 +1373,7 @@ footer .object_cost {
 	color: #FFF;
 	border-color: #FFF;
 	box-shadow: 0px 0px 3px #FFF, 0px 0px 10px #FFF;
+	background-color: transparent;
 }
 
 footer .object_cost:hover {
@@ -2104,6 +2112,7 @@ footer .tel-text:before {
 .color-original-border {
 	border: 1px solid #4B5392;
 	box-shadow: 0px 0px 5px #4B5392;
+	background-color: transparent;
 }
 
 
@@ -2351,7 +2360,7 @@ footer .tel-text:before {
 .metrs_mob input {
     width: 42.2%;
     margin: 0;
-    padding: 7px 0px 7px 9px;
+    padding: 8px 0px 8px 7px;
     color: #000;
 }
 
@@ -2439,6 +2448,10 @@ footer .tel-text:before {
 	padding: 5px 25px;
 	font-size: 13px;
 	margin-left: -88px;
+}
+
+.object_cost_modal {
+	margin: auto;
 }
 
 .tel {
