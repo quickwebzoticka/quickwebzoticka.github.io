@@ -1403,7 +1403,14 @@ footer .tel-text:before {
 	width: 100%;
 	background: #FBFAF7 url(../img/back3static.png) no-repeat 0 bottom;
 	background-size: cover;
-	background-position: fixed;
+	background-attachment: fixed;
+}
+
+.content-opacity {
+	background: linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,1) );
+	background: -webkit-linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,1) );
+	background: -moz-linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,1) );
+	background: -o-linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,1) );
 }
 
 .content {
