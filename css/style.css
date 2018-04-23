@@ -23,6 +23,9 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 15px;
 	font-weight: 300;
+	background: #FBFAF7 url(../img/back3static.png) no-repeat 0 bottom;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
 .row {
@@ -1404,10 +1407,6 @@ footer .tel-text:before {
 	background: #FBFAF7 url(../img/back3static.png) no-repeat 0 bottom;
 	background-size: cover;
 	background-attachment: fixed;
-}
-
-.content-opacity {
-	background: rgba(255,255,255,0.6);
 }
 
 .content {
