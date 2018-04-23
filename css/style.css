@@ -1404,9 +1404,6 @@ footer .tel-text:before {
 
 .content-width {
 	width: 100%;
-	background: #FBFAF7 url(../img/back3static.png) no-repeat 0 bottom;
-	background-size: cover;
-	background-attachment: fixed;
 }
 
 .content {
