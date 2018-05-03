@@ -23,9 +23,6 @@ body {
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 15px;
 	font-weight: 300;
-	background: #FBFAF7 url(../img/back3static.png) no-repeat 0 bottom;
-	background-size: cover;
-	background-attachment: fixed;
 }
 
 .row {
@@ -42,6 +39,8 @@ body {
 	padding-left: 0px;
 	padding-right: 0px;	
 }
+
+
 
 /*-------------------------------------*/
 /*---------------MAIN------------------*/
@@ -1234,7 +1233,7 @@ header {
 	padding: 7px 28px;
 	border: solid 1px #FFF;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: 0.5s;
     box-shadow: 0px 0px 5px #fff;
 }
@@ -1747,7 +1746,7 @@ footer .tel-text:before {
 .interest_text {
 	display: inline-block;
 	width: 60%;
-	font-size: 18px;
+	font-size: 20px;
     color: #FBFAF7;
     line-height: 30px;
     font-family: 'open-sans-condensed', sans-serif;
@@ -2116,6 +2115,125 @@ footer .tel-text:before {
 	background-color: transparent;
 }
 
+/*-------------------------------------*/
+/*---------------TEST------------------*/
+/*-------------------------------------*/
+
+.types h3 {
+	font-size: 20px;
+	font-family: 'ubuntu', sans-serif;
+	font-weight: 500;
+}
+
+.connection-width {
+	width: 100%;
+	background: #7F88C8;
+}
+
+.connection {
+	padding: 20px 15px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.connection_text {
+	text-align: left;
+	display: inline-block;
+	font-size: 16px;
+    color: #FBFAF7;
+    line-height: 30px;
+    font-family: 'open-sans-condensed', sans-serif;
+    font-weight: 700;
+    vertical-align: middle;
+    margin-bottom: 0px;
+}
+
+.connection_text span {
+	font-size: 25px;
+}
+
+.connection_telside {
+	padding-top: 10px;
+	display: inline-block;
+}
+
+.input_align {
+	vertical-align: middle;
+	display: inline-block;
+	width: 50%;
+}
+
+.connection_input {
+	display: inline-block;
+	width: 27%;
+	border: 1px solid #FBFAF7;
+	border-radius: 10px;
+	padding: 5px 10px;
+	color: #7E888D;
+    font-size: 14px;
+    line-height: 35px;
+    font-family: 'open-sans', sans-serif;
+    font-weight: 700;
+}
+
+.connection .btn-add {
+	display: inline-block;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.connection .flex-connection {
+	display: flex;
+	justify-content: space-between;
+}
+
+.inputs-connection {
+	text-align: center;
+	display: inline-block;
+}
+
+.consultations {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.flex-container-consultations {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-container-consultations .btn-add {
+	position: relative;
+}
+
+.active {
+	background-color: #FFF !important;
+    border: solid 1px #FFF !important;
+    color: #4B5392 !important;
+    box-shadow: 0px 0px 20px #fff !important;
+}
+
+.consultation-content {
+	position: absolute;
+	top: 105%;
+	background: #7F88C8;
+	border-radius: 10px;
+	border-color: #FFF;
+	box-shadow: 0px 0px 20px #fff;
+}
+
+.consultation-text {
+	color: #FFF;
+	text-align: left;
+}
+
+.consultation-content input, .consultation-text {
+	display: block;
+	width: 81%;
+	margin: 10px 20px;
+}
+
 
 /*-------------------MEDIA---------------*/
 
@@ -2165,6 +2283,21 @@ footer .tel-text:before {
 }
 
 @media (max-width: 992px) {
+
+.connection_input {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.connection .btn-add {
+	display: block;
+	text-align: center;
+	padding: 15px 0 0 0;
+}
+
+.inputs-connection {
+	text-align: left;
+}
 
 .navbar-nav {
     top:71px;
@@ -2268,6 +2401,8 @@ footer .tel-text:before {
 }
 
 @media (max-width: 760px) {
+
+
 
 .logo_mob_leftside {
 	padding: 0 10px 0 0;
