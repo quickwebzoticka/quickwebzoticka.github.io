@@ -2201,6 +2201,7 @@ footer .tel-text:before {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .flex-container-consultations .btn-add {
@@ -2221,6 +2222,7 @@ footer .tel-text:before {
 	border-radius: 10px;
 	border-color: #FFF;
 	box-shadow: 0px 0px 20px #fff;
+	z-index: 9999;
 }
 
 .consultation-text {
