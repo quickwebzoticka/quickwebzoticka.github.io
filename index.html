@@ -499,33 +499,21 @@
 
 					<div class="connection-width">
 						<div class="container connection">
-							<div class="row">
-								<p class="connection_text">
-									<!-- <span>Заинтересовал объект?</span><br>Оставьте свой номер и менеджер перезвонит в&nbsp;ближайшее время: -->
-									<span>Для связи со специалистом</span><br>укажите номер заявки, Ваше имя и&nbsp;телефон:
-								</p>
+							<div class="row consultations-head">
+								<div class="col-md-6 col-xs-12">
+									<p class="connection_text">
+										<!-- <span>Заинтересовал объект?</span><br>Оставьте свой номер и менеджер перезвонит в&nbsp;ближайшее время: -->
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas rem provident fugit earum nulla, cum est, a reiciendis corrupti nostrum.
+									</p>
+								</div>
 							
 								<div class="connection_telside">
-									<form action="/form" method="post" id="form-connection">
-										
-											
-												
-													<div class="inputs-connection">
-														<input type="text" class="connection_input" name="name" placeholder="№ Заявки">
-														<input type="text" class="connection_input" name="phone" placeholder="Имя">
-														<input type="text" class="connection_input" name="phone" placeholder="Телефон">
-													</div>
-													<div class=" btn-add">
-														<button>Отправить запрос</button>
-													</div>
-													<input type="hidden" name="_token" value="{{ csrf_token() }}">
-													<input type="hidden" name="typeform" value="Заказать звонок">
-												
-											
-									</form>
+									<div class="btn-add">
+										<button data-target=".consultations" data-toggle="collapse">Получить консультацию</button>
+									</div>
 								</div>
 							</div>
-							<div class="row consultations">
+							<div class="row consultations collapse">
 								<div class="flex-container-consultations">
 									<div class="btn-add">
 										<button id="trigger_consult1">Вид консультации</button>

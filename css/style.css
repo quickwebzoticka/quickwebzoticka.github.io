@@ -2192,9 +2192,10 @@ footer .tel-text:before {
 	display: inline-block;
 }
 
+.consultations-head {
+}
+
 .consultations {
-	padding-top: 20px;
-	padding-bottom: 20px;
 }
 
 .flex-container-consultations {
@@ -2206,6 +2207,7 @@ footer .tel-text:before {
 
 .flex-container-consultations .btn-add {
 	position: relative;
+	margin-top: 20px;
 }
 
 .active {
