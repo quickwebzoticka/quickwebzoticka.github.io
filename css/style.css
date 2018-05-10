@@ -2296,6 +2296,7 @@ footer .tel-text:before {
 
 .consultations .btn-add button {
 	font-size: 15px;
+	margin: 0 10px;
 }
 
 .active {
@@ -2602,7 +2603,7 @@ footer .tel-text:before {
 }
 
 #consult2 {
-	left: -18%;
+	left: -12%;
 }
 
 .metrs {
