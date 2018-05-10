@@ -2285,7 +2285,7 @@ footer .tel-text:before {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 .consultations .btn-add {
@@ -2589,11 +2589,16 @@ footer .tel-text:before {
 
 .flex-container-consultations {
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .consultation-content {
 	width: 332px;
 	left: 0px;
+}
+
+#consult2 {
+	left: -18%;
 }
 
 .metrs {
