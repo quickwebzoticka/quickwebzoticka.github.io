@@ -2288,9 +2288,14 @@ footer .tel-text:before {
 	flex-wrap: wrap;
 }
 
-.flex-container-consultations .btn-add {
+.consultations .btn-add {
 	position: relative;
 	margin-top: 20px;
+}
+
+
+.consultations .btn-add button {
+	font-size: 15px;
 }
 
 .active {
@@ -2303,57 +2308,35 @@ footer .tel-text:before {
 .consultation-content {
 	position: absolute;
 	top: 105%;
+	padding: 10px 20px;
 	background: #7F88C8;
 	border-radius: 10px;
 	border-color: #FFF;
 	box-shadow: 0px 0px 20px #fff;
 	z-index: 9999;
+	width: 450px;
+	left: -75px;
 }
-
-#consult2 {
-	width: 162%;
-	left: -31%;
-}
-
-#consult2 input {
-	width: 88%;
-}
-
-#consult2 .consultation-text {
-    display: block;
-    width: 88%;
-    margin: 10px 20px;
-    text-align: justify;	
-}
-
-#consult3 {
-	width: 162%;
-	left: -31%;
-}
-
-#consult3 input {
-	width: 88%;
-}
-
-#consult3 .consultation-text {
-    display: block;
-    width: 88%;
-    margin: 10px 20px;
-    text-align: justify;	
-}
-
-
 
 .consultation-text {
+	padding-left: 20px;
 	color: #FFF;
-	text-align: left;
+	text-align: justify;
 }
 
-.consultation-content input, .consultation-text {
-	display: block;
-	width: 81%;
-	margin: 10px 20px;
+.consultation-text li {
+	margin: 10px 0;
 }
+
+.consultation-content input {
+	display: block;
+	width: 100%;
+	margin: 10px 0;
+}
+ .consultation-text {
+ 	width: 	100%;
+	display: block;
+ }
 
 
 /*-------------------MEDIA---------------*/
@@ -2604,9 +2587,14 @@ footer .tel-text:before {
 
 @media (max-width: 531px) {
 
-	.flex-container-consultations {
-		justify-content: center;
-	}
+.flex-container-consultations {
+	justify-content: center;
+}
+
+.consultation-content {
+	width: 332px;
+	left: 0px;
+}
 
 .metrs {
 	display: none;
