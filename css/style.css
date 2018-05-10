@@ -2321,7 +2321,7 @@ footer .tel-text:before {
 .consultation-text {
 	padding-left: 20px;
 	color: #FFF;
-	text-align: justify;
+	text-align: left;
 }
 
 .consultation-text li {
@@ -2337,6 +2337,10 @@ footer .tel-text:before {
  	width: 	100%;
 	display: block;
  }
+
+.consultations .cost-button {
+	padding: 10px 0;
+}
 
 
 /*-------------------MEDIA---------------*/
