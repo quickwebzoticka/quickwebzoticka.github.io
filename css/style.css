@@ -2311,7 +2311,7 @@ footer .tel-text:before {
 }
 
 #consult2 {
-	width: 170%;
+	width: 162%;
 	left: -31%;
 }
 
@@ -2327,18 +2327,17 @@ footer .tel-text:before {
 }
 
 #consult3 {
-	width: 350%;
-    left: -130%;
-
+	width: 162%;
+	left: -31%;
 }
 
 #consult3 input {
-	width: 94%;
+	width: 88%;
 }
 
 #consult3 .consultation-text {
     display: block;
-    width: 94%;
+    width: 88%;
     margin: 10px 20px;
     text-align: justify;	
 }
@@ -2604,6 +2603,10 @@ footer .tel-text:before {
 }
 
 @media (max-width: 531px) {
+
+	.flex-container-consultations {
+		justify-content: center;
+	}
 
 .metrs {
 	display: none;
