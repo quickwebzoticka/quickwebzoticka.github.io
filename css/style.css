@@ -219,16 +219,16 @@ table th {
 
 .headmain-width {
 	width: 100%;
-	background-image: url(../img/staff/photo-staff/team.jpg);
+	background-image: url(../img/staticmain.jpg);
 	background-repeat:  no-repeat;
 	background-size: cover;
 	background-position: 0 0;
 	transition: 0.6s;
 }
 
-.headmain-width-opacity {
+/*.headmain-width-opacity {
 	background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0));
-}
+}*/
 
 .headmain-width-mob {
 	width: 100%;
