@@ -373,7 +373,7 @@ header {
 /*#FE0005*/
 
 .modal-logo-img {
-	width: 150px;
+	width: 150px !important;
 	height: 94px;
 	float: right;
 	vertical-align: top;
@@ -3120,9 +3120,15 @@ footer .tel-text:before {
 }
 
 .consultations-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 940px;
+	margin: 0 auto;
 }
 
-.consultations {
+.consultation-head-button {
+	display: inline-block;
 }
 
 .flex-container-consultations {
@@ -3130,6 +3136,8 @@ footer .tel-text:before {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: nowrap;
+	width: 940px;
+	margin: 0 auto
 }
 
 .consultations .btn-add {
@@ -3139,8 +3147,8 @@ footer .tel-text:before {
 
 
 .consultations .btn-add button {
-	font-size: 15px;
-	margin: 0 10px;
+	font-size: 16px;
+	width: 432px;
 }
 
 .active {
@@ -3160,7 +3168,7 @@ footer .tel-text:before {
 	box-shadow: 0px 0px 20px #fff;
 	z-index: 9999;
 	width: 450px;
-	left: -75px;
+	left: -7px;
 }
 
 .consultation-text {
@@ -3482,6 +3490,15 @@ footer .tel-text:before {
 }
 
 @media (max-width: 760px) {
+
+.flex-container-consultations {
+	flex-flow: column;
+}
+
+.consultation-content {
+	width: 340px;
+	left: -7px;
+}
 
 #div-nav-bar-mob {
 	margin-top: 30px;
