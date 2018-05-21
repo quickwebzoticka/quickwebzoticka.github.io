@@ -43,7 +43,7 @@ $(document).ready(function() {
 		//   }, 600)
 		setTimeout(function(){
 			$('.line3').animate({
-		     width: '20px'
+		     width: '33px'
 		   }, 100)
 		},290);
 		$('.number1').css('display', 'block');
@@ -75,7 +75,7 @@ $(document).ready(function() {
 		//   }, 600)
 		setTimeout(function(){
 			$('.line3').animate({
-		     width: '20px'
+		     width: '33px'
 		   }, 100)
 		},290);
 		$('.number2').css('display', 'block');
@@ -107,7 +107,7 @@ $(document).ready(function() {
 		//   }, 600)
 		setTimeout(function(){
 			$('.line3').animate({
-		     width: '20px'
+		     width: '33px'
 		   }, 100)
 		},290);
 		$('.number3').css('display', 'block');
@@ -139,7 +139,7 @@ $(document).ready(function() {
 		//   }, 600)
 		setTimeout(function(){
 			$('.line3').animate({
-		     width: '20px'
+		     width: '33px'
 		   }, 100)
 		},290);
 		$('.number4').css('display', 'block');
@@ -171,7 +171,7 @@ $(document).ready(function() {
 		//   }, 600)
 		setTimeout(function(){
 			$('.line3-1').animate({
-		     width: '20px'
+		     width: '33px'
 		   }, 100)
 		},290);
 		$('.number5').css('display', 'block');

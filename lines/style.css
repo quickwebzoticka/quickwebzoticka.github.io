@@ -27,8 +27,22 @@ html, body {
 	color: blue;
 }
 
+.result-width {
+	width: 100%;
+	background: url(3-min.jpg);
+	background-size: cover;
+	text-align: center;
+}
+
+.result-width-opcaity {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 100%;
+	background: rgba(0,0,0,0.6);
+}
+
 .offset {
-	height: 1000px;
+	height: 500px;
 }
 
 h2 {
@@ -43,10 +57,71 @@ ul {
 }
 
 li {
+	text-align: left;
 	position: relative;
 	list-style-type: none;
-	font-size: 20px;
-	padding: 10px 0;
+	font-size: 18px;
+	padding: 20px 0;
+}
+
+li:nth-child(1):before {
+    content: '';
+    width: 35px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 25px/2);
+    left: -50px;
+    background: url(icons_png/handshake.png) no-repeat;
+    background-size: 100%;
+}
+
+li:nth-child(2):before {
+    background: url(icons_png/piggy-bank.png) no-repeat;
+    content: '';
+    width: 27px;
+    height: 37px;
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 37px/2);
+    left: -46px;
+    background-size: 100%;
+}
+
+li:nth-child(3):before {
+	background: url(icons_png/sharing.png) no-repeat;
+	content: '';
+    width: 34px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 30px/2);
+    left: -50px;
+    background-size: 100%;
+}
+
+li:nth-child(4):before {
+    background: url(icons_png/head.png) no-repeat;
+    content: '';
+    width: 30px;
+    height: 36px;
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 36px/2);
+    left: -47px;
+    background-size: 100%;
+}
+
+li:nth-child(5):before {
+    background: url(icons_png/settings.png) no-repeat;
+    content: '';
+    width: 28px;
+    height: 35px;
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 35px/2);
+    left: -44px;
+    background-size: 100%;
 }
 
 ul li div {
@@ -57,14 +132,15 @@ ul li div {
 	/*width: 220px;*/
 	width: 0px;
 	height: 1px;
-	background: gold;
+	background: #FFF;
+	bottom: 10px;
 }
 
 .line2 {
 	/*width: 10px;*/
 	width: 0px;
     height: 1px;
-    background: gold;
+    background: #FFF;
     transform: rotate(-45deg);
     left: 218px;
     bottom: 13px;
@@ -74,7 +150,7 @@ ul li div {
 	/*width: 20px;*/
 	width: 0px;
 	height: 1px;
-	background: gold;
+	background: #FFF;
 	    left: 226px;
     bottom: 16px;
 }
@@ -83,14 +159,15 @@ ul li div {
 	/*width: 220px;*/
 	width: 0px;
 	height: 1px;
-	background: gold;
+	background: #FFF;
+	bottom: 10px;
 }
 
 .line2-1 {
 	/*width: 10px;*/
 	width: 0px;
     height: 1px;
-    background: gold;
+    background: #FFF;
     transform: rotate(-45deg);
     left: 398px;
     bottom: 13px;
@@ -100,49 +177,54 @@ ul li div {
 	/*width: 20px;*/
 	width: 0px;
 	height: 1px;
-	background: gold;
+	background: #FFF;
 	left: 406px;
     bottom: 16px;
 }
 
 .number1 {
-	font-size: 13px;
-	color: #AAA;
+	font-size: 18px;
+	color: rgba(207, 182, 88, 1);
     left: 227px;
     bottom: 15px;
     display: none;
+    font-weight: bold;
 }
 
 .number2 {
-	font-size: 13px;
-	color: #AAA;
+	font-size: 18px;
+	color: rgba(207, 182, 88, 1);
     left: 227px;
     bottom: 15px;
     display: none;
+    font-weight: bold;
 }
 
 .number3 {
-	font-size: 13px;
-	color: #AAA;
+	font-size: 18px;
+	color: rgba(207, 182, 88, 1);
     left: 227px;
     bottom: 15px;
     display: none;
+    font-weight: bold;
 }
 
 .number4 {
-	font-size: 13px;
-	color: #AAA;
+	font-size: 18px;
+	color: rgba(207, 182, 88, 1);
     left: 227px;
     bottom: 15px;
     display: none;
+    font-weight: bold;
 }
 
 .number5 {
-	font-size: 13px;
-	color: #AAA;
+	font-size: 18px;
+	color: rgba(207, 182, 88, 1);
     left: 407px;
     bottom: 15px;
     display: none;
+    font-weight: bold;
 }
 
 footer {
