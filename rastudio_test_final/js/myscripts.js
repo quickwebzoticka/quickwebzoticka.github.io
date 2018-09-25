@@ -135,6 +135,9 @@ $(document).ready(function() {
 		    touchScroll:true,
 		  });
 	  }
+	  if (width < 1450) {
+	  	$('.consult .map').addClass('smooth-slide');
+	  }
 	openMenu();
 	parallax();
 	activateAnim();
