@@ -4,7 +4,21 @@ $(document).ready(function() {
 		once: true
 	});
 
-	let   ulPos,
+	$.scrollify({
+	    section : ".smooth-slide",
+	    sectionName : "section-name",
+	    interstitialSection : "",
+	    easing: "easeOutExpo",
+	    scrollSpeed: 1100,
+	    offset : -100,
+	    scrollbars: true,
+	    setHeights: false,
+	    overflowScroll: true,
+	    updateHash: true,
+	    touchScroll:true,
+	  });
+
+	var   ulPos,
 		  winPos,
 		  borderPos;
 
@@ -82,11 +96,24 @@ $(document).ready(function() {
 	});	
 
     
-
-	  if (width < 1920) {
+	  if (width >= 1330 && width < 1450) {
 
 
 	    var swiper = new Swiper('.swiper-container', {
+	      slidesPerView: 3,
+	      spaceBetween: 10,
+	      loop: false,
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	    });
+
+	    shortMenu();
+
+	  } else if (width < 1330) {
+
+	  	var swiper = new Swiper('.swiper-container', {
 	      slidesPerView: 2,
 	      spaceBetween: 10,
 	      loop: false,
@@ -149,33 +176,8 @@ $(document).ready(function() {
 	  	let i = $(this).index('.icons');
 	  	let t = $('.text-1');
 	  	t.removeClass('text-1_active');
-	  	setTimeout((function(){
-	  		t.eq(i).addClass('text-1_active');
-	  	}),500);
+  		t.eq(i).addClass('text-1_active');
 	  });
-
-	  
-
-		 
-
-		// parallax();
-
-		// function openMenu() {
-		// 	$('.menu').click(function(event) {
-		// 		fullMenu();
-		// 	});
-		// };
-
-
-		// $(document).click( function(event){
-		// 	if( $(event.target).closest(".left-menu").length || winPos < 1081) 
-	 //        	return;
-	 //      event.stopPropagation();
-	 //      shortMenu();
-	 //    });
-
-
-		
 
 		$('.img-popup').magnificPopup({
 			type: 'image',
@@ -187,8 +189,7 @@ $(document).ready(function() {
 			},
 			zoom: {
 				enabled: true,
-				duration: 500 // don't foget to change the duration also in CSS
+				duration: 500
 			}
 		});
-
 });

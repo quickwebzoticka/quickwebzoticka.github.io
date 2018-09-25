@@ -4,11 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Yollki</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/queryLoader.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
 	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="js/preloader.js"></script>
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script type="text/javascript">
 	  ymaps.ready(function () {
@@ -27,11 +30,48 @@
 		myMap.geoObjects.add(myPlacemark1);
 		myMap.geoObjects.add(myPlacemark);
 	  });
+	  ymaps.ready(function () {
+	    var myMap1 = new ymaps.Map("YMapsID-2", {
+	      center: [59.95, 30.33],
+	      zoom: 9
+	    });
+	    
+		var myPlacemark = new ymaps.Placemark([60.18, 30.35], {}, {
+		    preset: 'islands#darkGreenIcon'
+		});
+		
+		var myPlacemark1 = new ymaps.Placemark([59.95, 30.33], {}, {
+		    preset: 'islands#darkGreenIcon'
+		});
+		myMap1.geoObjects.add(myPlacemark1);
+		myMap1.geoObjects.add(myPlacemark);
+	  });
+	  ymaps.ready(function () {
+	    var myMap2 = new ymaps.Map("YMapsID-3", {
+	      center: [59.95, 30.33],
+	      zoom: 9
+	    });
+	    
+		var myPlacemark = new ymaps.Placemark([60.18, 30.35], {}, {
+		    preset: 'islands#darkGreenIcon'
+		});
+		
+		var myPlacemark1 = new ymaps.Placemark([59.95, 30.33], {}, {
+		    preset: 'islands#darkGreenIcon'
+		});
+		myMap2.geoObjects.add(myPlacemark1);
+		myMap2.geoObjects.add(myPlacemark);
+	  });
 	</script>
 </head>
 <body>
+	<div id="preloader">
+	    <div class="dws-progress-bar">
+	    	
+	    </div>
+	</div>
 	<div class="wrapper">
-		<header>
+		<header class="smooth-slide">
 			<div class="left-menu">
 				<div class="logo">
 					<a href="#">
@@ -77,18 +117,18 @@
 				</div>
 			</div>
 			<div class="center-side">
-				<div class="head_container" data-aos="fade-up" data-aos-duration="1000">
+				<div class="head_container">
 					<a href="#"><img src="img/icons/010-smartphone-call.png" alt="phone" class="phone"> Отдел продаж: <span class="bold">+7(812) 501-18-59</span></a>
 					<p class="first-head"><span>«Yolkki Village»</span> - квартиры<br> в Ленинградской области</p>
 					<p class="second-head">До конца апреля скидка на 50 квартир до 24%</p>
 					<button>Выбрать квартиру</button>
 				</div>
-				<div class="right-side" data-aos="fade-up" data-aos-duration="1000">
+				<div class="right-side">
 					<div class="head_contacts"><p>Контакты</p></div>
 					<div class="head_scroll-down"><p>Листайте вниз</p><div class="head_scroll-down_arrow"></div></div>
 				</div>
 				<div class="head_contact-info">
-					<div class="head_contact-info_wrapper">
+					<div class="head_contact-info_wrapper container">
 						<div class="cross"><span></span></div>
 						<h3>Контакты</h3>
 						<div class="wrapper-flex">
@@ -114,14 +154,23 @@
 				</div>
 			</div>
 		</header>
-		<div class="location container">
+		<div class="location container smooth-slide">
 			<div class="redline"></div>
 			<h3>Местоположение</h3>
 			<p><span>«Yolkki Village»</span> возводится на территории Всеволожского р-на  в д. Скотное в отдалении от промышленных предприятий. Новоселов ждет<br> размеренная жизнь в окружении зелени, без шума и городской суеты.<br> Из окон квартир открываются красочные пейзажи. А многообразие<br> озер, горнолыжных курортов и мест для семейного отдыха удивит даже<br> самого взыскательного покупателя.
 			</p>
 		</div>
+	<div class="nature_wrapper_smooth smooth-slide">
 		<div class="nature">
-			<h3>Уникальная природа</h3>
+			<div class="container">
+				<h3>
+					Уникальная природа
+					<span class="swiper-button-prev"></span>
+				    <span class="swiper-button-next"></span>
+				</h3>
+			</div>
+			<div class="nature_trees"></div>
+		</div>
 			<div class="nature_gallery">
 				<div class="swiper-container">
 				    <div class="swiper-wrapper">
@@ -142,11 +191,9 @@
 				        </div>
 				    </div>
 				</div>
-				<div class="swiper-button-prev"></div>
-			    <div class="swiper-button-next"></div>
 			</div>
-			<div class="nature_trees"></div>
 		</div>
+	<div class="infra_smooth_wrapper smooth-slide">
 		<div class="infra container">
 			<div class="infra_wrapper">
 				<h3>Инфраструктура</h3>
@@ -172,10 +219,11 @@
 				<p class="second">Инфраструктура района</p>
 			</div>
 		</div>
-		<div class="infra_img">
-			<img src="img/infra-img.png" alt="infra">
+		<div class="infra_img container">
+
 		</div>
-		<div class="advantages">
+	</div>
+		<div class="advantages smooth-slide">
 			<div class="advantage security">
 				<div class="img">
 					<img src="img/advantages/security.png" alt="security">
@@ -210,7 +258,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="description container">
+		<div class="description container-wide smooth-slide">
 			<div class="wrapper-icons">
 				<div class="icons icons_active">
 					<img src="img/icons/006-family-room.png" alt="family">
@@ -240,7 +288,7 @@
 			<div class="wrapper-text">
 				<div class="text-1 text-1_active">
 					<p class="head">
-						Школа<br>
+						Школа 
 						и детский сад
 					</p>
 					<p>
@@ -307,51 +355,56 @@
 				</div>
 			</div>
 		</div>
-		<div class="arch">
-			<div class="swiper-container-arch">
-			    <div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="img/arch.png" alt="arch"></div>
-					<div class="swiper-slide"><img src="img/header-1.png" alt="arch"></div>
-					<div class="swiper-slide"><img src="img/header-2.png" alt="arch"></div>
-					<div class="swiper-slide"><img src="img/arch.png" alt="arch"></div>
-					<div class="swiper-slide"><img src="img/arch.png" alt="arch"></div>
-			    </div>
-			    <div class="nav-buttons">
-			    	<div class="swiper-button-prev-arch"></div>
-					<div class="swiper-pagination"></div>
-			    	<div class="swiper-button-next-arch"></div>
-			    </div>
-			</div>
-			<div class="arch_text">
-				<p class="head">
-					Архитектура
-				</p>
-				<p>
-					Скандинавский стиль домов демонстрирует лучшие традиции европейской архитектуры. Строящийся по финским технологиям, красивый не только внутри, но и снаружи, комплекс просто не может не вызывать восхищение у гостей и жителей. Благодаря малой и средней этажности и каскадной архитектуре, он прекрасно гармонирует с холмистым рельефом окружающей местности, мягко его дополняя. Корпуса будут находиться друг напротив друга, образуя закрытое пространство внутри. 
-				</p>
-			</div>
-		</div>
-		<div class="consult container">
-			<div class="consult_text">
-				<p class="head">Получите консультацию</p>
-				<p>Наш менеджер предоставит вам бесплатную
-				персональную консультацию и поможет подобрать
-				необходимую квартиру</p>
-				<button>Получить консультацию</button>
-				<a href="#">+7 (812) 501-18-59</a>
-			</div>
-			<div class="consult_img">
-				<div id="YMapsID" style="width: 100%; height: 100%"></div>
+		<div class="arch-smooth_slide smooth-slide">
+			<div class="arch">
+				<div class="swiper-container-arch">
+				    <div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/arch.png" alt="arch"></div>
+						<div class="swiper-slide"><img src="img/header-1.png" alt="arch"></div>
+						<div class="swiper-slide"><img src="img/header-2.png" alt="arch"></div>
+						<div class="swiper-slide"><img src="img/arch.png" alt="arch"></div>
+						<div class="swiper-slide"><img src="img/arch.png" alt="arch"></div>
+				    </div>
+				    <div class="nav-buttons">
+				    	<div class="swiper-button-prev-arch"></div>
+						<div class="swiper-pagination"></div>
+				    	<div class="swiper-button-next-arch"></div>
+				    </div>
+				</div>
+				<div class="arch_text">
+					<p class="head">
+						Архитектура
+					</p>
+					<p>
+						Скандинавский стиль домов демонстрирует лучшие традиции европейской архитектуры. Строящийся по финским технологиям, красивый не только внутри, но и снаружи, комплекс просто не может не вызывать восхищение у гостей и жителей. Благодаря малой и средней этажности и каскадной архитектуре, он прекрасно гармонирует с холмистым рельефом окружающей местности, мягко его дополняя. Корпуса будут находиться друг напротив друга, образуя закрытое пространство внутри. 
+					</p>
+				</div>
 			</div>
 		</div>
-		<div class="consult_img-mob">
-			<img src="img/map.png" alt="map">
+		
+		<div class="consult_smooth_wrapper smooth-slide">
+			<div class="consult container-wide">
+				<div class="consult_text">
+					<p class="head">Получите консультацию</p>
+					<p>Наш менеджер предоставит вам бесплатную
+					персональную консультацию и поможет подобрать
+					необходимую квартиру</p>
+					<button>Получить консультацию</button>
+					<a href="#">+7 (812) 501-18-59</a>
+				</div>
+				<div class="map">
+					<div id="YMapsID-2" style="width: 100%; height: 100%"></div>
+				</div>
+			</div>
+			<div class="consult_img-mob">
+				<div id="YMapsID-3" style="width: 100%; height: 100%"></div>
+			</div>
 		</div>
 		<div class="gray-line"></div>
 	</div>
 
 
-	<footer>
+	<footer class="container-wide smooth-slide">
 		<div class="wrapper-flex">
 			<div class="partner">
 				<p>Партнеры по ипотечному кредитованию</p>
@@ -385,11 +438,12 @@
 		</div>
 	</footer>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/aos.js"></script>
 	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.scrollify.js"></script>
 	<script src="js/myscripts.js"></script>
 </body>
 </html>
