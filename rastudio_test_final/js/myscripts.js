@@ -1,19 +1,5 @@
 $(document).ready(function() {
 
-	$.scrollify({
-	    section : ".smooth-slide",
-	    sectionName : "section-name",
-	    interstitialSection : "",
-	    easing: "easeOutExpo",
-	    scrollSpeed: 1100,
-	    offset : 0,
-	    scrollbars: true,
-	    setHeights: false,
-	    overflowScroll: true,
-	    updateHash: true,
-	    touchScroll:true,
-	  });
-
 	var   ulPos,
 		  winPos,
 		  borderPos;
@@ -132,6 +118,20 @@ $(document).ready(function() {
 	        prevEl: '.swiper-button-prev',
 	      },
 	    });
+
+	    $.scrollify({
+		    section : ".smooth-slide",
+		    sectionName : "section-name",
+		    interstitialSection : "",
+		    easing: "easeOutExpo",
+		    scrollSpeed: 1100,
+		    offset : 0,
+		    scrollbars: true,
+		    setHeights: false,
+		    overflowScroll: false,
+		    updateHash: true,
+		    touchScroll:true,
+		  });
 
 	  };
 	openMenu();
