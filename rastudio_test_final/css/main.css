@@ -422,7 +422,7 @@ header {
     -o-transition: 1s;
     transition: 1s; }
     .center-side .head_contact-info .head_contact-info_wrapper {
-      padding: 93px 0 0 192px;
+      padding: 20px 0 0 192px;
       opacity: 0;
       -webkit-transition: 1s;
       -o-transition: 1s;
@@ -464,11 +464,11 @@ header {
             font-weight: 700; }
     .center-side .head_contact-info .map {
       margin-top: 88px;
-      height: 515px;
+      height: 400px;
       width: 1182px; }
     .center-side .head_contact-info .cross {
       position: absolute;
-      top: 89px;
+      top: 30px;
       right: 107px;
       height: 61px;
       width: 61px;
@@ -1396,7 +1396,7 @@ footer {
           height: 768px; }
           .wrapper header .center-side .head_contact-info_wrapper {
             height: 100%;
-            padding: 55px 0 0 108px; }
+            padding: 20px 0 0 108px; }
             .wrapper header .center-side .head_contact-info_wrapper h3 {
               font-size: 56px;
               font-weight: 700;
@@ -1412,7 +1412,7 @@ footer {
             right: 20px; }
           .wrapper header .center-side .head_contact-info .map {
             margin-top: 20px;
-            height: 400px;
+            height: 300px;
             width: 800px; }
         .wrapper header .center-side .head_container a {
           font-size: 18px;
