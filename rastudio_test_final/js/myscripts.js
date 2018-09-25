@@ -77,7 +77,7 @@ $(document).ready(function() {
 		
 	});	
 
-    
+    console.log(width);
 	  if (width >= 1330 && width < 1450) {
 
 
@@ -119,6 +119,8 @@ $(document).ready(function() {
 	      },
 	    });
 
+	  };
+	  if (width >= 1024) {
 	    $.scrollify({
 		    section : ".smooth-slide",
 		    sectionName : "section-name",
@@ -132,8 +134,7 @@ $(document).ready(function() {
 		    updateHash: true,
 		    touchScroll:true,
 		  });
-
-	  };
+	  }
 	openMenu();
 	parallax();
 	activateAnim();

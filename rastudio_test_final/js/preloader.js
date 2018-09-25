@@ -8,8 +8,6 @@ $(document).ready(function () {
         loadedImg    = 0,
         whiteLine    = $('.dws-progress-bar'); // счетчик загрузки картинок
 
-    // dBody.css('overflow', 'hidden');
-
     if (imagesCount >= imgSum && imagesCount > 0) {
         for (var i = 0; i < imagesCount; i++) { // создаем клоны изображений
             var img_copy        = new Image();
@@ -41,20 +39,4 @@ $(document).ready(function () {
     } else {
         preloader.remove();
     }
-
-    // // dBody.css('overflow', 'hidden');
-    // whiteLine.animate({width: '100%'}, 5000).animate({opacity: '0'}, 2000);
-    // preloader.delay(5000).animate({width: '0%'}, 2000, function(){
-
-    // 	$('.head_container').css({
-    // 		transform: 'translate3d(0, 0, 0)',
-    // 		opacity: '1'
-    // 	});
-
-    // 	$('.right-side').css({
-    // 		transform: 'translate3d(0, 0, 0)',
-    // 		opacity: '1'
-    // 	});
-    // });
-
 });
