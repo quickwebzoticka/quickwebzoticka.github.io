@@ -659,7 +659,7 @@ header {
       .infra .minutes .head span {
         font-size: 104px; }
   .infra_text {
-    padding-top: 110px;
+    margin-top: 110px;
     padding-bottom: 105px; }
     .infra_text p {
       display: inline-block;
@@ -1474,7 +1474,7 @@ footer {
       font-size: 48px;
       margin-bottom: 40px; }
     .infra_text {
-      padding-top: 82px;
+      margin-top: 82px;
       padding-bottom: 54px; }
     .infra_img {
       margin-left: 54px;
@@ -1707,7 +1707,7 @@ footer {
     .infra_wrapper {
       width: 100%; }
     .infra_text {
-      padding-top: 63px;
+      margin-top: 63px;
       padding-bottom: 62px; }
       .infra_text p {
         display: block;
