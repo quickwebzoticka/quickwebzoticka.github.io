@@ -66,7 +66,7 @@ $(document).ready(function() {
 		activateAnim();
 		parallax();
 		if (width > 1920) {
-			if (winPos >= 1081) {
+			if (winPos >= 900) {
 				shortMenu();
 			} else {
 				fullMenu();
