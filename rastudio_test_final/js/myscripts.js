@@ -10,7 +10,7 @@ $(document).ready(function() {
 	    interstitialSection : "",
 	    easing: "easeOutExpo",
 	    scrollSpeed: 1100,
-	    offset : -100,
+	    offset : 0,
 	    scrollbars: true,
 	    setHeights: false,
 	    overflowScroll: true,
