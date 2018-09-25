@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-	AOS.init({
-		once: true
-	});
-
 	$.scrollify({
 	    section : ".smooth-slide",
 	    sectionName : "section-name",
