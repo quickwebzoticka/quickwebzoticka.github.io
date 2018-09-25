@@ -11,57 +11,6 @@
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script type="text/javascript">
-	  ymaps.ready(function () {
-	    var myMap = new ymaps.Map("YMapsID", {
-	      center: [59.95, 30.33],
-	      zoom: 9
-	    });
-	    
-		var myPlacemark = new ymaps.Placemark([60.18, 30.35], {}, {
-		    preset: 'islands#darkGreenIcon'
-		});
-		
-		var myPlacemark1 = new ymaps.Placemark([59.95, 30.33], {}, {
-		    preset: 'islands#darkGreenIcon'
-		});
-		myMap.geoObjects.add(myPlacemark1);
-		myMap.geoObjects.add(myPlacemark);
-	  });
-	  ymaps.ready(function () {
-	    var myMap1 = new ymaps.Map("YMapsID-2", {
-	      center: [59.95, 30.33],
-	      zoom: 9
-	    });
-	    
-		var myPlacemark = new ymaps.Placemark([60.18, 30.35], {}, {
-		    preset: 'islands#darkGreenIcon'
-		});
-		
-		var myPlacemark1 = new ymaps.Placemark([59.95, 30.33], {}, {
-		    preset: 'islands#darkGreenIcon'
-		});
-		myMap1.geoObjects.add(myPlacemark1);
-		myMap1.geoObjects.add(myPlacemark);
-	  });
-	  ymaps.ready(function () {
-	    var myMap2 = new ymaps.Map("YMapsID-3", {
-	      center: [59.95, 30.33],
-	      zoom: 9
-	    });
-	    
-		var myPlacemark = new ymaps.Placemark([60.18, 30.35], {}, {
-		    preset: 'islands#darkGreenIcon'
-		});
-		
-		var myPlacemark1 = new ymaps.Placemark([59.95, 30.33], {}, {
-		    preset: 'islands#darkGreenIcon'
-		});
-		myMap2.geoObjects.add(myPlacemark1);
-		myMap2.geoObjects.add(myPlacemark);
-	  });
-	</script>
 	<script src="js/preloader.js"></script>
 </head>
 <body>
@@ -445,5 +394,56 @@
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/jquery.scrollify.js"></script>
 	<script src="js/myscripts.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+	  ymaps.ready(function () {
+	    var myMap = new ymaps.Map("YMapsID", {
+	      center: [59.95, 30.33],
+	      zoom: 9
+	    });
+	    
+		var myPlacemark = new ymaps.Placemark([60.18, 30.35], {}, {
+		    preset: 'islands#darkGreenIcon'
+		});
+		
+		var myPlacemark1 = new ymaps.Placemark([59.95, 30.33], {}, {
+		    preset: 'islands#darkGreenIcon'
+		});
+		myMap.geoObjects.add(myPlacemark1);
+		myMap.geoObjects.add(myPlacemark);
+	  });
+	  ymaps.ready(function () {
+	    var myMap1 = new ymaps.Map("YMapsID-2", {
+	      center: [59.95, 30.33],
+	      zoom: 9
+	    });
+	    
+		var myPlacemark = new ymaps.Placemark([60.18, 30.35], {}, {
+		    preset: 'islands#darkGreenIcon'
+		});
+		
+		var myPlacemark1 = new ymaps.Placemark([59.95, 30.33], {}, {
+		    preset: 'islands#darkGreenIcon'
+		});
+		myMap1.geoObjects.add(myPlacemark1);
+		myMap1.geoObjects.add(myPlacemark);
+	  });
+	  ymaps.ready(function () {
+	    var myMap2 = new ymaps.Map("YMapsID-3", {
+	      center: [59.95, 30.33],
+	      zoom: 9
+	    });
+	    
+		var myPlacemark = new ymaps.Placemark([60.18, 30.35], {}, {
+		    preset: 'islands#darkGreenIcon'
+		});
+		
+		var myPlacemark1 = new ymaps.Placemark([59.95, 30.33], {}, {
+		    preset: 'islands#darkGreenIcon'
+		});
+		myMap2.geoObjects.add(myPlacemark1);
+		myMap2.geoObjects.add(myPlacemark);
+	  });
+	</script>
 </body>
 </html>
