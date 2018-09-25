@@ -77,7 +77,9 @@ $(document).ready(function() {
 		
 	});	
 
-    console.log(width);
+	  if (width < 1450) {
+	  	$('.consult .map').addClass('smooth-slide');
+	  }
 	  if (width >= 1330 && width < 1450) {
 
 
@@ -134,9 +136,6 @@ $(document).ready(function() {
 		    updateHash: true,
 		    touchScroll:true,
 		  });
-	  }
-	  if (width < 1450) {
-	  	$('.consult .map').addClass('smooth-slide');
 	  }
 	openMenu();
 	parallax();
