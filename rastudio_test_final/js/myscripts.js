@@ -2,7 +2,16 @@ $(document).ready(function() {
 
 	var   ulPos,
 		  winPos,
-		  borderPos;
+		  borderPos,
+		  leftMenu,
+		  menu;
+
+	menu = $('.menu');
+	winPos = $(window).scrollTop();
+	leftMenu = $('.left-menu');
+
+	//измерение ширины экрана
+	var width = parseInt($('html').css('width'), 10);
 
 	function refreshVar(){
 		ulPos = $('.redline').offset().top;
@@ -12,15 +21,36 @@ $(document).ready(function() {
 	function fullMenu(){
 		$('.left-menu').removeClass('left-menu_active');
 		$('.logo').removeClass('logo_active');
+		$('.nav').css('opacity', '1');
 		$('.nav').slideDown('slow');
-		$('.menu').fadeOut('fast');
+		if (width <= 1024) {
+			$('.menu').addClass('menu_active')
+		} else {
+			$('.menu').fadeOut('fast');
+		}
+		
 	};
 
 	function shortMenu(){
 		$('.left-menu').addClass('left-menu_active');
 		$('.logo').addClass('logo_active');
-		$('.nav').css('display', 'none');
-		$('.menu').fadeIn('fast');
+		$('.nav').css({
+			display: 'none',
+			opacity: '0'
+		});
+		if (width <= 1024) {
+			$('.menu').removeClass('menu_active')
+		} else {
+			$('.menu').fadeIn('fast');
+		}
+	};
+
+	function rightSideActive(){
+		$('.right-side__bottom').addClass('right-side__bottom_active');
+	};
+
+	function rightSideDeactive(){
+		$('.right-side__bottom').removeClass('right-side__bottom_active');
 	};
 
 	function parallax(){
@@ -28,19 +58,39 @@ $(document).ready(function() {
 	};
 
 	function openMenu() {
-		$('.menu').click(function(event) {
-			fullMenu();
+		menu.click(function(event) {
+			if (width <= 1024) {
+			  if (menu.hasClass('menu_active')) {
+			  	shortMenu();
+			  	leftMenu.css('height', '79px');
+			  } else {
+			  	fullMenu();
+			  	leftMenu.css('height', '100%');
+			  }
+			} else {
+				fullMenu();
+			}
 		});
 	};
-
 	function closeMenu() {
 		$(document).click( function(event){
-			if( $(event.target).closest(".left-menu").length) 
+			if (width > 1920 && winPos < 900) {
+			  return;
+			} else {
+			  if( $(event.target).closest(".left-menu").length) 
 	        	return;
-	      event.stopPropagation();
-	      shortMenu();
+		      event.stopPropagation();
+		      shortMenu();
+			}
+			  
 	    });
 	};
+
+  	function openContacts() {
+	  	$('.head_contact-info').addClass('head_contact-info_active');
+	  	$('.head_contact-info_wrapper').addClass('head_contact-info_wrapper_active');
+	  	shortMenu();
+  	};
 
 	 function activateAnim() {
 	 	if (winPos >= ulPos - 500) {
@@ -55,12 +105,9 @@ $(document).ready(function() {
 		};
 	 };
 
- 	closeMenu();
-
-	var width = parseInt($('html').css('width'), 10);
-	
 	$(window).resize(refreshVar());
 
+	//отслеживание проскролленной высоты документа
 	$(window).scroll(function(){
 		winPos = $(window).scrollTop();
 		activateAnim();
@@ -74,14 +121,23 @@ $(document).ready(function() {
 		} else {
 			shortMenu();
 		}
+		if (width > 1024) {
+			if (winPos > 700) {
+				rightSideActive();
+			} else {
+				rightSideDeactive();
+			}
+			
+		}
 		
 	});	
-
+	 //подключение якоря для скролифая при смещении карты
 	  if (width < 1450) {
 	  	$('.consult .map').addClass('smooth-slide');
-	  }
-	  if (width >= 1330 && width < 1450) {
+  	};
 
+	 //вывод количества слайдов
+	  if (width >= 1330 && width < 1450) {
 
 	    var swiper = new Swiper('.swiper-container', {
 	      slidesPerView: 3,
@@ -120,8 +176,9 @@ $(document).ready(function() {
 	        prevEl: '.swiper-button-prev',
 	      },
 	    });
-
 	  };
+
+	  //включение скролифая только на больших экранах
 	  if (width >= 1024) {
 	    $.scrollify({
 		    section : ".smooth-slide",
@@ -136,11 +193,40 @@ $(document).ready(function() {
 		    updateHash: true,
 		    touchScroll:true,
 		  });
-	  }
-	openMenu();
-	parallax();
-	activateAnim();
 
+	    //выключение скроллифи при ховере на левое меню
+	    leftMenu.hover(function() {
+				$.scrollify.disable();
+		    },
+		    function(){
+		    	$.scrollify.enable();
+		    });
+	  };
+
+	//выключение обычного скролла при скролле левого меню
+    leftMenu.bind('mousewheel DOMMouseScroll', function(e) {
+	    var scrollTo = null;
+	    if (e.type == 'mousewheel') {
+	        scrollTo = (e.originalEvent.wheelDelta * -1);
+	    }
+	    else if (e.type == 'DOMMouseScroll') {
+	        scrollTo = 40 * e.originalEvent.detail;
+	    }
+	    if (scrollTo) {
+	        e.preventDefault();
+	        $(this).scrollTop(scrollTo + $(this).scrollTop());
+	    }
+	});
+	//открытие меню по клику .menu
+	openMenu();
+	//параллакс
+	parallax();
+	//активация анимации
+	activateAnim();
+	//закртыие меню при клике вне
+ 	closeMenu();
+
+	//инициализация галереи Архитектуры
 	var swiperArch = new Swiper('.swiper-container-arch', {
       slidesPerView: 1,
       navigation: {
@@ -152,25 +238,29 @@ $(document).ready(function() {
       },
     });
 
+	//открывания подменю
 	  $('.has_sub').click(function(event) {
 	  	$(this).children('.submenu').toggle('fast');
 	  	$(this).toggleClass('has_sub_active');
 	  });
 
-	  $('.head_contacts').click(function(event) {
-	  	$('.head_contact-info').addClass('head_contact-info_active');
-	  	$('.head_contact-info_wrapper').addClass('head_contact-info_wrapper_active');
-	  });
+	 //открытие контактов 
+	  $('.head_contacts').click(openContacts);
+	  $('.li_contacts').click(openContacts);
 
+	 //закрытие контактов
 	  $('.cross').click(function(event) {
 	  	$('.head_contact-info').removeClass('head_contact-info_active');
 	  	$('.head_contact-info_wrapper').removeClass('head_contact-info_wrapper_active');
+	  	if (width > 1920 && winPos < 900) {
+	  		fullMenu();
+	  	}
 	  });
 
+	 //переключение текстов
 	  $('.icons').click(function(event) {
 	  	$('.icons').removeClass('icons_active');
 	  	$(this).addClass('icons_active');
-
 
 	  	let i = $(this).index('.icons');
 	  	let t = $('.text-1');
@@ -178,6 +268,7 @@ $(document).ready(function() {
   		t.eq(i).addClass('text-1_active');
 	  });
 
+	  //инициализация магнифик
 		$('.img-popup').magnificPopup({
 			type: 'image',
 			closeOnContentClick: true,

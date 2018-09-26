@@ -30,6 +30,10 @@ $(document).ready(function () {
 			    		transform: 'translate3d(0, 0, 0)',
 			    		opacity: '1'
 			    	});
+                    $('.right-side__bottom').css({
+                        transform: 'translate3d(0, 0, 0)',
+                        opacity: '1'
+                    });
 			    	dBody.css('overflow', 'unset');
 			    });
             }
