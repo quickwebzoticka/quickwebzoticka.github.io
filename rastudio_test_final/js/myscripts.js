@@ -190,7 +190,7 @@ $(document).ready(function() {
 		    scrollbars: true,
 		    setHeights: false,
 		    overflowScroll: false,
-		    updateHash: true,
+		    updateHash: false,
 		    touchScroll:true,
 		  });
 
