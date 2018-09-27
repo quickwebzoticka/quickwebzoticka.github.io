@@ -789,7 +789,8 @@ header {
         -ms-flex: 1 1 100px;
             flex: 1 1 100px;
     height: 870px;
-    position: relative; }
+    position: relative;
+    z-index: 5; }
     .advantages .advantage:before {
       content: '';
       position: absolute;
@@ -880,9 +881,9 @@ header {
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
-      -webkit-transition-delay: 1s;
-           -o-transition-delay: 1s;
-              transition-delay: 1s; }
+      -webkit-transition-delay: 0s;
+           -o-transition-delay: 0s;
+              transition-delay: 0s; }
   .advantages .accomplishment {
     background-color: #d51317;
     position: relative; }
@@ -917,9 +918,9 @@ header {
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
-      -webkit-transition-delay: 1s;
-           -o-transition-delay: 1s;
-              transition-delay: 1s; }
+      -webkit-transition-delay: 0s;
+           -o-transition-delay: 0s;
+              transition-delay: 0s; }
     .advantages .accomplishment .wrapper-text {
       z-index: 999999; }
   .advantages .reliability {
@@ -964,9 +965,9 @@ header {
       -webkit-transition: 0.5s;
       -o-transition: 0.5s;
       transition: 0.5s;
-      -webkit-transition-delay: 1s;
-           -o-transition-delay: 1s;
-              transition-delay: 1s; }
+      -webkit-transition-delay: 0s;
+           -o-transition-delay: 0s;
+              transition-delay: 0s; }
 
 .description {
   padding-top: 184px;
@@ -1060,6 +1061,9 @@ header {
   -webkit-transform: translate3d(0, 0, 0) !important;
           transform: translate3d(0, 0, 0) !important;
   opacity: 1 !important; }
+
+.arch-wrapper {
+  position: relative; }
 
 .arch {
   padding-top: 177px;
@@ -1790,7 +1794,11 @@ footer {
     .nature h3 {
       margin-bottom: 59px; }
     .nature_gallery {
-      width: 550px !important; }
+      width: 73vw !important; }
+      .nature_gallery .swiper-slide {
+        text-align: right; }
+        .nature_gallery .swiper-slide img {
+          display: inline-block; }
     .nature .swiper-button-next {
       left: 80%; }
     .nature .swiper-button-prev {
