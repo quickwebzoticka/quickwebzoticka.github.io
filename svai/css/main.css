@@ -188,3 +188,131 @@ p {
             .wrapper .main .table__body table tbody tr td .inner ul li {
               list-style: none;
               margin-bottom: 5px; }
+  .wrapper .main__mini-tables {
+    padding: 40px 0; }
+    .wrapper .main__mini-tables .main__row {
+      padding: 30px 0 10px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      border-top: 1px solid #999; }
+      .wrapper .main__mini-tables .main__row:first-child {
+        border-bottom: none; }
+      .wrapper .main__mini-tables .main__row:last-child {
+        border-top: 1px solid #999;
+        border-bottom: 1px solid #999; }
+      .wrapper .main__mini-tables .main__row .mini-table {
+        text-align: center; }
+        .wrapper .main__mini-tables .main__row .mini-table .head {
+          font-size: 20px;
+          color: orange; }
+        .wrapper .main__mini-tables .main__row .mini-table table {
+          -webkit-border-radius: 8px;
+                  border-radius: 8px; }
+          .wrapper .main__mini-tables .main__row .mini-table table thead th {
+            background: #f8eca5;
+            padding: 5px;
+            text-align: center; }
+            .wrapper .main__mini-tables .main__row .mini-table table thead th:first-child {
+              -webkit-border-radius: 10px 0 0 0;
+                      border-radius: 10px 0 0 0; }
+            .wrapper .main__mini-tables .main__row .mini-table table thead th:last-child {
+              -webkit-border-radius: 0 10px 0 0;
+                      border-radius: 0 10px 0 0; }
+          .wrapper .main__mini-tables .main__row .mini-table table tbody tr td {
+            padding: 5px 4px;
+            background: #DDD; }
+  .wrapper .footer__for-btn {
+    margin: 40px 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .wrapper .footer__for-btn .text_wrapper {
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; }
+      .wrapper .footer__for-btn .text_wrapper p {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 20px; }
+    .wrapper .footer__for-btn .btn_wrapper {
+      margin-left: 20px; }
+      .wrapper .footer__for-btn .btn_wrapper button {
+        padding: 10px 60px;
+        white-space: nowrap;
+        background: #f8eca5;
+        border: 1px solid #DDD;
+        -webkit-border-radius: 10px;
+                border-radius: 10px;
+        font-size: 20px;
+        font-weight: 700;
+        color: #333;
+        outline: none;
+        -webkit-transition: 0.3s ease;
+        -o-transition: 0.3s ease;
+        transition: 0.3s ease; }
+        .wrapper .footer__for-btn .btn_wrapper button:hover {
+          background: #f4e276; }
+
+.modal .modal-content {
+  position: relative; }
+
+.modal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+
+.modal h5 {
+  font-size: 28px;
+  font-weight: 700; }
+
+.modal .name_field {
+  margin: 20px 0 10px;
+  font-size: 20px;
+  font-weight: 700; }
+
+.modal input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #999;
+  background: #FFF;
+  padding: 5px 10px; }
+
+.modal textarea {
+  width: 100%;
+  height: 80px; }
+
+.modal .checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: bottom;
+  margin-bottom: 2px; }
+
+.modal .btn-primary {
+  background: #f8eca5;
+  border: 1px solid #999;
+  color: #333;
+  font-weight: 700;
+  font-size: 18px;
+  outline: none; }
+  .modal .btn-primary:active {
+    background: #f8eca5;
+    color: #333;
+    outline: none;
+    border: 1px solid #999; }
