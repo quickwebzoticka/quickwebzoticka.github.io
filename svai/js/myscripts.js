@@ -5,8 +5,12 @@ $(document).ready(function() {
             .closest('div.table__main__active')
             .find('.table')
             .removeClass('table__active')
+            .css('display', 'none')
             .eq($(this).index())
-            .addClass('table__active');
+            .slideDown('slow', function() {
+                $(this).addClass('table__active');
+            });
+            
     });
 
     $('.table__head').on('click', '.li_nav_main', function() {
