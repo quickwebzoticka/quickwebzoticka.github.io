@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$('.table__main__nav').on('click', '.li_nav', function() {
+	$('.table__main__nav').on('click', '.li_nav:not("active")', function() {
         $(this)
             .addClass('active').siblings().removeClass('active')
             .closest('div.table__main__active')
