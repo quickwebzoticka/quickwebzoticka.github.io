@@ -190,62 +190,61 @@ p {
       .wrapper .main .table__body table th {
         text-align: center;
         vertical-align: top;
-        background: #f8eca5; }
+        background: #f8eca5;
+        padding: 5px 10px; }
         .wrapper .main .table__body table th:first-child {
           -webkit-border-radius: 10px 0 0 0;
                   border-radius: 10px 0 0 0; }
         .wrapper .main .table__body table th:last-child {
           -webkit-border-radius: 0 10px 0 0;
                   border-radius: 0 10px 0 0; }
-      .wrapper .main .table__body table tbody {
-        max-height: 300px;
-        overflow-y: scroll; }
-        .wrapper .main .table__body table tbody tr:nth-child(2n) {
-          background: #DDD; }
-        .wrapper .main .table__body table tbody tr td {
-          text-align: center;
-          font-weight: 700; }
-          .wrapper .main .table__body table tbody tr td:last-child {
-            color: #333;
-            position: relative; }
-            .wrapper .main .table__body table tbody tr td:last-child:hover .inner {
-              display: block; }
-          .wrapper .main .table__body table tbody tr td:first-child {
-            background: #f8eca5;
-            border-right: 1px solid #000; }
-          .wrapper .main .table__body table tbody tr td .inner {
-            display: none;
+      .wrapper .main .table__body table tbody tr:nth-child(2n) {
+        background: #DDD; }
+      .wrapper .main .table__body table tbody tr td {
+        text-align: center;
+        font-weight: 700;
+        padding: 5px 10px; }
+        .wrapper .main .table__body table tbody tr td:last-child {
+          color: #333;
+          position: relative; }
+          .wrapper .main .table__body table tbody tr td:last-child:hover .inner {
+            display: block; }
+        .wrapper .main .table__body table tbody tr td:first-child {
+          background: #f8eca5;
+          border-right: 1px solid #000; }
+        .wrapper .main .table__body table tbody tr td .inner {
+          display: none;
+          position: absolute;
+          width: 220px;
+          height: 170px;
+          background: #FFF;
+          border: 1px solid #000;
+          -webkit-box-shadow: 0px 5px 10px 0px #777;
+                  box-shadow: 0px 5px 10px 0px #777;
+          padding: 10px 5px 10px 15px;
+          z-index: 100;
+          text-align: left;
+          top: 0%;
+          left: 100%;
+          -webkit-border-radius: 5px;
+                  border-radius: 5px; }
+          .wrapper .main .table__body table tbody tr td .inner:before {
+            content: '';
             position: absolute;
-            width: 220px;
-            height: 170px;
+            width: 20px;
+            height: 20px;
             background: #FFF;
-            border: 1px solid #000;
-            -webkit-box-shadow: 0px 5px 10px 0px #777;
-                    box-shadow: 0px 5px 10px 0px #777;
-            padding: 10px 5px 10px 15px;
-            z-index: 100;
-            text-align: left;
-            top: 0%;
-            left: 100%;
-            -webkit-border-radius: 5px;
-                    border-radius: 5px; }
-            .wrapper .main .table__body table tbody tr td .inner:before {
-              content: '';
-              position: absolute;
-              width: 20px;
-              height: 20px;
-              background: #FFF;
-              -webkit-transform: rotate(45deg);
-                  -ms-transform: rotate(45deg);
-                      transform: rotate(45deg);
-              top: 11px;
-              left: -11px;
-              z-index: 110;
-              border-bottom: 1px solid #000;
-              border-left: 1px solid #000; }
-            .wrapper .main .table__body table tbody tr td .inner ul li {
-              list-style: none;
-              margin-bottom: 5px; }
+            -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+            top: 11px;
+            left: -11px;
+            z-index: 110;
+            border-bottom: 1px solid #000;
+            border-left: 1px solid #000; }
+          .wrapper .main .table__body table tbody tr td .inner ul li {
+            list-style: none;
+            margin-bottom: 5px; }
   .wrapper .main__mini-tables {
     padding: 40px 0; }
     .wrapper .main__mini-tables .main__row {
