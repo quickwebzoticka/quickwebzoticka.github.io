@@ -79,13 +79,70 @@ p {
       font-weight: 700;
       cursor: pointer; }
       .wrapper .main .table__head ul li:nth-child(2) {
-        margin: 0 20px; }
+        border-left: none;
+        border-right: none; }
   .wrapper .main .table__head .active {
     color: orange; }
   .wrapper .main .table__body {
     padding: 20px 0; }
     .wrapper .main .table__body .table__main {
       display: none; }
+      .wrapper .main .table__body .table__main .flex-wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        margin: 20px 0; }
+        .wrapper .main .table__body .table__main .flex-wrapper .category {
+          color: #333;
+          padding: 20px 15px;
+          width: 31%;
+          margin: 5px;
+          text-align: center;
+          font-size: 16px;
+          font-weight: 700;
+          background: #f8eca5;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer; }
+          .wrapper .main .table__body .table__main .flex-wrapper .category p {
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+          .wrapper .main .table__body .table__main .flex-wrapper .category:before {
+            content: '';
+            width: 100%;
+            height: 10px;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            background: orange;
+            -webkit-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s; }
+          .wrapper .main .table__body .table__main .flex-wrapper .category:last-child {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1 1 auto;
+                -ms-flex: 1 1 auto;
+                    flex: 1 1 auto; }
+          .wrapper .main .table__body .table__main .flex-wrapper .category:hover:before {
+            bottom: 0px; }
+          .wrapper .main .table__body .table__main .flex-wrapper .category:hover p {
+            -webkit-transform: translate(0, -10%);
+                -ms-transform: translate(0, -10%);
+                    transform: translate(0, -10%);
+            color: orange; }
       .wrapper .main .table__body .table__main .description {
         font-size: 16px; }
       .wrapper .main .table__body .table__main .table__main__nav ul {
