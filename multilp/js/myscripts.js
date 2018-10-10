@@ -26,4 +26,10 @@ $(document).ready(function() {
       $(this).siblings('.main-form__placeholder').removeClass('filled');
     };
   });
+  $('#modal-details').on('show.bs.modal', function(event) {
+    $('.wrapper').css('filter', 'blur(10px)');
+  });
+  $('#modal-details').on('hide.bs.modal', function(event) {
+    $('.wrapper').css('filter', 'unset');
+  });
 });

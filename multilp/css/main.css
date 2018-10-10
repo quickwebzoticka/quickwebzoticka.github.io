@@ -48,6 +48,11 @@ body {
 button, input, optgroup, select, textarea, label {
   font-family: 'Roboto Light'; }
 
+.wrapper {
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease; }
+
 .container {
   padding: 0; }
 
