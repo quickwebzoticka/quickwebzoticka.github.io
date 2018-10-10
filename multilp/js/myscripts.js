@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+  $('.main-form__input').mask('+7(999) 999 99 99');
 
   AOS.init({
     once: true

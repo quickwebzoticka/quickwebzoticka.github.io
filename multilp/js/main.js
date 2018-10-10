@@ -1,4 +1,8 @@
-function update_all(limiter) {
+var mainWidth = $(window).width();
+mainTabFirstMobView(mainWidth);
+mainTabSecondMobView(mainWidth);
+
+function update_all(limiter, width) {
     if (limiter === undefined){
         limiter = $(document)
     }
@@ -7,16 +11,7 @@ function update_all(limiter) {
     mainTabs();
     reviewsSLider();
     lendCarousel();
-}
-// $(document).ready(function () {
-//     $(document).on('click', '.faq-item-top-toggle', function(){
-//         $(this).toggleClass('active');
-//         $(this).parents('.faq-item').find('.faq-item__text').slideToggle();
-//         $(this).parents('.faq-item').toggleClass('active');
-//         return false;
-//     });
-//     update_all();
-// });
+};
 $(document).ready(function () {
     $(document).on('click', '.faq-item', function(){
         $(this).find('.faq-item-top-toggle').toggleClass('active');
@@ -33,8 +28,11 @@ function sliderWidthPaginationNumber(){
         arrows:false
     });
     slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        var itemLink = $(document).find('[data-slick-index='+nextSlide+']')[0];
+        var itemLink = $(document).find('[data-slick-index='+nextSlide+']')[0],
+            itemImg = $(document).find('.slider__right-side__item');
         $(document).find('.slider-main-controls-count__tec').html(nextSlide+1);
+        itemImg.removeClass('active');
+        itemImg.eq(nextSlide).addClass('active');
         $(document).find('.slider-main__but').attr('href',$(itemLink).attr('data-link'))
 
     });
@@ -126,8 +124,46 @@ function mainTabs() {
         $(this)
             .addClass('active').siblings().removeClass('active')
             .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
-    return false;
+        return false;
     });
+}
+function mainTabFirstMobView(mainWidth) {
+    if (mainWidth <= 480) {
+        var slider = $('.tabs-first .tabs__caption').slick({
+            dots: false,
+            arrows:false,
+            infinite: false
+        });
+        slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+          var tabs = $(this).find('.tabs-left-item');
+          var a = $(this).find('.slick-active');
+          var b;
+          tabs.removeClass('active');
+          a.addClass('active');
+
+          b = $(this).find('.tabs-left-item').siblings('.active').index('.tabs-first .tabs-left-item');
+          $('.tabs-first .tabs__content').removeClass('active').eq(b).addClass('active');
+        });
+    }
+}
+function mainTabSecondMobView(mainWidth) {
+    if (mainWidth <= 480) {
+        var slider = $('.tabs-second .tabs__caption').slick({
+            dots: false,
+            arrows:false,
+            infinite: false
+        });
+        slider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+          var tabs = $(this).find('.tabs-left-item');
+          var a = $(this).find('.slick-active');
+          var b;
+          tabs.removeClass('active');
+          a.addClass('active');
+
+          b = $(this).find('.tabs-left-item').siblings('.active').index('.tabs-second .tabs-left-item');
+          $('.tabs-second .tabs__content').removeClass('active').eq(b).addClass('active');
+        });
+    }
 }
 
 
