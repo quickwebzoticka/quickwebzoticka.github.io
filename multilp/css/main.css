@@ -827,6 +827,10 @@ a:hover {
         -ms-flex-align: center;
             align-items: center;
     padding-right: 50px; }
+    .tabs-left-item:last-child:before {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
   .tabs-left-item.active:before {
     right: 0px; }
   .tabs-left-item__number {
