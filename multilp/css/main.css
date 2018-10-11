@@ -53,6 +53,9 @@ button, input, optgroup, select, textarea, label {
   -o-transition: 0.3s ease;
   transition: 0.3s ease; }
 
+.lend-carousel {
+  margin-bottom: 180px; }
+
 .container {
   padding: 0; }
 
@@ -78,8 +81,10 @@ a {
 a.footer__text:visited {
   color: #999999; }
 
-.tabs-left-item:visited {
-  color: inherit; }
+.tabs-left-item {
+  cursor: pointer; }
+  .tabs-left-item:visited {
+    color: inherit; }
 
 .main-content {
   width: 100vw; }
