@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Персональная информация</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/csslib.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+	<div class="container lk">
+		<div class="link">
+			<a href="#">Главная страница</a>
+			<span class="arrow"> • </span>
+			<a href="index.html">Личный кабинет</a>
+			<span class="arrow"> • </span>
+			<span>Персональные данные</span>
+		</div>
+		<h1>Персональные данные</h1>
+		<nav>
+			<ul>
+				<li class="active"><a href="personal-data.html">Персональные данные</a></li>
+				<li><a href="profile-customers.html">Профили покупателя</a></li>
+				<li><a href="history-of-order.html">История заказов</a></li>
+				<li><a href="count.html">Личный счет</a></li>
+				<li><a href="buscket.html">Моя корзина</a></li>
+				<li><a href="subscribe.html">Подписка на рассылку</a></li>
+				<li><a href="partner-programm.html">Партнерская программа</a></li>
+			</ul>
+		</nav>
+		<div class="main__personal-data">
+			<div class="container">
+				<form action="">
+					<label>
+						<input type="text">
+						<span>ФИО</span>
+					</label>
+					<label>
+						<input type="text">
+						<span>E-mail</span>
+					</label>
+					<label>
+						<input type="text" class="input__mob">
+						<span>Мобильный телефон</span>
+					</label>
+					<label>
+						<input type="text">
+						<span>Город</span>
+					</label>
+					<label>
+						<input type="text" class="input__index">
+						<span>Почтовый индекс</span>
+					</label>
+					<label class="textarea">
+						<textarea></textarea>
+						<span>Адрес</span>
+					</label>
+					<div class="password">Изменить пароль</div>
+					<label>
+						<input type="password">
+						<span>Введите новый пароль</span>
+					</label>
+					<label>
+						<input type="password">
+						<span>Подтверждение пароля</span>
+					</label>
+					<div>
+						<input type="submit" value="Сохранить изменения" class="submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/myscripts.js"></script>
+	<script>
+		$('.input__mob').mask('+7(999) 999 99 99');
+	</script>
+</body>
+</html>

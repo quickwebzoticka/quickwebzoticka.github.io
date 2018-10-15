@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Подписка на рассылку</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/csslib.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+	<div class="container lk">
+		<div class="link">
+			<a href="#">Главная страница</a>
+			<span class="arrow"> • </span>
+			<a href="index.html">Личный кабинет</a>
+			<span class="arrow"> • </span>
+			<span>Подписка на рассылку</span>
+		</div>
+		<h1>Подписка на рассылку</h1>
+		<nav>
+			<ul>
+				<li><a href="personal-data.html">Персональные данные</a></li>
+				<li><a href="profile-customers.html">Профили покупателя</a></li>
+				<li><a href="history-of-order.html">История заказов</a></li>
+				<li><a href="count.html">Личный счет</a></li>
+				<li><a href="buscket.html">Моя корзина</a></li>
+				<li class="active"><a href="subscribe.html">Подписка на рассылку</a></li>
+				<li><a href="partner-programm.html">Партнерская программа</a></li>
+			</ul>
+		</nav>
+		<div class="main__subscribe">
+			<div class="subscribe__title">
+				Авторизация
+			</div>
+			<div class="subscribe__text">Адрес подписки будет принадлежать пользователю:	<span id="subscribe__text__name">Антон</span> <span id="subscribe__text__login">[anton16]</span></div>
+			<div class="subscribe__text">Вы можете <a href="#">закончить сеанс</a>, чтобы авторизоваться под другим пользователем.</div>
+			<div class="subscribe__title">
+				Настройки подписки
+			</div>
+			<div class="subscribe__settings">
+				<form action="">
+					<label class="settings__email">
+						<input type="text">
+						<span>Ваш E-mail*</span>
+					</label>
+					<div class="settings__head">Рубрики подписки*</div>
+					<div>
+						<label class="checkbox">
+							<input class="checkbox__check" type="checkbox">
+							<div class="checkbox__square">
+								<svg>
+								  <rect />
+								</svg>
+							</div>
+							<span>Новости магазина</span>
+						</label>
+					</div>
+					<div class="settings__head">Предпочтительный формат</div>
+					<label class="radio">
+						<input type="radio" name="format" value="text" checked>
+						<div class="radio__circle"></div>
+						<span>Текст</span>
+					</label>
+					<label class="radio">
+						<input type="radio" name="format" value="html">
+						<div class="radio__circle"></div>
+						<span>HTML</span>
+					</label>
+					<div class="description">
+						После добавления или изменения адреса подписки вам будет выслан код подтверждения.<br><br>
+						Подписка будет не активной до ввода кода подтверждения.
+					</div>
+					<div class="description__mini">
+						* Поля, обязательные для заполнения.
+					</div>
+					<div class="settings__footer">
+						<input type="submit" name="Save" value="Добавить"><input type="reset" name="reset" value="Сбросить" class="reset">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/myscripts.js"></script>
+</body>
+</html>
