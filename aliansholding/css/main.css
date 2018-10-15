@@ -144,7 +144,7 @@ p {
       height: 300px;
       width: 20%;
       margin: 5px;
-      background: #DDD;
+      background: #999;
       position: relative;
       overflow: hidden;
       cursor: pointer;
@@ -200,29 +200,15 @@ p {
             -webkit-transition: 0.3s ease;
             -o-transition: 0.3s ease;
             transition: 0.3s ease; }
-      .lk .main .flex-wrapper .flex-item:after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 10%;
-        background: #ff9601;
-        bottom: -10%;
-        right: 0;
-        z-index: 1;
-        -webkit-transition: 0.3s ease;
-        -o-transition: 0.3s ease;
-        transition: 0.3s ease; }
-      .lk .main .flex-wrapper .flex-item:hover:after {
-        bottom: 0; }
       .lk .main .flex-wrapper .flex-item:hover .content p {
         -webkit-transform: translate(0, -10px);
             -ms-transform: translate(0, -10px);
                 transform: translate(0, -10px);
-        color: #ff9601; }
+        color: #FFF; }
       .lk .main .flex-wrapper .flex-item:hover .content svg path {
-        fill: #ff9601; }
+        fill: #FFF; }
       .lk .main .flex-wrapper .flex-item:hover .content svg polygon {
-        fill: #ff9601; }
+        fill: #FFF; }
 
 .lk .main__personal-data form {
   display: block;
