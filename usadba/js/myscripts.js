@@ -2,7 +2,7 @@ $(document).ready(function() {
   $.fn.maphilight.defaults = {
     fill: true,
     fillColor: '0000FF',
-    fillOpacity: 0.4,
+    fillOpacity: 0.7,
     stroke: true,
     strokeColor: 'ffffff',
     strokeOpacity: 1,
@@ -22,4 +22,23 @@ $(document).ready(function() {
     shadowFrom: true
   };
   $('.foo').maphilight();
+  AOS.init({
+    once: true
+  });
+  $('area').hover(function() {
+      $('.head').addClass('blacked');
+      $('.foo').addClass('blacked');
+  }, function() {
+      $('.head').removeClass('blacked');
+      $('.foo').removeClass('blacked');
+  });
+    $('.tooltip').tooltipster({
+        animation: 'fade',
+        delay: 0,
+        plugins: ['follower']
+    });
+  // function(){
+  //   var id_res=$(this).attr('id-res');
+  //   var area=$(document).find('area[id-res="'+id_res+'"]');area.parent().tooltipster('open');
+  // }
 });
