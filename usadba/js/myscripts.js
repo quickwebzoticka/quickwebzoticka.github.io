@@ -2,7 +2,7 @@ $(document).ready(function() {
   $.fn.maphilight.defaults = {
     fill: true,
     fillColor: '0000FF',
-    fillOpacity: 0.7,
+    fillOpacity: 0.3,
     stroke: true,
     strokeColor: 'ffffff',
     strokeOpacity: 1,
