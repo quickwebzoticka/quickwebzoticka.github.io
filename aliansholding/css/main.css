@@ -210,6 +210,39 @@ p {
       .lk .main .flex-wrapper .flex-item:hover .content svg polygon {
         fill: #FFF; }
 
+.lk .main__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: top;
+  -webkit-align-items: top;
+      -ms-flex-align: top;
+          align-items: top; }
+  .lk .main__wrapper .advert {
+    width: 250px;
+    background: #777;
+    height: 500px; }
+  .lk .main__wrapper .content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding: 0 15px; }
+
+.lk .advert-top-block {
+  display: block;
+  background: #777;
+  text-align: center;
+  height: 80px;
+  padding: 30px;
+  color: #FFF;
+  margin-bottom: 40px; }
+
 .lk .main__personal-data form {
   display: block;
   width: 50%;
@@ -620,7 +653,7 @@ p {
       font-size: 12px;
       color: #999; }
     .lk .main__subscribe form .settings__footer input {
-      width: 200px;
+      width: 45%;
       height: 50px;
       background: #ff9601;
       border: none;
