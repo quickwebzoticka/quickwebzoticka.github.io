@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #f3f3f3; }
+
+.wrapper {
+  max-width: 690px;
+  margin: 100px auto;
+  background: #FFF;
+  font-family: 'PT Sans', sans-serif;
+  color: #467490;
+  font-size: 15px;
+  font-weight: 700; }
+  .wrapper .dentmir-module .p_head {
+    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid #EDEDED; }
+  .wrapper .dentmir-module .module__service {
+    border-bottom: 1px solid #EDEDED;
+    border-right: 1px solid #EDEDED;
+    border-left: 1px solid #EDEDED;
+    padding: 10px 0; }
+  .wrapper .dentmir-module .service__title {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px;
+    cursor: pointer; }
+  .wrapper .dentmir-module .service__desc {
+    padding: 10px 20px;
+    display: none; }
+    .wrapper .dentmir-module .service__desc button {
+      height: 29px;
+      width: 138px;
+      background: #5C99BE;
+      -webkit-border-radius: 50px;
+              border-radius: 50px;
+      color: #FFF;
+      font-size: 12px;
+      border: none;
+      font-weight: 500;
+      outline: none; }
+  .wrapper .dentmir-module .service__desc__text {
+    color: #7F7F7F;
+    max-width: 387px;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 20px; }
