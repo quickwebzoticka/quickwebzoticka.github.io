@@ -36,22 +36,28 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 20px;
-    cursor: pointer; }
+    padding: 20px; }
   .wrapper .dentmir-module .service__desc {
-    padding: 10px 20px;
-    display: none; }
+    padding: 10px 20px; }
     .wrapper .dentmir-module .service__desc button {
       height: 29px;
       width: 138px;
       background: #5C99BE;
       -webkit-border-radius: 50px;
               border-radius: 50px;
+      border: 1px solid transparent;
       color: #FFF;
       font-size: 12px;
       border: none;
       font-weight: 500;
-      outline: none; }
+      outline: none;
+      -webkit-transition: 0.3s ease;
+      -o-transition: 0.3s ease;
+      transition: 0.3s ease; }
+      .wrapper .dentmir-module .service__desc button:hover {
+        border: 1px solid #5C99BE;
+        color: #5C99BE;
+        background: transparent; }
   .wrapper .dentmir-module .service__desc__text {
     color: #7F7F7F;
     max-width: 387px;
