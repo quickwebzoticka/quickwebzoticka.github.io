@@ -23,6 +23,8 @@ body {
     border-right: 1px solid #EDEDED;
     border-left: 1px solid #EDEDED;
     padding: 10px 0; }
+    .wrapper .dentmir-module .module__service:nth-child(even) {
+      background: #F1FAFE; }
   .wrapper .dentmir-module .service__title {
     display: -webkit-box;
     display: -webkit-flex;
@@ -38,30 +40,62 @@ body {
             align-items: center;
     padding: 20px; }
   .wrapper .dentmir-module .service__desc {
-    padding: 10px 20px; }
+    padding: 10px 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
     .wrapper .dentmir-module .service__desc button {
       height: 29px;
       width: 138px;
-      background: #5C99BE;
       -webkit-border-radius: 50px;
               border-radius: 50px;
-      border: 1px solid transparent;
-      color: #FFF;
+      color: #5C99BE;
+      border: 1px solid #5C99BE;
+      background: transparent;
       font-size: 12px;
-      border: none;
       font-weight: 500;
       outline: none;
       -webkit-transition: 0.3s ease;
       -o-transition: 0.3s ease;
       transition: 0.3s ease; }
       .wrapper .dentmir-module .service__desc button:hover {
-        border: 1px solid #5C99BE;
-        color: #5C99BE;
-        background: transparent; }
+        color: #FFF;
+        border: 1px solid transparent;
+        background: #5C99BE; }
   .wrapper .dentmir-module .service__desc__text {
     color: #7F7F7F;
     max-width: 387px;
     line-height: 16px;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 500; }
+
+@media screen and (max-width: 768px) {
+  .wrapper .dentmir-module .service__desc {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .wrapper .dentmir-module .service__desc__text {
     margin-bottom: 20px; }
+  .wrapper .dentmir-module .service__title {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .wrapper .dentmir-module .service__title div {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1;
+          -ms-flex: 1 1;
+              flex: 1 1; }
+      .wrapper .dentmir-module .service__title div:nth-child(2) {
+        text-align: right; } }
