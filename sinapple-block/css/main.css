@@ -36,7 +36,7 @@ body {
     position: absolute;
     z-index: 100;
     padding: 8px 20px;
-    width: 242px;
+    width: 255px;
     height: 168px;
     background: #FFF;
     left: -75%;
@@ -77,7 +77,7 @@ body {
     margin-bottom: 10px; }
 
 .modal-content {
-  width: 300px;
+  width: 280px;
   margin: auto auto; }
 
 .modal-body {
@@ -104,7 +104,7 @@ body {
       height: 50%; }
   .modal-body .terms__description {
     display: block;
-    padding: 8px 20px;
+    padding: 8px 5px;
     background: #FFF; }
   .modal-body .desc__main {
     padding: 10px 0; }
@@ -112,13 +112,8 @@ body {
       list-style: inside; }
   .modal-body .desc__footer a {
     color: inherit;
-    display: block;
     outline: none;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 1px solid #e5e5e5;
-    padding: 10px 5px;
-    margin-top: 20px;}
+    text-decoration: none; }
     .modal-body .desc__footer a span {
       font-weight: 700;
       color: #7e394d; }
