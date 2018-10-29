@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../fonts/Ubuntu-Medium.ttf);
+  font-weight: 500;
+  font-style: normal; }
+
+.wrapper {
+  width: 916px;
+  margin: 100px auto;
+  position: relative; }
+
+.block-slider {
+  height: 320px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFF; }
+  .block-slider .block-slide {
+    background: url(../img/1.png) no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+    padding: 89px;
+    height: 320px; }
+    .block-slider .block-slide__title {
+      font-size: 30px;
+      line-height: 33px;
+      width: 215px;
+      margin-bottom: 20px; }
+    .block-slider .block-slide__btn {
+      background: #AA5761;
+      border: none;
+      height: 43px;
+      width: 163px;
+      margin-right: 15px;
+      outline: none; }
+    .block-slider .block-slide__btn-1 {
+      width: 88px;
+      background: #B0C3CA;
+      border: none;
+      height: 43px;
+      outline: none; }
+
+.block-slider__arrow-next {
+  background: #FFF;
+  height: 45px;
+  width: 45px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  z-index: 1000;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+  .block-slider__arrow-next svg {
+    -webkit-transform: translate(10%, 0);
+        -ms-transform: translate(10%, 0);
+            transform: translate(10%, 0);
+    width: 50%;
+    height: 50%;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease; }
+    .block-slider__arrow-next svg:hover {
+      -webkit-transform: translate(20%, 0);
+          -ms-transform: translate(20%, 0);
+              transform: translate(20%, 0); }
+
+.block-slider__arrow-prev {
+  background: #FFF;
+  height: 45px;
+  width: 45px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  z-index: 1000;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%); }
+  .block-slider__arrow-prev svg {
+    -webkit-transform: translate(-10%, 0);
+        -ms-transform: translate(-10%, 0);
+            transform: translate(-10%, 0);
+    width: 50%;
+    height: 50%;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease; }
+    .block-slider__arrow-prev svg:hover {
+      -webkit-transform: translate(-20%, 0);
+          -ms-transform: translate(-20%, 0);
+              transform: translate(-20%, 0); }
