@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Партнерская программа</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/csslib.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+	<div class="container lk">
+		<div class="link">
+			<a href="#">Главная страница</a>
+			<span class="arrow"> • </span>
+			<a href="index.html">Личный кабинет</a>
+			<span class="arrow"> • </span>
+			<span>Партнерская программа</span>
+		</div>
+		<h1>Партнерская программа</h1>
+		<nav>
+			<ul>
+				<li><a href="personal-data.html">Персональные данные</a></li>
+				<li><a href="profile-customers.html">Профили покупателя</a></li>
+				<li><a href="history-of-order.html">История заказов</a></li>
+				<li><a href="count.html">Личный счет</a></li>
+				<li><a href="buscket.html">Моя корзина</a></li>
+				<li><a href="subscribe.html">Подписка на рассылку</a></li>
+				<li class="active"><a href="partner-programm.html">Партнерская программа</a></li>
+			</ul>
+		</nav>
+		<div class="main__wrapper">
+			<div class="advert"></div>
+			<div class="content">
+				<div class="main__partner-programm main__partner-programm-otchet">
+					<div class="partner-programm-otchet__wrapper">
+						<div class="left-side">
+							<div class="top__nav">
+								<a href="partner-programm.html">Вернуться на техническую страницу</a>
+							</div>
+							<div class="p_description">
+								<div class="description_head">400 от заявки</div>
+								<div class="description_text">Комиссия аффилиата: 400 руб.</div>
+							</div>
+							<div class="p_description">
+								<div class="description_head">5%</div>
+								<div class="description_text">Комиссия аффилиата: 5%</div>
+								<div class="description_text">Для получения этого плана необходимо продать не менее 1 товаров
+								</div>
+							</div>
+						</div>
+						<div class="right-side">
+							<div class="diagramm-wrapper">
+								<div id="donut-diagramm" data-firstval="35" data-secondval="31" data-thirdval="33"></div>
+							</div>
+						</div>
+					</div>
+					<div class="partner-programm__filter">
+						<div class="filter__top_nav">
+							<form method="GET" action="/affiliate/sales-report.php" name="bfilter_1218">
+								<div class="filter__title">Фильтр по периоду</div>
+								<div class="filter__choose-bar">
+									<div class="choose-bar__name">Период:</div>
+									<input type="text" id="filter_date_from" name="filter_date_from" value="01.07.2018" class="filter__input">
+									<img src="//opt-1237571.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/images/calendar-icon.gif?1515668314238" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'filter_date_from', form: 'bfilter_1218', bTime: false, currentTime: '1540393639', bHideTime: false});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
+									<span class="date-interval-hellip">…</span>
+									<input type="text" id="filter_date_to" name="filter_date_to" value="25.10.2018" class="filter__input">
+									<img src="//opt-1237571.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/images/calendar-icon.gif?1515668314238" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'filter_date_to', form: 'bfilter_1218', bTime: false, currentTime: '1540393639', bHideTime: false});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
+								</div>
+								<div class="filter__bottom">
+									<input type="submit" name="filter" value="Установить">
+									<input type="submit" name="del_filter" value="Сбросить">
+								</div>
+							</form>
+						</div>
+						<div class="filter__result">
+							<table class="data-table">
+								<thead>
+									<tr>
+										<td>Дата</td>
+										<td>Приход</td>
+										<td>Расход</td>
+										<td>Комментарий</td>
+									</tr>
+								</thead>
+								<tbody>
+												<tr>
+											<td>24.09.2018 19:37:10</td>
+											<td>12 720.51 руб.</td>
+											<td></td>
+											<td>Начисление</td>
+										</tr>
+														<tr>
+											<td>24.10.2018 13:20:35</td>
+											<td>83.66 руб.</td>
+											<td></td>
+											<td>Начисление</td>
+										</tr>
+												</tbody>
+								<tfoot>
+								<tr>
+									<td>На счете на 24.10.2018</td>
+									<td>12 804.17 руб.</td>
+									<td></td>
+									<td>&nbsp;</td>
+								</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+					<div class="partner-programm__filter">
+						<div class="filter__top_nav">
+							<form method="GET" action="/affiliate/sales-report.php" name="bfilter_1218">
+								<div class="filter__title">Фильтр по периоду</div>
+								<div class="filter__choose-bar">
+									<div class="choose-bar__name">Период:</div>
+										<input type="text" id="filter_date_from" name="filter_date_from" value="01.07.2018" class="filter__input">
+										<img src="//opt-1237571.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/images/calendar-icon.gif?1515668314238" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'filter_date_from', form: 'bfilter_1218', bTime: false, currentTime: '1540393639', bHideTime: false});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
+										<span class="date-interval-hellip">…</span>
+										<input type="text" id="filter_date_to" name="filter_date_to" value="25.10.2018" class="filter__input">
+										<img src="//opt-1237571.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/images/calendar-icon.gif?1515668314238" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'filter_date_to', form: 'bfilter_1218', bTime: false, currentTime: '1540393639', bHideTime: false});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
+								</div>
+								<div class="filter__bottom">
+									<input type="submit" name="filter" value="Установить">
+									<input type="submit" name="del_filter" value="Сбросить">
+								</div>
+							</form>
+						</div>
+						<div class="filter__result">
+							<table class="data-table">
+		<thead>
+			<tr>
+				<td>Название</td>
+				<td>Количество</td>
+				<td>На сумму</td>
+			</tr>
+		</thead>
+					<tbody>
+							<tr>
+					<td>Panasonic CU-2E18PBD/CS-E9RKDW*2шт</td>
+					<td>2</td>
+					<td>221 047.20 руб.</td>
+				</tr>
+								<tr>
+					<td>Roda RUI-2M14BB</td>
+					<td>1</td>
+					<td>32 917.50 руб.</td>
+				</tr>
+								<tr>
+					<td>Конвекторы серии Атлет ZHC-A с механическим управлением</td>
+					<td>1</td>
+					<td>1 673.10 руб.</td>
+				</tr>
+								<tr>
+					<td>Нагреватель дренажный 0.5 м + 1м 15 Вт</td>
+					<td>1</td>
+					<td>445.50 руб.</td>
+				</tr>
+							</tbody>
+			<tfoot>
+				<tr>
+					<td>Итого</td>
+					<td>5</td>
+					<td>256 083.30 руб.</td>
+				</tr>
+			</tfoot>
+				</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<script src="js/morris.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/myscripts.js"></script>
+	<script>
+		var var1 = $('#donut-diagramm').data('firstval'),
+		var2 = $('#donut-diagramm').data('secondval'),
+		var3 = $('#donut-diagramm').data('thirdval');
+
+		new Morris.Donut({
+		  element: 'donut-diagramm',
+		  resize: true,
+		  colors: ['#ff9601', '#ffab34', '#ffc067'],
+		  formatter: function(y, data) {
+		  	return y + '%';
+		  },
+		  data: [
+		    {label: "Скидки", value: var1},
+		    {label: "Скидочки", value: var2},
+		    {label: "Скидосики", value: var3}
+		  ]
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Партнерская программа</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/csslib.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+	<div class="container lk">
+		<div class="link">
+			<a href="#">Главная страница</a>
+			<span class="arrow"> • </span>
+			<a href="index.html">Личный кабинет</a>
+			<span class="arrow"> • </span>
+			<span>Партнерская программа</span>
+		</div>
+		<h1>Партнерская программа</h1>
+		<nav>
+			<ul>
+				<li><a href="personal-data.html">Персональные данные</a></li>
+				<li><a href="profile-customers.html">Профили покупателя</a></li>
+				<li><a href="history-of-order.html">История заказов</a></li>
+				<li><a href="count.html">Личный счет</a></li>
+				<li><a href="buscket.html">Моя корзина</a></li>
+				<li><a href="subscribe.html">Подписка на рассылку</a></li>
+				<li class="active"><a href="partner-programm.html">Партнерская программа</a></li>
+			</ul>
+		</nav>
+		<div class="main__wrapper">
+			<div class="advert"></div>
+			<div class="content">
+				<div class="main__partner-programm main__partner-programm-otchet">
+					<div class="top__nav">
+						<a href="partner-programm.html">Вернуться на техническую страницу</a>
+					</div>
+					<div class="partner-programm__filter">
+						<div class="filter__top_nav">
+							<form method="GET" action="/affiliate/sales-report.php" name="bfilter_1218">
+								<div class="filter__title">Фильтр по периоду</div>
+								<div class="filter__choose-bar">
+									<div class="choose-bar__name">Период:</div>
+									<input type="text" id="filter_date_from" name="filter_date_from" value="01.07.2018" class="filter__input">
+									<img src="//opt-1237571.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/images/calendar-icon.gif?1515668314238" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'filter_date_from', form: 'bfilter_1218', bTime: false, currentTime: '1540393639', bHideTime: false});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
+									<span class="date-interval-hellip">…</span>
+									<input type="text" id="filter_date_to" name="filter_date_to" value="25.10.2018" class="filter__input">
+									<img src="//opt-1237571.ssl.1c-bitrix-cdn.ru/bitrix/js/main/core/images/calendar-icon.gif?1515668314238" alt="Выбрать дату в календаре" class="calendar-icon" onclick="BX.calendar({node:this, field:'filter_date_to', form: 'bfilter_1218', bTime: false, currentTime: '1540393639', bHideTime: false});" onmouseover="BX.addClass(this, 'calendar-icon-hover');" onmouseout="BX.removeClass(this, 'calendar-icon-hover');" border="0">
+								</div>
+								<div class="filter__bottom">
+									<input type="submit" name="filter" value="Установить">
+									<input type="submit" name="del_filter" value="Сбросить">
+								</div>
+							</form>
+						</div>
+						<div class="filter__result">
+							<table class="data-table">
+								<thead>
+									<tr>
+										<td>Дата</td>
+										<td>Приход</td>
+										<td>Расход</td>
+										<td>Комментарий</td>
+									</tr>
+								</thead>
+								<tbody>
+												<tr>
+											<td>24.09.2018 19:37:10</td>
+											<td>12 720.51 руб.</td>
+											<td></td>
+											<td>Начисление</td>
+										</tr>
+														<tr>
+											<td>24.10.2018 13:20:35</td>
+											<td>83.66 руб.</td>
+											<td></td>
+											<td>Начисление</td>
+										</tr>
+												</tbody>
+								<tfoot>
+								<tr>
+									<td>На счете на 24.10.2018</td>
+									<td>12 804.17 руб.</td>
+									<td></td>
+									<td>&nbsp;</td>
+								</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/myscripts.js"></script>
+</body>
+</html>
