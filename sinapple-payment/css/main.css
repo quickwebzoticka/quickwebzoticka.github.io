@@ -193,8 +193,22 @@ input[type='text'] {
   -webkit-background-size: 100% 100%;
           background-size: 100%; }
 
+.card__front__logo-name {
+  position: absolute;
+  width: 97%;
+  height: 97%;
+  z-index: -2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  -webkit-background-size: 100% 100%;
+          background-size: 100%;
+}
+
 .input__number {
-  width: 100%; }
+  width: 100%;
+  background: rgba(255,255,255,0.7) }
 
 .input__name {
   margin: 20px 0;

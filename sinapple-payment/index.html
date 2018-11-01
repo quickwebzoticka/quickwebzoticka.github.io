@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Sinapple | payment</title>
+	<title>Template</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -64,6 +64,7 @@
 						<div class="card__f-and-b">
 							<div class="card__front" id="card__front">
 								<div class="card__front__logo" id="card__front__logo"></div>
+								<div class="card__front__logo-name" id="card__front__logo-name"></div>
 								<input type="text" name="number" class="input__number" id="input__number" placeholder="Введите номер карты">
 								<input type="text" name="name" class="input__name" placeholder="Введите имя">
 								<div class="card__front__date">
@@ -153,6 +154,7 @@
 		var background = document.getElementById('card__front');
 		var backgroundBack = document.getElementById('card__back');
 		var logo = document.getElementById('card__front__logo');
+		var logoBank = document.getElementById('card__front__logo-name');
 
 		CardInfo.setDefaultOptions({
 		  banksLogosPath: '../img/banks-logos/',
@@ -167,6 +169,8 @@
 				background.style.background = cardInfo.backgroundColors[0];
 				backgroundBack.style.background = cardInfo.backgroundColors[1];
 				logo.style.background = 'url(img/' + cardInfo.brandLogoPng + ') no-repeat bottom right';
+				logoBank.style.background = 'url(img/' + cardInfo.bankLogoPng + ') no-repeat top center';
+				logoBank.style.backgroundSize = '100%';
 			}
 			
 		});
