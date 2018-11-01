@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sinapple | payment</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+	<div class="wrapper">
+		<header class="header">
+			<a href="/" class="back__a">
+				<div class="back__img">
+					<svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M15.3537 5.37064H0.646312C0.289375 5.37064 0 5.65242 0 6C0 6.34761 0.289375 6.62937 0.646312 6.62937H15.3537C15.7107 6.62937 16 6.34761 16 6C16 5.65242 15.7107 5.37064 15.3537 5.37064Z" fill="#999999"/>
+					<path d="M1.56061 6L6.61883 1.07438C6.87124 0.828595 6.87124 0.430106 6.61883 0.184318C6.36642 -0.0614393 5.95721 -0.0614393 5.7048 0.184318L0.189549 5.55495C-0.0628574 5.80074 -0.0628574 6.19923 0.189549 6.44502L5.7048 11.8157C5.83099 11.9386 5.99642 12 6.16183 12C6.32724 12 6.49267 11.9386 6.61886 11.8157C6.87127 11.5699 6.87127 11.1714 6.61886 10.9256L1.56061 6Z" fill="#999999"/>
+					</svg>
+				</div>
+				<span class="back__text">Вернуться к покупкам</span>
+			</a>
+			<div class="logo">
+				<a href="/">
+					<img src="img/logo.png" alt="logo">
+				</a>
+			</div>
+		</header>
+		<div class="main">
+			<div class="main__head">
+				Онлайн оплата
+			</div>
+			<div class="main__cards">
+				<img src="img/card-1.png" alt="card">
+				<img src="img/card-2.png" alt="card">
+				<img src="img/card-3.png" alt="card">
+			</div>
+			<div class="main__big-card">
+				<div class="main__card">
+					<form action="" method="post">
+						<div class="card__top">
+							<div class="top__left-text">
+								Оплата: <span class="top__left-text__rubs">3450</span>,<span class="top__left-text__cops">00</span> ₽
+							</div>
+							<div class="top__right-text">
+								<div class="top__right-text__img">
+									<svg width="21" height="25" viewBox="0 0 21 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M17.9073 9.31157V6.71296C17.9073 3.01157 14.5841 0 10.4999 0C6.41562 0 3.09247 3.01157 3.09247 6.71296V9.31157C1.51794 9.58287 0.314697 10.9551 0.314697 12.6065V21.6537C0.314697 23.4986 1.81609 25 3.66146 25H17.3383C19.1837 25 20.6851 23.4986 20.6851 21.6532V12.606C20.6851 10.9551 19.4818 9.58287 17.9073 9.31157ZM4.0184 6.71296C4.0184 3.52176 6.92581 0.925926 10.4999 0.925926C14.074 0.925926 16.9814 3.52176 16.9814 6.71296V9.25926H4.0184V6.71296ZM19.7591 21.6532C19.7591 22.988 18.673 24.0741 17.3383 24.0741H3.66146C2.32673 24.0741 1.24062 22.988 1.24062 21.6532V12.606C1.24062 11.2713 2.32673 10.1852 3.66146 10.1852H17.3383C18.673 10.1852 19.7591 11.2713 19.7591 12.606V21.6532Z" fill="#767676"/>
+										<path d="M10.4998 12.963C9.4785 12.963 8.64795 13.7935 8.64795 14.8148V17.5926C8.64795 18.6139 9.4785 19.4444 10.4998 19.4444C11.5211 19.4444 12.3517 18.6139 12.3517 17.5926V14.8148C12.3517 13.7935 11.5211 12.963 10.4998 12.963ZM11.4257 17.5926C11.4257 18.1032 11.0104 18.5185 10.4998 18.5185C9.98915 18.5185 9.57387 18.1032 9.57387 17.5926V14.8148C9.57387 14.3042 9.98915 13.8889 10.4998 13.8889C11.0104 13.8889 11.4257 14.3042 11.4257 14.8148V17.5926Z" fill="#767676"/>
+									</svg>
+								</div>
+								<div class="top__right-text__text">
+									Безопасное<br>соединение
+								</div>
+							</div>
+						</div>
+						<div class="card__top__sub-text">
+							<div class="sub-text__shop">
+								Магазин: Sinapple
+							</div>
+							<div class="sub-text__order">
+								Номер заказа: <span class="order-number">1234567886</span>
+							</div>
+						</div>
+						<div class="card__f-and-b">
+							<div class="card__front" id="card__front">
+								<div class="card__front__logo" id="card__front__logo"></div>
+								<input type="text" name="number" class="input__number" id="input__number" placeholder="Введите номер карты">
+								<input type="text" name="name" class="input__name" placeholder="Введите имя">
+								<div class="card__front__date">
+									<input type="text" name="month" class="input__month" placeholder="Месяц">
+									<div class="date__dash">
+										<svg width="13" height="29" viewBox="0 0 13 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10.15 0.739998H12.1L2.2 29H0.25L10.15 0.739998Z" fill="#909090"/>
+										</svg>
+									</div>
+									<input type="text" name="year" class="input__year" placeholder="Год">
+								</div>
+							</div>
+							<div class="card__back" id="card__back">
+								<div class="back__line">
+									<svg height="60" viewBox="0 0 500 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect width="500px" height="60" fill="#CCCCCC"/>
+									</svg>
+								</div>
+								<div class="back__input">
+									<div class="input__lines">
+										<svg width="129" height="60" viewBox="0 0 129 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M114.501 0L128.001 1.66642e-05L74.0005 60H60.5005L114.501 0Z" fill="#DCDBDB"/>
+											<path d="M84.501 0L98.0012 1.66642e-05L44.0005 60H30.5005L84.501 0Z" fill="#DCDBDB"/>
+											<path d="M54.501 0L68.0012 1.66642e-05L14.0005 60H0.500488L54.501 0Z" fill="#DCDBDB"/>
+										</svg>
+									</div>
+									<input type="text" name="CVV" class="input__cvv" placeholder="CVV/CVC">
+								</div>
+								<div class="back__faq">
+									<a href="#">Что это?</a>
+								</div>
+							</div>
+						</div>
+						<div class="card__wrapper-btn">
+							<label class="checkbox">
+								<input class="checkbox__check" type="checkbox">
+								<div class="checkbox__square">
+									<svg>
+									  <rect />
+									</svg>
+								</div>
+								<span>Получать квитанцию на эл. почту</span>
+							</label>
+							<button class="card__btn">Оплатить</button>
+						</div>
+						<div class="card__footer-desc">
+							Кнопка «Оплатить» направит на страницу Вашего банка для подтверждения оплаты.
+						</div>
+					</form>
+				</div>
+				<div class="main__description">
+					<div class="description__top-img">
+						<img src="img/yandex-kassa.png" alt="ya-kassa">
+					</div>
+					<div class="description__text">
+						Эта транзакция обрабатывается сервисом «Яндекс.Касса»
+					</div>
+					<div class="description__bottom-img">
+						<img src="img/SSL.png" alt="SSL">
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer__text">
+					<div class="footer__head">
+						Москва
+					</div>
+					<a href="tel:+74950000000">+7 495 000 00 00</a>
+				</div>
+				<div class="footer__text">
+					<div class="footer__head">
+						Вся Россия
+					</div>
+					<a href="tel:88000000000">8 800 000 00 00</a>
+				</div>				
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://static.yandex.net/checkout/ui/v1/"></script>
+	<script src="js/card-info.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/myscripts.js"></script>
+	<script>
+		var number = document.getElementById('input__number');
+		var cardInfo;
+		var background = document.getElementById('card__front');
+		var backgroundBack = document.getElementById('card__back');
+		var logo = document.getElementById('card__front__logo');
+
+		CardInfo.setDefaultOptions({
+		  banksLogosPath: '../img/banks-logos/',
+		  brandsLogosPath: '../img/brands-logos/'
+		});
+
+		number.addEventListener('keyup', function(){
+			var a = number.value;
+			cardInfo = new CardInfo(a);
+			console.log(cardInfo.brandLogoPng);
+			if (cardInfo.backgroundColor.length > 0) {
+				background.style.background = cardInfo.backgroundColors[0];
+				backgroundBack.style.background = cardInfo.backgroundColors[1];
+				logo.style.background = 'url(img/' + cardInfo.brandLogoPng + ') no-repeat bottom right';
+			}
+			
+		});
+		// var cardInfo = new CardInfo(number)
+	</script>	
+</body>
+</html>
