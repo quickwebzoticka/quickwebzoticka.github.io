@@ -19,7 +19,7 @@ body {
 
 input[type='text'] {
   height: 60px;
-  background: rgba(255,255,255,0.9);
+  background: #FFF;
   border: 1px solid #E5E5E5;
   padding: 20px;
   outline: none; }
@@ -208,7 +208,7 @@ input[type='text'] {
 
 .input__number {
   width: 100%;
-  background: rgba(255,255,255,0.7) }
+  background: rgba(255,255,255,0.9) }
 
 .input__name {
   margin: 20px 0;
