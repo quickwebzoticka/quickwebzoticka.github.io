@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.second-screen-main-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.second-screen-main-right-item {
+  margin-right: 20px; }
+  .second-screen-main-right-item:last-child {
+    margin-right: 0px; }
+
+.third-screen .second-screen-main-left {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 40px; }
+
+.fourth-screen .second-screen-main-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1;
+      -ms-flex: 1 1;
+          flex: 1 1; }
+  .fourth-screen .second-screen-main-left .second-screen-main-left__wrapper {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  .fourth-screen .second-screen-main-left .second-screen-main-left-advanced {
+    margin-right: 80px; }
+  .fourth-screen .second-screen-main-left .second-screen-main-left-advanced-item {
+    margin-top: 0px;
+    margin-bottom: 30px; }
+
+.first-screen-top-logo__img__mob {
+  display: none; }
+
+@media screen and (max-width: 1200px) {
+  .first-screen-top {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .first-screen-top-logo__img__mob {
+    display: block; }
+  .first-screen-title .first-screen-top-logo__img {
+    display: none; }
+  .first-screen-subtitle {
+    display: none; }
+  .second-screen {
+    background: url(../img/head-logo-white.png) no-repeat;
+    background-position: 50% 20%;
+    background-color: #000;
+    display: none; }
+  .second-screen-top-logoPoselka {
+    display: none; }
+  .second-screen-top-titlePoselka {
+    margin-left: 0px;
+    text-align: center;
+    font-size: 18px; }
+  .second-screen-top {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .second-screen-main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .third-screen {
+    display: block; }
+    .third-screen .second-screen-main-left {
+      -webkit-box-ordinal-group: 1;
+      -webkit-order: 0;
+          -ms-flex-order: 0;
+              order: 0;
+      padding: 15px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .third-screen .second-screen-main-left__wrapper-mob {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 100px;
+          -ms-flex: 0 1 100px;
+              flex: 0 1 100px; }
+    .third-screen .second-screen-main-left-advanced-item {
+      margin-top: 0px;
+      margin-bottom: 20px; }
+  .second-screen-main-left {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 15px; }
+  .fourth-screen {
+    display: block; }
+    .fourth-screen .second-screen-main-left .second-screen-main-left-advanced {
+      margin-right: 0px; }
+    .fourth-screen .second-screen-main-left {
+      -webkit-box-ordinal-group: 1;
+      -webkit-order: 0;
+          -ms-flex-order: 0;
+              order: 0;
+      padding: 15px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .fourth-screen .second-screen-main-left__wrapper {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1;
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 100px;
+          -ms-flex: 0 1 100px;
+              flex: 0 1 100px; }
+    .fourth-screen .second-screen-main-left-advanced-item {
+      margin-top: 0px;
+      margin-bottom: 20px; }
+  .second-screen-main-left-advanced {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .second-screen-main-left-advanced-item {
+    font-size: 10px; }
+  .second-screen-main-left-text {
+    font-size: 10px; }
+  .second-screen-main-left-title {
+    font-size: 12px; }
+  .second-screen-main-right {
+    padding: 0 15px; }
+  .second-screen-main-right-item {
+    width: 120px;
+    border: none;
+    text-align: center; }
+    .second-screen-main-right-item img {
+      width: 100%; }
+    .second-screen-main-right-item .second-screen-main-right-item_priceNew {
+      font-size: 14px;
+      text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.7); }
+    .second-screen-main-right-item .second-screen-main-right-item_priceThrough {
+      font-size: 12px;
+      margin-top: 10px; }
+    .second-screen-main-right-item .second-screen-main-right-item_square img {
+      width: 10px;
+      height: 10px; }
+    .second-screen-main-right-item .second-screen-main-right-item_but {
+      padding: 10px 10px;
+      font-size: 12px;
+      cursor: pointer; }
+  .third-screen .second-screen-main-right {
+    overflow-x: scroll;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    display: block;
+    white-space: nowrap; }
+    .third-screen .second-screen-main-right .second-screen-main-right-item {
+      display: inline-block;
+      margin-right: 10px; }
+  .first-screen-block {
+    height: 100vh; } }
