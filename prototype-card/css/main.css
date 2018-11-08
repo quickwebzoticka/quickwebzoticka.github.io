@@ -44,7 +44,7 @@
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 80%;
+  width: 97%;
   margin: 100px auto; }
 
 .left-side {
@@ -153,7 +153,9 @@
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .right-side .color__active {
-    display: block; }
+    display: block;
+    margin-right: auto;
+    margin-left: 27px; }
   .right-side .colors {
     display: -webkit-box;
     display: -webkit-flex;

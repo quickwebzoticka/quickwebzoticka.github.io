@@ -71,4 +71,31 @@ $(document).ready(function() {
 			$('.material__active').fadeIn('fast');
 		}, 400);
 	});
+
+
+	//filter--mechanic
+	$(document).on('click', '.filter__mechanic .change', function(e) {
+		$(this).hide();
+		$('.mechanic__active').hide();
+		$('.mechanic__acc').slideDown('fast');
+	});
+
+	$(document).on('click', '.mechanic__wrapper .mech-item', function(e) {
+		var a = $(this).find('.mech-item__head').text();
+
+		$('.mechanic__active').text(a);
+		$('.mechanic__acc').slideUp('fast');
+		$('.filter__mechanic .change').show();
+
+		setTimeout(function() {
+			$('.mechanic__active').fadeIn('fast');
+		}, 400);
+	});
+
+	//filter--add
+	$(document).on('click', '.filter__add .change', function(e) {
+		$(this).hide();
+		$('.add__hidden').slideDown('fast');
+	});
+	
 });
