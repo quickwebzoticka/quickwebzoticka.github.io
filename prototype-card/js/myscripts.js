@@ -97,5 +97,11 @@ $(document).ready(function() {
 		$(this).hide();
 		$('.add__hidden').slideDown('fast');
 	});
+
+	$('.filter__footer-item').hover(function(e){
+		$(this).find('.filter__footer-item__tooltip').slideDown('fast');
+	}, function(e) {
+		$(this).find('.filter__footer-item__tooltip').slideUp('fast');
+	})
 	
 });
