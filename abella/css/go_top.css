@@ -1,0 +1,43 @@
+.text-block {
+  width: 250px;
+  margin: 50px;
+}
+
+#go-top {
+  position: fixed;
+  bottom: 25px; 
+  right: 4%; 
+  cursor:pointer; 
+  display:none;
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  opacity: 0.5;
+  background: url(../img/icons/011-up-chevron.png) no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  z-index: 8000;
+  border: 2px solid #ea2e44;
+}
+
+#go-top:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-30%) rotate(-45deg);
+  width: 60%;
+  height: 60%;
+  border-top: 3px solid #ea2e44;
+  border-right: 3px solid #ea2e44;
+}
+
+#go-top:hover {
+  opacity: 1;
+}
