@@ -16,4 +16,12 @@ $(document).ready(function() {
         slider.slick('slickNext');
         e.preventDefault();
     });
+
+
+	function ready() {
+		AOS.refresh();
+	}
+
+	document.addEventListener("DOMContentLoaded", ready);
 });
+
