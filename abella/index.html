@@ -3,20 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Abella</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<!-- <link rel="stylesheet" href="css/queryLoader.css"> -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/slick.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href="css/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/go_top.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<!-- 	<div id="preloader" style="width: 0%;">
-	    <div class="dws-progress-bar" style="width: 100%;">
-	    	
-	    </div>
-	</div> -->
+	<div id="preloader">
+		<div class="preloader__circle">
+			<svg>
+				<circle cx="60" cy="60" r="50"></circle>
+			</svg>
+		</div>
+	</div>
 	<div class="wrapper">
 		<div class="first-screen">
 			<div class="container first-screen__add-bg">
@@ -27,8 +29,19 @@
 						</a>
 					</div>
 					<div class="header__calls">
-						<a href="tel:8 (901) 115-86-94 ">8 (901) 115-86-94</a>
-						<a href="#">обратный звонок</a>
+						<div class="header__calls__wrapper">
+							<a href="tel:8 (901) 115-86-94 ">8 (901) 115-86-94</a>
+							<a href="#">обратный звонок</a>
+						</div>
+						<div class="header__calls__mob">
+							<a href="tel:8 (901) 115-86-94">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+									<g>
+										<path d="M256,32c123.5,0,224,100.5,224,224S379.5,480,256,480S32,379.5,32,256S132.5,32,256,32 M256,0C114.625,0,0,114.625,0,256   s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0L256,0z M398.719,341.594l-1.438-4.375   c-3.375-10.062-14.5-20.562-24.75-23.375L334.688,303.5c-10.25-2.781-24.875,0.969-32.405,8.5l-13.688,13.688   c-49.75-13.469-88.781-52.5-102.219-102.25l13.688-13.688c7.5-7.5,11.25-22.125,8.469-32.406L198.219,139.5   c-2.781-10.25-13.344-21.375-23.406-24.75l-4.313-1.438c-10.094-3.375-24.5,0.031-32,7.563l-20.5,20.5   c-3.656,3.625-6,14.031-6,14.063c-0.688,65.063,24.813,127.719,70.813,173.75c45.875,45.875,108.313,71.345,173.156,70.781   c0.344,0,11.063-2.281,14.719-5.938l20.5-20.5C398.688,366.062,402.062,351.656,398.719,341.594z" fill="#FFFFFF"/>
+									</g>
+								</svg>
+							</a>
+						</div>
 					</div>
 					<div class="header__menu">
 						<div class="header__burger">
@@ -37,7 +50,7 @@
 						<div class="header__menu__text">Меню</div>
 					</div>
 				</header>
-				<div class="first-screen__main" data-aos="fade-up">
+				<div class="first-screen__main">
 					<h1>Abella</h1>
 					<div class="first-screen__main__text">
 						<p class="bolded">
@@ -49,56 +62,59 @@
 					</div>
 					<button>Купить в один клик</button>
 				</div>
-				<div class="first-screen__advantages">
-					<div class="advantage" data-aos="fade-up">
-						<div class="img__wrapper">
-							<img src="img/icons/001-spa.png" alt="spa" class="advantage__img">
+				<div class="first-screen__advantages__wrapper">
+					<div class="first-screen__advantages">
+						<div class="advantage" data-aos="fade-up">
+							<div class="img__wrapper">
+								<img src="img/icons/001-spa.png" alt="spa" class="advantage__img">
+							</div>
+							<p><span class="bolded">Натуральный состав</span> 
+								- в составе экстракты индийских трав и растений.
+							</p>
 						</div>
-						<p><span class="bolded">Натуральный состав</span> 
-							- в составе экстракты индийских трав и растений.
-						</p>
+						<div class="advantage" data-aos="fade-up" data-aos-delay="200">
+							<div class="img__wrapper">
+								<img src="img/icons/003-health.png" alt="health" class="advantage__img">
+							</div>
+							<p>
+								<span class="bolded">Безопасность</span>  - по рецептам традиционной системы индийской медицины "Аюрведы"
+							</p>
+						</div>
+						<div class="advantage" data-aos="fade-up" data-aos-delay="400">
+							<div class="img__wrapper">
+								<img src="img/icons/002-charity.png" alt="charity" class="advantage__img">
+							</div>
+							<p><span class="bolded">Нет противопоказаний.</span> Подходит всем типам кожи и волос. Беременным и кормящим матерям.
+							</p>
+						</div>
 					</div>
-					<div class="advantage" data-aos="fade-up" data-aos-delay="200">
-						<div class="img__wrapper">
-							<img src="img/icons/003-health.png" alt="health" class="advantage__img">
+					<div class="first-screen__advantages">
+						<div class="advantage" data-aos="fade-up">
+							<div class="img__wrapper">
+								<img src="img/icons/004-herbal-cream.png" alt="cream" class="advantage__img">
+							</div>
+							<p><span class="bolded">Увлажняет и питает кожу.</span><br> 
+								Снимает раздражение после эпиляции, а волоски не врастают в кожу.
+							</p>
 						</div>
-						<p>
-							<span class="bolded">Безопасность</span>  - по рецептам традиционной системы индийской медицины "Аюрведы"
-						</p>
-					</div>
-					<div class="advantage" data-aos="fade-up" data-aos-delay="400">
-						<div class="img__wrapper">
-							<img src="img/icons/002-charity.png" alt="charity" class="advantage__img">
+						<div class="advantage" data-aos="fade-up" data-aos-delay="200">
+							<div class="img__wrapper">
+								<img src="img/icons/005-thumbs-up-hand-symbol.png" alt="hand" class="advantage__img">
+							</div>
+							<p><span class="bolded">Более 100 положительных отзывов.</span> У большинства девушек волосы пропали совсем
+							</p>
 						</div>
-						<p><span class="bolded">Нет противопоказаний.</span> Подходит всем типам кожи и волос. Беременным и кормящим матерям.
-						</p>
+						<div class="advantage" data-aos="fade-up" data-aos-delay="400">
+							<div class="img__wrapper">
+								<img src="img/icons/006-calendar-with-a-clock-time-tools.png" alt="calendar" class="advantage__img
+							">	
+							</div>
+							<p><span class="bolded">За 8-10 курсов полностью устраняет рост волос.</span>
+							</p>
+						</div>
 					</div>
 				</div>
-				<div class="first-screen__advantages">
-					<div class="advantage" data-aos="fade-up">
-						<div class="img__wrapper">
-							<img src="img/icons/004-herbal-cream.png" alt="cream" class="advantage__img">
-						</div>
-						<p><span class="bolded">Увлажняет и питает кожу.</span><br> 
-							Снимает раздражение после эпиляции, а волоски не врастают в кожу.
-						</p>
-					</div>
-					<div class="advantage" data-aos="fade-up" data-aos-delay="200">
-						<div class="img__wrapper">
-							<img src="img/icons/005-thumbs-up-hand-symbol.png" alt="hand" class="advantage__img">
-						</div>
-						<p><span class="bolded">Более 100 положительных отзывов.</span> У большинства девушек волосы пропали совсем
-						</p>
-					</div>
-					<div class="advantage" data-aos="fade-up" data-aos-delay="400">
-						<div class="img__wrapper">
-							<img src="img/icons/006-calendar-with-a-clock-time-tools.png" alt="calendar" class="advantage__img
-						">	
-						</div>
-						<p><span class="bolded">За 8-10 курсов полностью устраняет рост волос.</span>
-						</p>
-					</div>
-				</div>
+
 				<div class="first-screen__video" data-aos="fade-up" data-aos-delay="600">
 					<div class="first-screen__video__text">
 						<span>Подробно о лосьоне</span><br>
