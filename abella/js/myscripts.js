@@ -1,11 +1,12 @@
-$(document).ready(function() {
-
+$(window).on('load', function (){
 	setTimeout(function() {
       $('#preloader').fadeOut('slow',function() {
       	$('.first-screen__main').addClass('first-screen__main__after-load');
       });
     },2000);
+});
 
+$(document).ready(function() {
 	AOS.init({
 		once: true
 	});
@@ -30,4 +31,13 @@ $(document).ready(function() {
 	};
 
 	document.addEventListener("DOMContentLoaded", ready);
+
+
+    
+
+
+	// slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+	//   $("[data-slick-index='" +currentSlide+ "']").removeClass('slider-inn-current-slide');
+	//   $("[data-slick-index='" +nextSlide+ "']").addClass('slider-inn-current-slide');
+	// });
 });
