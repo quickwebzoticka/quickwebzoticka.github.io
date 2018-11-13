@@ -29,14 +29,5 @@ $(document).ready(function() {
 		AOS.refresh();
 	};
 
-	// document.addEventListener("DOMContentLoaded", ready);
-
-
-    
-
-
-	// slider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-	//   $("[data-slick-index='" +currentSlide+ "']").removeClass('slider-inn-current-slide');
-	//   $("[data-slick-index='" +nextSlide+ "']").addClass('slider-inn-current-slide');
-	// });
+	document.addEventListener("DOMContentLoaded", ready);
 });
