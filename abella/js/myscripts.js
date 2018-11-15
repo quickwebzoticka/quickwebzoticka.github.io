@@ -11,7 +11,8 @@ $(window).on('load', function (){
 
 $(document).ready(function() {
 	var slider = $('.seven-screen__gallery'),
-		windowWidth = $(window).width();
+		windowWidth = $(window).width(),
+		count = $('.count');
 
 	$(window).resize(function() {
 		windowWidth = $(window).width();
@@ -41,23 +42,21 @@ $(document).ready(function() {
 	    $('.menu-big').animate({'width': '0vw'}, 'slow');
     });
     $(document).on('click', '.counter-minus', function() {
-    	var a = $('.count').val();
+    	var a = count.val();
 
     	if (a <= 1) {
     		return;
     	}
     	a--;
-
-    	$('.count').val(a);
+    	count.val(a);
     });
     $(document).on('click', '.counter-plus', function() {
-    	var a = $('.count').val();
+    	var a = count.val();
 
     	if (a > 6000) {
     		return;
     	}
     	a++;
-
-    	$('.count').val(a);
+    	count.val(a);
     });
 });
