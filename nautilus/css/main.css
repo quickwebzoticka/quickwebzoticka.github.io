@@ -7242,8 +7242,7 @@ li.fancybox-thumbs-loading {
   padding: 0px; }
 
 .fullscreen-slider__main .slick-list {
-  padding: 0px;
-}
+  padding: 0px; }
 
 @media screen and (max-width: 768px) {
   .slick-list {
