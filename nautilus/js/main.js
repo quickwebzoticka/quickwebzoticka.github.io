@@ -66,10 +66,10 @@ function tabs(limiter){
             .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
         let curElementContentBlock = $(this).closest('div.tabs').find('div.tabs__content').eq($(this).index());
             if (curElementContentBlock.find('.slick-slider').length > 0){
-                curElementContentBlock.find('.slick-slider').slick('destroy').slick('init');
+                console.log(curElementContentBlock.find('.slick-slider'));
+                curElementContentBlock.find('.slick-slider').slick('setPosition');
             }
         return false;
-
     });
 }
 
@@ -129,6 +129,11 @@ function allClics(limiter){
     })
     $(document).on('click', '.bws-top-arrow', function(){
         $(this).parents('.bws').toggleClass('no-active');
+        return false;
+    });
+   $(document).on('click','.tabs-flat .first-slider-arrows__prev', function(){
+        let a = $(this).siblings('.tabs-flat-right__wrap');
+        a.slick('slickPrev');
         return false;
     });
 }
@@ -256,23 +261,28 @@ function sliders(limiter){
         hodSlider.slick('slickNext');
         return false;
     });
-    let hotTooltipSliderItems =  $(document).find('.hod-tooltip-left-item');
+    
 
-    let hodTooltipSlider = $(document).find('.hod-tooltip-left__slider').slick({
-        arrows:false
-    });
-    $(document).find('.hod-tooltip-bot__all').html(hotTooltipSliderItems.length);
-    hodTooltipSlider.on('afterChange', function(event, slick, currentSlide, nextSlide){
-        $(document).find('.hod-tooltip-bot__this').html(currentSlide + 1);
-    });
-    $(document).on('click', '.hod-tooltip-prev', function(){
-        hodTooltipSlider.slick('slickPrev');
-        return false;
-    });
-    $(document).on('click', '.hod-tooltip-next', function(){
-        hodTooltipSlider.slick('slickNext');
-        return false;
-    });
+
+    $.fancybox.defaults.afterShow = function(){
+        let hotTooltipSliderItems =  $(document).find('.hod-tooltip-left-item');
+        // $('.hod-tooltip-left__slider').slick('setPosition');
+        let hodTooltipSlider = $(document).find('.hod-tooltip-left__slider').slick({
+         arrows:false
+        });
+        $(document).find('.hod-tooltip-bot__all').html(hotTooltipSliderItems.length);
+        hodTooltipSlider.on('afterChange', function(event, slick, currentSlide, nextSlide){
+            $(document).find('.hod-tooltip-bot__this').html(currentSlide + 1);
+        });
+        $(document).on('click', '.hod-tooltip-prev', function(){
+            hodTooltipSlider.slick('slickPrev');
+            return false;
+        });
+        $(document).on('click', '.hod-tooltip-next', function(){
+            hodTooltipSlider.slick('slickNext');
+            return false;
+        });
+    };
 }
 function inputMask(limiter){
     if (limiter === undefined){
@@ -287,9 +297,15 @@ function acc(limiter){
     $(document).on('click', '.acc-item__top', function(){
         $(this).parents('.acc-item').siblings().each(function(index,item){
             $(item).find('.acc-item-bot').slideUp();
+            $(item).find('.acc-item__top').removeClass('active');
         })
         $(this).parents('.acc-item').find('.acc-item-bot').slideToggle();
+        $(this).toggleClass('active');
     });
+}
+
+function accArrow(limiter) {
+
 }
 
 function scroll(limiter){
@@ -302,6 +318,18 @@ function scroll(limiter){
             top = $(id).offset().top - 100;
         $('body,html').animate({scrollTop: top}, 1000);
     });
-        
+    $(document).on("click",'.go-top', function (event) {
+        event.preventDefault();
+        $('body,html').animate({scrollTop: 0}, 1000);
+    }); 
 }
+
+$(window).scroll(function(event) {
+    var a = window.pageYOffset;
+    if (a > 1000) {
+        $('.go-top').addClass('visible');
+    } else {
+        $('.go-top').removeClass('visible');
+    }
+});
 
