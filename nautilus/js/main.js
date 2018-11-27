@@ -77,7 +77,20 @@ function allClics(limiter){
     if (limiter === undefined){
         limiter = $(document)
     }
-    $(document).on('click', '.menu__burger .hamburger', function(){
+    $(document).on('click', '.menu__burger .hamburger', function(e){
+        let width = $(window).width();
+        if (width <= 768) {
+            if ($('.hamburger').hasClass('is-active') && $('.callback').hasClass('active')) {
+                e.preventDefault;
+                $('.hamburger').removeClass('is-active');
+                $('.callback').removeClass('active');
+                $(document).find('.menu.active').removeClass('active').addClass('no-active');
+                $(document).find('.menu__link span').hide();
+                $(document).find('.menu-footer').hide();
+                $(document).find('.wrapper-disable').remove();
+                return false;
+            };
+        }
         let menu = $(this).parents('.menu');
         $(this).toggleClass('is-active');
         if(menu.hasClass('active')){
@@ -143,7 +156,11 @@ function sliders(limiter){
         limiter = $(document)
     }
     let firstSlider = limiter.find('.first-slider').slick({
-        dots:true
+        dots:true,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
     firstSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
         $('.first-slider-item__title span').removeClass('active');
@@ -333,3 +350,13 @@ $(window).scroll(function(event) {
     }
 });
 
+function menuButtonMob() {
+    $(document).on('click', '.header-block__but', function(e) {
+        let width = $(window).width();
+        if (width <= 768) {
+            $('.hamburger').addClass('is-active');
+        }
+    })
+}
+
+menuButtonMob();
