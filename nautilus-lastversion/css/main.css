@@ -6562,7 +6562,7 @@ li.fancybox-thumbs-loading {
   align-self: stretch; }
   .tabs-ip-list .first-slider-arrows__next {
     position: absolute;
-    bottom: -30px;
+    bottom: 30px;
     left: 50%;
     -webkit-transform: translate(-50%) rotate(90deg);
     -ms-transform: translate(-50%) rotate(90deg);
@@ -7622,6 +7622,10 @@ li.fancybox-thumbs-loading {
     margin-bottom: 25px; }
   .tabs-ip-list__wrap .slick-slide {
     height: 180px; } }
+
+@media screen and (max-width: 1500px) {
+  .tabs-ip-list .first-slider-arrows__next {
+    bottom: -30px; } }
 
 @media screen and (max-width: 1255px) {
   .tabs-ip-list .first-slider-arrows__next {
