@@ -77,6 +77,7 @@ function allClics(limiter){
     if (limiter === undefined){
         limiter = $(document)
     }
+    //Изменение логики на нажатие гамбургера в моб версии (1 кнопка для меню и для заказать звонок)
     let width = $(window).width();
     $(document).on('click', '.menu__burger .hamburger', function(e){
         if (width <= 768) {
@@ -119,10 +120,8 @@ function allClics(limiter){
             menu.find('.menu__link span').toggle('slide');
             menu.find('.menu-footer').toggle('slide');
             menu.addClass('no-active');   
-        } else {
-            
         }
-    })
+    });
     $(document).on('click', '.header-block__but', function(){
         let formMain = $(document).find('.callback');
 
@@ -161,7 +160,7 @@ function allClics(limiter){
         $(document).find('.wrapper-disable').remove();
         setTimeout(function(){
             formMain.removeClass('active');
-        }, 1000)
+        }, 300)
     })
     $(document).on('click', '.bws-top-arrow', function(){
         $(this).parents('.bws').toggleClass('no-active');
@@ -172,6 +171,19 @@ function allClics(limiter){
         a.slick('slickPrev');
         return false;
     });
+   $(document).on('click', '.wrapper-disable', function(){
+        $('.menu').find('.hamburger').removeClass('is-active');
+        $('.menu').removeClass('active');
+        $('.menu').find('.menu__link span').hide();
+        $('.menu').find('.menu-footer').hide();
+        $('.menu').addClass('no-active');
+        $('.callback').removeClass('fadeInRight');
+        $('.callback').addClass('fadeOutRight');
+        setTimeout(function(){
+            $('.callback').removeClass('active');
+        }, 300)
+        $(document).find('.wrapper-disable').remove();
+   })
 }
 
 function sliders(limiter){
